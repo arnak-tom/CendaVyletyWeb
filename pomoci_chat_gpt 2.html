@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistika</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav {
+            position: fixed;
+            top: 60px; /* Height of header */
+            left: 0;
+            width: 250px;
+            height: calc(100% - 60px);
+            background-color: #f4f4f4;
+            padding: 1rem;
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li ul {
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+
+        nav ul li ul li a {
+            font-weight: normal;
+            color: #555;
+        }
+
+        main {
+            margin-left: 260px; /* Width of nav */
+            margin-top: 70px; /* Height of header */
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 1rem;
+        }
+
+        main img {
+            width: 300px;
+            height: auto;
+        }
+
+        .text-blocks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+
+            main {
+                margin: 0;
+                margin-top: 130px; /* Adjust for header and nav */
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Turistická Prezentace</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Domů</a></li>
+            <li><a href="#">Trasy</a>
+                <ul>
+                    <li><a href="#">Horské túry</a></li>
+                    <li><a href="#">Vodní stezky</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tipy na výlety</a>
+                <ul>
+                    <li><a href="#">Rodinné výlety</a></li>
+                    <li><a href="#">Historické památky</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="https://via.placeholder.com/300" alt="Turistická fotografie">
+        <div class="text-blocks">
+            <p>Turistika nabízí skvělou příležitost pro objevování přírody a zlepšení fyzické kondice. Na našich stránkách najdete tipy na výlety po horách, lesích a dalších krásných lokalitách.</p>
+            <p>Plánování výletů nikdy nebylo snazší. Zjistěte více o trasách, doporučeném vybavení a nejlepších destinacích v naší oblasti.</p>
+            <p>Pro rodiny s dětmi máme speciální sekci s trasami, které jsou přizpůsobeny pro mladší dobrodruhy. Každý si u nás najde něco, co ho zaujme.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Turistická Prezentace</p>
+    </footer>
+</body>
+</html>

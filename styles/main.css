@@ -1,0 +1,194 @@
+body
+{
+    margin: 0;
+}
+
+header 
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/symmetric_nature_pattern_100px_200width.png');
+    background-size: contain;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    filter: drop-shadow(2px 4px 6px black);
+    color: white;
+    font-family: Verdana, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 1em;
+    text-align: center;
+    z-index: 1000;    
+}
+
+main 
+{
+    margin-left: 260px; /* Width of nav */
+    margin-top: 70px; /* Height of header */
+    padding: 1rem;
+    font-size: 14px;
+    background-image: url('../images/vintage-concrete.png');
+    background-repeat: repeat;
+}
+
+nav 
+{
+    position: fixed;
+    top: 80px; /* Height of header */
+    left: 0;
+    width: 250px;
+    height: calc(100% - 80px);
+    font-family: Verdana, sans-serif;
+    background-color: #d4d4d4;
+    padding: 1rem;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li 
+{
+    margin-bottom: 10px;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li ul 
+{
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+nav ul li ul li a 
+{
+    font-weight: normal;
+    color: #555;
+}
+
+nav ul.journeys-list li a:hover
+{
+    font-weight: bold;
+}
+
+.journey-card
+{
+    border: 2px solid gray; 
+    padding: 0; 
+    margin: 2em;
+    font-family: Verdana, sans-serif;
+    border-radius: 0 0 10px 10px;
+}
+
+.journey-card-label
+{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgb(208,134,63);
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 2px solid gray; 
+}
+
+.journey-card-content
+{
+    padding: 2em;
+}
+
+.journey-card-summary
+{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+}
+
+.journey-card-details
+{
+    margin-top: 1em;
+}
+
+.journey-attributes .label
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Modal styles */
+#pictureModal 
+{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#pictureModal-img
+{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close 
+{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev, .next
+{
+    font-size: 60px; 
+    color: white; 
+    cursor: pointer; 
+    position: absolute;
+}
+
+#close:hover, .prev:hover, .next:hover 
+{
+    color: red;
+}
+
+@media (max-width: 768px) 
+{
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    main {
+        margin: 0;
+        margin-top: 130px; /* Adjust for header and nav */
+    }
+}
