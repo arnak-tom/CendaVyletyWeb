@@ -283,7 +283,7 @@
       <p>Autor: Čenda & spol.</p>
     </footer>
     
-    <div id="pictureModal" data-images="[]" data-images-current-index="0" >   
+    <div id="pictureModal" data-images="[]" data-images-current-index="0" data-scale="1" >   
       <span id="close" onclick="hideModal();">&times;</span>
       <span class="prev" onclick="changeImage(-1)" style="left: 10%;">&#8249;</span>
       <img id="pictureModal-img" src="" >    
@@ -300,11 +300,14 @@
           modal.style.display =  'flex';
           modal.setAttribute('data-images', thumbnailElement.getAttribute('data-images'));
           modal.setAttribute('data-images-current-index', '0');
+          modal.setAttribute('data-scale', '1');
 
          // Načtení JSON z atributu data-images
          const images = JSON.parse(thumbnailElement.getAttribute('data-images'));
 
          const modalImg = document.getElementById('pictureModal-img');
+
+         modalImg.style.transform = `scale(1)`;
 
          modalImg.src = images[0];
       }
@@ -332,6 +335,25 @@
           modalImg.src = '';
           modalImg.alt = '';
       }
+
+      const modalImage = document.getElementById("pictureModal-img");
+
+      // Zoomování kolečkem myši
+      modalImage.addEventListener("wheel", (e) => {
+            e.preventDefault();
+
+            const modal = document.getElementById('pictureModal');
+
+            var scale = +modal.getAttribute('data-scale');
+
+            scale += e.deltaY < 0 ? 0.1 : -0.1; // Zoom-in kolečkem nahoru, zoom-out dolů
+            scale = Math.max(scale, 0.5); // Min zoom = 0.5
+
+            modalImage.style.transform = `scale(${scale})`;
+
+            modal.setAttribute('data-scale', scale);
+      });
+
   </script>
   
 </html>
