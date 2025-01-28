@@ -145,7 +145,7 @@ nav ul.journeys-list li a:hover
     max-height: 90%;
 }
 
-#close 
+#pictureModal .close 
 {
     position: absolute;
     top: 10px;
@@ -163,7 +163,7 @@ nav ul.journeys-list li a:hover
     position: absolute;
 }
 
-#close:hover, .prev:hover, .next:hover 
+#pictureModal .close:hover, .prev:hover, .next:hover 
 {
     color: red;
 }
