@@ -410,15 +410,30 @@
       <p>Autor: Čenda & spol.</p>
     </footer>
     
-    <div id="pictureModal" data-images="[]" data-images-current-index="0" data-scale="1" >   
+    <div id="pictureModal" 
+         data-images="[]" 
+         data-images-current-index="0" 
+         data-start-x="0" 
+         data-start-y="0" 
+         data-offset-x="0" 
+         data-offset-y="0" 
+         data-is-dragging="false" >   
       <span class="close">&times;</span>
       <span class="prev" style="left: 10%;">&#8249;</span>
-      <img id="pictureModal-img" src="" >    
+      <img id="pictureModal-img" src="" ondragstart="return false;">    
       <span class="next" style="right: 10%;">&#8250;</span>
     </div>      
 
    </body>
 
    <script type="module" src="scripts/main.js"></script>
+
+   <script>
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+   </script>
   
 </html>

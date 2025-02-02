@@ -1,59 +1,229 @@
 export class ImageGallery 
 {
-    static openGallery(thumbnailElement) 
+    static #instance;
+
+    #modalDiv;
+
+    #modalImg;
+
+    #onMouseMoveHandler;
+
+    #shiftX;
+
+    #shiftY;
+
+    static get #MIN_WIDTH_PX() {
+        return 300;
+    }
+
+    static get #MAX_WIDTH_PX() {
+        return 3000;
+    }
+
+    static get #WIDTH_STEP_PX() {
+        return 50;
+    }
+
+    constructor() 
+    {
+        if (ImageGallery.#instance) 
+        {
+            return ImageGallery.#instance;
+        }
+
+        ImageGallery.#instance = this;
+
+        this.#modalImg = document.getElementById("pictureModal-img");
+
+        this.#modalDiv = document.getElementById("pictureModal");
+
+        this.#setEventHandlers();
+    }
+
+    // Otevření galerie fotek
+    #openGallery(thumbnailElement) 
     {
         console.debug('Metoda ImageGalery.showFullImage(thumbnailElement) byla zavolána.');
 
-        const modal = document.getElementById('pictureModal');
+        const imagesJson = thumbnailElement.getAttribute('data-images');
           
-        modal.style.display =  'flex';
-        modal.setAttribute('data-images', thumbnailElement.getAttribute('data-images'));
-        modal.setAttribute('data-images-current-index', '0');
-        modal.setAttribute('data-scale', '1');
+        this.#modalDiv.style.display =  'flex';
+        this.#modalDiv.setAttribute('data-images', imagesJson);
+        this.#modalDiv.setAttribute('data-images-current-index', '0');
 
         // Načtení JSON z atributu data-images
-        const images = JSON.parse(thumbnailElement.getAttribute('data-images'));
+        const images = JSON.parse(imagesJson);
 
-        const modalImg = document.getElementById('pictureModal-img');
+        this.#modalImg.src = images[0];
 
-        modalImg.style.transform = `scale(1)`;
-
-        modalImg.src = images[0];
+        this.#modalImg.style.cursor = "grab";
     }
 
-    static closeGallery() 
+    // Zavření galerie fotek
+    #closeGallery() 
     {
-        const modal = document.getElementById('pictureModal');
-        const modalImg = document.getElementById('pictureModal-img');
+        this.#modalDiv.style.display = 'none';
         
-        modal.style.display = 'none';
-        modalImg.src = '';
-        modalImg.alt = '';
+        this.#setModalImageToDefault();
     }
 
-    static nextImage()
+    // Posun na další fotku
+    #nextImage()
     {
         this.#changeImage(1);
     }
 
-    static previousImage()
+    // Posun na předchozí fotku
+    #previousImage()
     {
         this.#changeImage(-1);
     }
 
-    // # oznacuje privatni metodu
-    static #changeImage(direction) 
+    //Zoomování kolečkem myši
+    #zoomImageByWheel(wheelEvent) 
     {
-        const modal = document.getElementById('pictureModal');
+        wheelEvent.preventDefault();
 
-        const images = JSON.parse(modal.getAttribute('data-images'));
+        const originalWidth = this.#modalImg.getBoundingClientRect().width;
 
-        const modalImg = document.getElementById("pictureModal-img");
+        if ((originalWidth < ImageGallery.#MIN_WIDTH_PX) || (originalWidth > ImageGallery.#MAX_WIDTH_PX))
+        {
+            return;
+        }
 
-        var currentIndex = (+modal.getAttribute('data-images-current-index') + direction + images.length) % images.length;
+        const newWidth = wheelEvent.deltaY < 0 
+            ? originalWidth + ImageGallery.#WIDTH_STEP_PX 
+            : originalWidth - ImageGallery.#WIDTH_STEP_PX;
 
-        modal.setAttribute('data-images-current-index', currentIndex);
-            
-        modalImg.src = images[currentIndex];
+        if ((newWidth < ImageGallery.#MIN_WIDTH_PX) || (newWidth > ImageGallery.#MAX_WIDTH_PX))
+        {
+            return;
+        }
+
+        this.#modalImg.style.width     =  `${newWidth}px`;
+        this.#modalImg.style.maxWidth  = "unset";
+        this.#modalImg.style.maxHeight = "unset";
+    }
+
+    #onImageMouseDown(mouseEvent)
+    {
+        const boundingRect = this.#modalImg.getBoundingClientRect();
+
+        this.#shiftX = mouseEvent.clientX - boundingRect.left;
+        this.#shiftY = mouseEvent.clientY - boundingRect.top + window.scrollY;
+
+        this.#modalImg.style.cursor = 'grabbing';
+
+        this.#modalDiv.append(this.#modalImg);
+
+        this.#moveAt(mouseEvent.pageX, mouseEvent.pageY);
+
+        this.#modalDiv.addEventListener('mousemove', this.#onMouseMoveHandler);
+    }
+
+    #onImageMouseUp()
+    {
+        this.#modalImg.style.cursor = "grab";
+
+        this.#modalDiv.removeEventListener('mousemove', this.#onMouseMoveHandler);
+    }
+
+    // # oznacuje privatni metodu
+    #changeImage(direction) 
+    {
+        this.#setModalImageToDefault();
+
+        const images = JSON.parse(this.#modalDiv.getAttribute('data-images'));
+
+        var currentIndex = (+this.#modalDiv.getAttribute('data-images-current-index') + direction + images.length) % images.length;
+
+        this.#modalDiv.setAttribute('data-images-current-index', currentIndex);
+
+        this.#modalImg.src = images[currentIndex];
+    }
+
+    #moveAt(pageX, pageY) 
+    {
+        this.#modalImg.style.left = pageX - this.#shiftX + 'px';
+        this.#modalImg.style.top  = pageY - this.#shiftY + 'px';
+    }
+
+    #setModalImageToDefault()
+    {
+        this.#modalImg.src = '';
+        this.#modalImg.alt = '';
+
+        this.#modalImg.style.width     = "unset";
+        this.#modalImg.style.maxWidth  = "90%";
+        this.#modalImg.style.maxHeight = "90%";
+
+        this.#modalImg.style.left = "unset";
+        this.#modalImg.style.top = "unset";
+
+        this.#shiftX = 0;
+        this.#shiftY = 0;
+    }
+
+    #setEventHandlers()
+    {
+        this.#modalDiv.addEventListener("wheel", (e) => 
+        {
+            console.debug("modal div WHEEL");
+
+            e.preventDefault();
+        });
+
+        this.#modalImg.addEventListener("wheel", (e) => 
+        {
+            console.debug("modal div img WHEEL");
+
+            this.#zoomImageByWheel(e);
+        });
+
+        const journeyThumbnails = document.querySelectorAll('.journey-thumbnail');
+
+        journeyThumbnails.forEach((thumbnailElement) => 
+        {
+            thumbnailElement.addEventListener('click', () => 
+            {
+                this.#openGallery(thumbnailElement);
+            });
+        });
+
+        const closeGalleryButton = document.querySelector('#pictureModal .close');
+
+        closeGalleryButton.addEventListener('click', () => 
+        {
+            this.#closeGallery();
+        });
+
+        const previousImageButton = document.querySelector('#pictureModal .prev');
+
+        previousImageButton.addEventListener('click', () => 
+        {
+            this.#previousImage();
+        });
+
+        const nextImageButton = document.querySelector('#pictureModal .next');
+
+        nextImageButton.addEventListener('click', () => 
+        {
+            this.#nextImage();
+        });
+
+        this.#modalImg.addEventListener("mousedown", (e) => 
+        {
+            this.#onImageMouseDown(e);
+        });
+
+        this.#modalDiv.addEventListener("mouseup", () => 
+        {
+            this.#onImageMouseUp();
+        });
+
+        this.#onMouseMoveHandler = (mouseEvent) => 
+        { 
+            this.#moveAt(mouseEvent.pageX, mouseEvent.pageY, this.#shiftX, this.#shiftY); 
+        };
     }
 }

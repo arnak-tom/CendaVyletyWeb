@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Testing</title>
+
+    <style>
+        #pictureModal 
+{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#pictureModal-img
+{
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.1s ease-out; /* Plynulá animace */
+    cursor: grab;
+    z-index: 1000;
+    position: absolute;
+}
+
+#pictureModal .close 
+{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.prev, .next
+{
+    font-size: 60px; 
+    color: white; 
+    cursor: pointer; 
+    position: absolute;
+    z-index: 2000;
+}
+
+#pictureModal .close:hover, .prev:hover, .next:hover 
+{
+    color: red;
+}
+    </style>
+
+   </head>
+  
+  <body>
+  
+    <header>
+        <h1>Můj výletový deníček</h1>
+    </header>
+
+    <div id="pictureModal" >   
+      <span class="close">&times;</span>
+      <span class="prev" style="left: 10%;">&#8249;</span>
+      <img id="pictureModal-img" 
+      src="https://lh3.googleusercontent.com/pw/AP1GczNrGUEGZrnFZhEbmbShRacW_aFfI8z_FoMI-md-D7iys0pN-jlieBD9Eij6TRJsn1_1RcKIpTvejUdzJ13pG0i23vwrUQf8cng7vI3bKXqs9Ldu83Q=w2400" 
+      ondragstart="return false;">    
+      <span class="next" style="right: 10%;">&#8250;</span>
+    </div>      
+
+   </body>
+
+   <script>
+
+const modal = document.getElementById('pictureModal');
+
+const modalImage = document.getElementById('pictureModal-img');
+
+modalImage.onmousedown = function(event) {
+
+    let shiftX = event.clientX - modalImage.getBoundingClientRect().left;
+    let shiftY = event.clientY - modalImage.getBoundingClientRect().top;
+
+  // (1) prepare to moving: make absolute and on top by z-index
+  //modalImage.style.position = 'absolute';
+  //modalImage.style.zIndex = 1000;
+  modalImage.style.cursor = 'grabbing';
+
+  // move it out of any current parents directly into body
+  // to make it positioned relative to the body
+  modal.append(modalImage);
+
+  // centers the ball at (pageX, pageY) coordinates
+  function moveAt(pageX, pageY) {
+    modalImage.style.left = pageX - shiftX + 'px';
+    modalImage.style.top = pageY - shiftY + 'px';
+  }
+
+  // move our absolutely positioned ball under the pointer
+  moveAt(event.pageX, event.pageY);
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // (2) move the ball on mousemove
+  modal.addEventListener('mousemove', onMouseMove);
+
+  // (3) drop the ball, remove unneeded handlers
+  modalImage.onmouseup = function() {
+    modal.removeEventListener('mousemove', onMouseMove);
+    modalImage.onmouseup = null;
+    modalImage.style.cursor = 'grab';
+  };
+
+};
+
+modalImage.onmousewheel = function(event) 
+{
+    event.preventDefault();
+
+const originalWidth = modalImage.getBoundingClientRect().width;
+
+if ((originalWidth < 300) || (originalWidth > 3000))
+{
+    return;
+}
+
+const newWidth = event.deltaY < 0 ? originalWidth + 50 : originalWidth - 50;
+
+if ((newWidth < 300) || (newWidth > 3000))
+{
+    return;
+}
+
+const style = `${newWidth}px`;
+
+modalImage.style.maxWidth = "unset";
+modalImage.style.maxHeight = "unset";
+
+    modalImage.style.width =  style;
+};
+
+
+
+
+   </script>
+  
+</html>
