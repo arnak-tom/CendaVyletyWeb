@@ -40,6 +40,14 @@ export class ImageGallery
         this.#setEventHandlers();
     }
 
+    addThumbNailHandlers(thumbnailElement)
+    {
+        thumbnailElement.addEventListener('click', () => 
+        {
+            this.#openGallery(thumbnailElement);
+        });
+    }
+
     // Otevření galerie fotek
     #openGallery(thumbnailElement) 
     {

@@ -21,10 +21,15 @@ header
     z-index: 1000;    
 }
 
+footer
+{
+    padding-left: 400px;
+}
+
 main 
 {
     margin-left: 260px; /* Width of nav */
-    margin-top: 70px; /* Height of header */
+    margin-top: 100px; /* Height of header */
     padding: 1rem;
     font-size: 14px;
     background-image: url('../images/vintage-concrete.png');
@@ -34,10 +39,10 @@ main
 nav 
 {
     position: fixed;
-    top: 80px; /* Height of header */
+    top: 100px; /* Height of header */
     left: 0;
     width: 250px;
-    height: calc(100% - 80px);
+    height: calc(100% - 100px);
     font-family: Verdana, sans-serif;
     background-color: #d4d4d4;
     padding: 1rem;
@@ -80,6 +85,11 @@ nav ul.journeys-list li a:hover
     font-weight: bold;
 }
 
+.hidden
+{
+    display: none;
+}
+
 .journey-card
 {
     border: 2px solid gray; 
@@ -99,6 +109,30 @@ nav ul.journeys-list li a:hover
     font-size: 1.2em;
     font-weight: bold;
     border-bottom: 2px solid gray; 
+}
+
+.journey-card-status
+{
+    float: right;
+    width: 1em;
+    height: 1em;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+
+.todo
+{
+    background-color: firebrick;
+}
+
+.inprogress
+{
+    background-color: orange;
+}
+
+.finished
+{
+    background-color: green;
 }
 
 .journey-card-content
