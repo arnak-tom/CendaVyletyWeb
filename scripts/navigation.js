@@ -26,6 +26,8 @@ export class Navigation
 
             this.#addYearJourneyNodes(y, journeyListElement);
         });
+
+        this.#addNavToggleEventListener();
     }
 
     #addYearJourneyNodes(year, journeyListElement)
@@ -81,6 +83,25 @@ export class Navigation
         ulElement.appendChild(newListItem);
 
         return journeyList;
+    }
+
+    #addNavToggleEventListener()
+    {
+        // Zavření/ otevření menu
+        document.querySelector(".main-nav-toggle").addEventListener("click", () => 
+        {
+           const leftNavigation = document.querySelector("#leftNavigation");
+  
+           leftNavigation.classList.toggle("closed");
+  
+           leftNavigation.querySelector(".main-navigation-list").classList.toggle("hidden");
+  
+           document.querySelector("main").classList.toggle("wide");
+  
+           document.querySelector("#leftNavigation .main-nav-toggle .material-symbols-outlined").textContent = leftNavigation.classList.contains("closed")
+              ? "arrow_menu_open"
+              : "arrow_menu_close";
+        });
     }
 
     #getUniqueYears()

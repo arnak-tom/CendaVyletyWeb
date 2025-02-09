@@ -28,12 +28,18 @@ footer
 
 main 
 {
-    margin-left: 260px; /* Width of nav */
+    margin-left: 280px; /* Width of nav */
     margin-top: 100px; /* Height of header */
     padding: 1rem;
     font-size: 14px;
     background-image: url('../images/vintage-concrete.png');
     background-repeat: repeat;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+main.wide
+{
+    margin-left: 40px; /* Width of nav */
 }
 
 nav 
@@ -48,6 +54,12 @@ nav
     padding: 1rem;
     overflow-y: auto;
     border-right: 1px solid #ddd;
+    transition: left 0.3s ease-in-out;
+}
+
+nav#leftNavigation.closed
+{
+    left: -240px;
 }
 
 nav#leftNavigation .year
@@ -58,6 +70,21 @@ nav#leftNavigation .journeys-list li:hover
 {
     font-weight: bold;
     cursor: pointer;
+}
+
+nav#leftNavigation .main-nav-toggle 
+{
+    position: absolute; /* Uvnitř sidebaru */
+    top: 15px;
+    right: 0;
+    color: rgb(208,134,63);
+    cursor: pointer;
+    user-select: none;
+}
+
+nav#leftNavigation .main-nav-toggle .material-symbols-outlined
+{
+    font-size: 35px;
 }
 
 nav ul 
