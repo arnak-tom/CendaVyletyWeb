@@ -4,7 +4,31 @@ import { Navigation } from './navigation.js'
 
 const imageGallery = new ImageGallery();
 
+
+
+
+
+
+
+
+
+const cardsData = await JourneyWeb.createCards();
+
+
+
+
+
+
 const navigation = new Navigation();
+
+
+
+
+
+
+
+
+
 
 
 

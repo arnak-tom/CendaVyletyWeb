@@ -21,6 +21,16 @@
    </head>
   
   <body>
+
+   <!-- Uložená šablona hlavičky karty výletu -->
+   <template id="journey-card-template">
+      <div class='journey-card' data-is-loaded="0" data-year="0">
+         <div class='journey-card-label'>
+            <span>Titulek výletu</span>
+            <div class="journey-card-status todo"></div>
+         </div>
+      </div>
+   </template>
   
     <header>
         <h1>Můj výletový deníček</h1>
@@ -38,132 +48,8 @@
       </ul>
     </nav>
     
-    <main>
+    <main> <!-- Karty s výlety budou vytvořeny Javascriptem z načtených dat. -->
 
-      <div id='2025-02-08-vysker' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-            Vyskeř 8.2.2025
-            <div class="journey-card-status inprogress"></div>
-         </div>
-      </div>
-
-      <div id='2025-02-01-hradek' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-            Hrádek n. N. 1.2.2025
-            <div class="journey-card-status inprogress"></div>
-         </div>
-      </div>
-
-      <div id='2025-01-25-valdstejn' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-            Valdštejn 25.1.2025
-            <div class="journey-card-status inprogress"></div>
-         </div>
-      </div>
-
-      <div id='2025-01-19-hamstejn' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-          Hamštejn 19.1.2025
-          <div class="journey-card-status inprogress"></div>
-         </div>
-      </div>
-
-      <div id='2025-11-01-nisanka' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-          Nisanka, Bramberk 11.1.2025
-          <div class="journey-card-status inprogress"></div>
-         </div>
-      </div>
-
-      <div id='2025-01-05-javornik' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-            Javorník 5.1.2025
-            <div class="journey-card-status inprogress"></div>
-         </div>
-      </div>
-
-      <div id='2025-01-01-kozakov' class='journey-card' data-is-loaded="0" data-year="2025">
-         <div class='journey-card-label'>
-           Kozákov - Novoroční výstup 2025
-           <div class="journey-card-status finished"></div>
-         </div>
-      </div>
-
-      <!-- 2024 -->
-      <div id='2024-02-24-malinik' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Maliník 24.2.2024
-            <div class="journey-card-status todo"></div>
-         </div>
-      </div>
-
-      <div id='2024-02-18-bramberk' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Bramberk 18.2.2024
-            <div class="journey-card-status todo"></div>
-         </div>
-      </div>
-
-      <div id='2024-02-17-jablonne' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Jablonné v Podještědí 17.2.2024
-            <div class="journey-card-status todo"></div>
-         </div>
-      </div>
-
-      <div id='2024-02-10-sychrov' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Sychrov 10.2.2024
-            <div class="journey-card-status todo"></div>
-         </div>
-      </div>
-
-      <div id='2024-02-03-liberec' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Liberec 3.2.2024
-            <div class="journey-card-status todo"></div>
-         </div>
-      </div>
-
-      <div id='2024-01-27-lucany' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Muzeum Lučany 27.1.2024
-            <div class="journey-card-status todo"></div>
-         </div>
-      </div>
-
-      <div id='2024-01-20-jested' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Ještěd 20.1.2024
-            <div class="journey-card-status todo"></div>
-           </div>
-      </div>
-
-      <div id='2024-01-14-turnov' class='journey-card' data-is-loaded="0" data-year="2024">
-         <div class='journey-card-label'>
-            Turnov 14.1.2024
-            <div class="journey-card-status todo"></div>
-           </div>
-      </div>
-
-      <div id='2024-01-06-chrastava' class='journey-card' data-is-loaded="0" data-year="2024">
-
-         <div class='journey-card-label'>
-            Chrastavská šlápota 2024
-            <div class="journey-card-status todo"></div>
-           </div>
-
-      </div>
-
-      <div id='2024-01-01-kozakov' class='journey-card' data-is-loaded="0" data-year="2024">
-
-         <div class='journey-card-label'>
-            Kozákov - Novoroční výstup 2024
-            <div class="journey-card-status todo"></div>
-           </div>
-
-      </div>
-     
     </main>
     
     <footer>

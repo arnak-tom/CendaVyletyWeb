@@ -1,0 +1,122 @@
+[
+    {
+        "year" : 2024,
+        "journeys": 
+        [
+            {
+                "id" : "2024-01-01-kozakov",
+                "label" : "Kozákov - Novoroční výstup 2024"
+            },
+            {
+                "id" : "2024-01-06-chrastava",
+                "label" : "Chrastavská šlápota 2024"
+            },
+            {
+                "id" : "2024-01-14-turnov",
+                "label" : "Turnov 14.1.2024"
+            },
+            {
+                "id" : "2024-01-20-jested",
+                "label" : "Ještěd 20.1.2024"
+            },
+            {
+                "id" : "2024-01-27-lucany",
+                "label" : "Lučany 27.1.2024"
+            },
+            {
+                "id" : "2024-02-03-liberec",
+                "label" : "Liberec 3.2.2024"
+            },
+            {
+                "id" : "2024-02-10-sychrov",
+                "label" : "Sychrov 10.2.2024"
+            },
+            {
+                "id" : "2024-02-17-jablonne",
+                "label" : "Jablonné v Podještědí 17.2.2024"
+            },
+            {
+                "id" : "2024-02-18-bramberk",
+                "label" : "Bramberk 18.2.2024"
+            },
+            {
+                "id" : "2024-02-24-malinik",
+                "label" : "Maliník 24.2.2024"
+            },
+            {
+                "id" : "2024-02-27-bor",
+                "label" : "Nový Bor 27.2.2024"
+            },
+            {
+                "id" : "2024-03-02-lomnice",
+                "label" : "Lomnice 2.3.2024"
+            },
+            {
+                "id" : "2024-03-09-zizkac",
+                "label" : "Žižkův Vrch 9.3.2024"
+            },
+            {
+                "id" : "2024-03-10-svijany",
+                "label" : "Svijany 10.3.2024"
+            },
+            {
+                "id" : "2024-03-16-turnov",
+                "label" : "Turnov 16.3.2024"
+            },
+            {
+                "id" : "2024-03-17-klic",
+                "label" : "Klíč 17.3.2024"
+            },
+            {
+                "id" : "2024-03-23-oldrichov",
+                "label" : "Nový Oldřichov 23.3.2024"
+            },
+            {
+                "id" : "2024-04-06-rovensko",
+                "label" : "Rovensko p. Tr. 6.4.2024"
+            },
+            {
+                "id" : "2024-04-13-milire",
+                "label" : "Milíře 13.4.2024"
+            },
+            {
+                "id" : "2024-04-28-kumburk",
+                "label" : "Kumburk 28.4.2024"
+            }
+        ]
+    },
+    {
+        "year" : 2025,
+        "journeys":
+        [
+            {
+                "id" : "2025-01-01-kozakov",
+                "label" : "Kozákov - Novoroční výstup 2025"
+            },
+            {
+                "id" : "2025-01-05-javornik",
+                "label" : "Javorník 5.1.2025"
+            },
+            {
+                "id" : "2025-01-11-nisanka",
+                "label" : "Nisanka, Bramberk 11.1.2025"
+            },
+            {
+                "id" : "2025-01-19-hamstejn",
+                "label" : "Hamštejn 19.1.2025"
+            },
+            {
+                "id" : "2025-01-25-valdstejn",
+                "label" : "Valdštejn 25.1.2025"
+            },
+            {
+                "id" : "2025-02-01-hradek",
+                "label" : "Hrádek n. N. 1.2.2025"
+            },
+            {
+                "id" : "2025-02-08-vysker",
+                "label" : "Vyskeř 8.2.2025"
+            }
+        ]
+    }
+]
