@@ -30,6 +30,17 @@ export class JourneyWeb
 
                 journeyCard.querySelector(".journey-card-label span").textContent = journeyData.label;
 
+                const statusDiv = journeyCard.querySelector(".journey-card-status");
+
+                if (journeyData.status)
+                {
+                    statusDiv.classList.add(journeyData.status);
+                }
+                else
+                {
+                    statusDiv.classList.add('todo');
+                }
+
                 document.querySelector("main").appendChild(journeyCard);
             } );
             
