@@ -108,7 +108,8 @@
             },
             {
                 "id" : "2025-01-25-valdstejn",
-                "label" : "Valdštejn 25.1.2025"
+                "label" : "Valdštejn 25.1.2025",
+                "status" : "finished"
             },
             {
                 "id" : "2025-02-01-hradek",
