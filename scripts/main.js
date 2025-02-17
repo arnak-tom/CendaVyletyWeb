@@ -1,13 +1,9 @@
 import { JourneyWeb }   from './journey-web.js'
 import { ImageGallery } from './image-gallery.js'
-import { Navigation } from './navigation.js'
+import { Navigation }   from './navigation.js'
+import { SearchField } from './search-field.js'
 
 const imageGallery = new ImageGallery();
-
-
-
-
-
 
 
 
@@ -17,12 +13,10 @@ const cardsData = await JourneyWeb.createCards();
 
 
 
-
-
 const navigation = new Navigation();
 
 
-
+const searchField = await new SearchField().init();
 
 
 

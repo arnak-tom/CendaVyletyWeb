@@ -82,6 +82,11 @@ nav#leftNavigation .main-nav-toggle
     user-select: none;
 }
 
+nav#leftNavigation .main-navigation-list
+{
+    margin-top: 50px;
+}
+
 nav#leftNavigation .main-nav-toggle .material-symbols-outlined
 {
     font-size: 35px;
@@ -171,6 +176,11 @@ nav ul li ul li a
     padding: 2em;
 }
 
+.journey-thumbnail
+{
+    cursor: pointer;
+}
+
 .journey-card-summary
 {
     display: grid;
@@ -238,6 +248,36 @@ nav ul li ul li a
 #pictureModal .close:hover, .prev:hover, .next:hover 
 {
     color: red;
+}
+
+ul#suggestions {
+    list-style: none;
+    font-family: Verdana, sans-serif;
+    font-size: 0.85rem;
+    padding: 0;
+    margin: 5px 0;
+    position: absolute;
+    background: white;
+    border: 1px solid #888;
+    width: 220px;
+    max-width: 250px;
+    display: none;
+}
+
+#suggestions li {
+    border-bottom: 1px solid;
+    padding: 6px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background: #ddd;
+}
+
+/* Zvýraznění hledaného slova */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) 

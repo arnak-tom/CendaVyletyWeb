@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <style>
+
+            #suggestions {
+                list-style: none;
+                padding: 0;
+                margin: 5px 0;
+                position: absolute;
+                background: white;
+                border: 1px solid #ccc;
+                max-width: 250px;
+                display: none;
+            }
+
+            #suggestions li {
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            #suggestions li:hover {
+                background: #ddd;
+            }
+
+            /* Zvýraznění hledaného slova */
+            .highlight {
+                background-color: yellow;
+                font-weight: bold;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <input type="text" id="search" placeholder="Hledat..." />
+        <ul id="suggestions"></ul>
+        <div id="results"></div> <!-- Místo pro zobrazení obsahu -->
+        
+
+    </body>
+
+    <script>
+
+        let dataset =   [
+                            { "id": 1, "text": "Jablko je zdravé ovoce." },
+                            { "id": 2, "text": "Oranžová barva je jasná." },
+                            { "id": 3, "text": "Modrá barva uklidňuje mysl." },
+                            { "id": 4, "text": "Banány obsahují hodně draslíku." }
+                        ];
+
+        document.addEventListener("DOMContentLoaded", async function () 
+        {
+            const searchInput = document.getElementById("search");
+            const suggestionsList = document.getElementById("suggestions");
+            const resultsDiv = document.getElementById("results");
+
+            let selectedIndex = -1; // Index vybraného prvku v seznamu návrhů
+
+            searchInput.addEventListener("input", function () 
+            {
+                const query = searchInput.value.toLowerCase();
+                suggestionsList.innerHTML = "";
+                suggestionsList.style.display = "none";
+                selectedIndex = -1; // Reset indexu
+
+                if (query.length === 0) return;
+
+                let matches = dataset.filter(item => item.text.toLowerCase().includes(query));
+
+                if (matches.length > 0) {
+                    suggestionsList.style.display = "block";
+                    matches.slice(0, 5).forEach((match, index) => 
+                    {
+                        const li = document.createElement("li");
+                        li.innerHTML = highlightText(match.text, query);
+                        li.dataset.index = index;
+                        li.addEventListener("click", () => selectItem(match.text, query));
+                        suggestionsList.appendChild(li);
+                    });
+                }
+            });
+
+            searchInput.addEventListener("keydown", function (event) 
+            {
+                const items = suggestionsList.querySelectorAll("li");
+                if (items.length === 0) return;
+
+                if (event.key === "ArrowDown") {
+                    event.preventDefault();
+                    selectedIndex = (selectedIndex + 1) % items.length;
+                    updateSelection(items);
+                } else if (event.key === "ArrowUp") {
+                    event.preventDefault();
+                    selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+                    updateSelection(items);
+                } else if (event.key === "Enter" && selectedIndex !== -1) {
+                    event.preventDefault();
+                    selectItem(items[selectedIndex].textContent, searchInput.value);
+                }
+            });
+
+
+            document.addEventListener("click", (e) => 
+            {
+                if (e.target !== searchInput) {
+                    suggestionsList.style.display = "none"; 
+                }
+            });
+
+            // Zvýrazní hledané slovo
+            function highlightText(text, query) 
+            {
+                const regex = new RegExp(`(${query})`, "gi");
+                return text.replace(regex, `<span class="highlight">$1</span>`);
+            }
+
+            // Vybere položku a zobrazí výsledek
+            function selectItem(text, query) 
+            {
+                searchInput.value = text;
+                suggestionsList.style.display = "none";
+                displayResult(text, query);
+            }
+
+            function updateSelection(items) 
+            {
+                items.forEach((item, index) => 
+                {
+                    item.style.background = index === selectedIndex ? "#ddd" : "white";
+                });
+            }
+
+
+            // Zobrazí vybraný výsledek s označením hledaného slova
+            function displayResult(text, query) 
+            {
+                resultsDiv.innerHTML = `<p>${highlightText(text, query)}</p>`;
+            }
+        });
+
+
+    </script>
+
+</html>
