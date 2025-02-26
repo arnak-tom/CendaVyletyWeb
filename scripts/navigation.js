@@ -48,13 +48,6 @@ export class Navigation
 
             newListItem.addEventListener('click', (e) => 
             {
-                // const elementPosition = journeyCard.getBoundingClientRect().top + window.scrollY;
-                // const offset = 130; // Požadovaná vzdálenost od vrchu
-
-                // window.scrollTo({
-                //     top: elementPosition - offset,
-                //     behavior: "smooth" // Plynulé scrollování
-                // });
                 JourneyWeb.moveToJourneyCard(journeyCard);
 
                 if (journeyCard.dataset.isLoaded !== "1")

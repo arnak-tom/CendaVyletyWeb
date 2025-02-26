@@ -5,26 +5,11 @@ import { SearchField } from './search-field.js'
 
 const imageGallery = new ImageGallery();
 
-
-
-
 const cardsData = await JourneyWeb.createCards();
-
-
-
 
 const navigation = new Navigation();
 
-
 const searchField = await new SearchField().init();
-
-
-
-
-
-
-
-
 
 const journeyCards = document.querySelectorAll('.journey-card');
 
@@ -41,3 +26,4 @@ journeyCards.forEach((journeyCard) =>
 const firstJourneyCardLabel = document.body.querySelector(".journey-card-label");
 
 firstJourneyCardLabel.click();
+

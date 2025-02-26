@@ -224,6 +224,11 @@
                 "id" : "2025-02-16-prosec",
                 "label" : "Proseč 16.2.2025",
                 "status" : "inprogress"
+            },
+            {
+                "id" : "2025-02-22-grabstejn",
+                "label" : "Grabštejn 22.2.2025",
+                "status" : "inprogress"
             }
         ]
     }

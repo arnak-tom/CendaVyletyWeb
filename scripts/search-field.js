@@ -4,7 +4,7 @@ export class SearchField
 {
     static #instance;
 
-    static MAX_SUGGESTIONS_COUNT = 10;
+    static MAX_SUGGESTIONS_COUNT = 20;
 
     #dataJsonUrl = '/src/data/journey-list.json';
 

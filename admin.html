@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Journey web administration</title>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        <style>
+            table
+            {
+                border: 1px solid black;
+                padding: 0;
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            th
+            {
+                background-color: darkgrey;
+                padding: 0.5rem;
+                border-bottom: 1px solid black;
+            }
+
+            table tbody tr:nth-child(even) 
+            {
+                background-color: #f2f2f2;
+            }
+
+            table tbody tr:nth-child(odd) 
+            {
+                background-color: #dddddd; 
+            }
+
+            td
+            {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            /* Překryvná vrstva modálního okna */
+            .modal-overlay {
+            display: none; /* Skryto ve výchozím stavu */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Poloprůhledné pozadí */
+            justify-content: center;
+            align-items: center;
+            }
+
+            /* Obsah modálního okna */
+            .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Stylování tlačítek uvnitř modálního okna */
+            .modal-content button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            }
+
+            #confirmButton {
+            background-color: #d9534f; /* Červená barva pro potvrzení */
+            color: white;
+            }
+
+            #cancelButton {
+            background-color: #5bc0de; /* Modrá barva pro zrušení */
+            color: white;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Můj výletový deníček</h1>
+            <div id="google-login-button" style="position: absolute; top: 1rem; right: 5rem;"></div>
+        </header>
+        
+        <main class="administration">
+
+            <h1 style="text-align: center;">Administrace základních dat výletů</h1>
+
+            
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: start; gap: 2rem;">
+                <!-- Tabulka pro zobrazení dat -->
+                <table id="journeys-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Rok</th>
+                            <th>Den konání</th>
+                            <th>Název</th>
+                            <th>Stav</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTable">
+
+                    </tbody>
+                </table>
+
+                <form id="dataForm">
+                    <input type="hidden" id="docId"/>
+
+                    <fieldset style="display: flex; flex-direction: column; gap: 2rem; min-width: 30rem; align-items: end;">
+
+                        <legend>Výlet</legend>
+
+                        <div style="margin-top: 1em;">
+                            <label for="journeyId">Srozumitelný jednoznačný identifikátor</label>
+                            <input type="text" id="journeyId" placeholder="např. 2030-12-24-severnipol" required />
+                        </div>
+                        
+                        <div>
+                            <label for="journeyDate">Datum konání</label>
+                            <input type="date" id="journeyDate" placeholder="datum" required />
+                        </div>
+                        
+                        <div>
+                            <label for="journeyTitle">Název (jedno symbolické místo trasy)</label>
+                            <input type="text" id="journeyTitle" placeholder="např. Severní pól" required />
+                        </div>
+
+                        <div>
+                            <label for="status">Stav zpracování karty výletu</label>
+                            <select id="status">
+                                <option value="todo">Nový</option>
+                                <option value="inprogress">Rozpracovaný</option>
+                                <option value="finshed">Hotový</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <button type="submit">Uložit</button>
+                        </div>
+                        
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <!-- <button onclick="importData();">import</button> -->
+
+        <!-- Překryvná vrstva modálního okna -->
+        <div id="modalOverlay" class="modal-overlay">
+            <!-- Obsah modálního okna -->
+            <div class="modal-content">
+            <h2>Potvrzení</h2>
+            <p>Opravdu chcete smazat položku '<span id="itemToDelete-title"></span>'?</p>
+            <button id="confirmButton">Ano</button>
+            <button id="cancelButton">Ne</button>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcD9dwIQfUTnfXCxn5ZiZqj1710BsDILk",
+            authDomain: "vylety.tiiny.site",
+            projectId: "journey-web-889",
+            storageBucket: "journey-web-889.firebasestorage.app",
+            messagingSenderId: "164318039168",
+            appId: "1:164318039168:web:780444be95d0fb51bcea65",
+            measurementId: "G-N7S1LQKET5"
+        };
+
+        // Inicializace Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        async function importData()
+        {
+            const response = await fetch('/src/data/journey-list.json');
+    
+            let journeysByYear = await response.json();
+
+            journeysByYear = journeysByYear.sort((a, b) => b.year - a.year);
+
+            journeysByYear.forEach((journeysOfYear) => 
+            {
+                const journeysSorted = journeysOfYear.journeys.sort((a, b) => b.id.localeCompare(a.id));
+
+                journeysSorted.forEach( (journeyData) => 
+                {
+                    let data = {
+                        journeyId: journeyData.id,
+                        year: parseInt(journeysOfYear.year),
+                        title: journeyData.label,
+                        status: journeyData.status ?? "todo"
+                    };
+
+                    db.collection("journeys").add(data).then(() => {
+                    console.log("✅ Data přidána");
+                    resetForm();
+                });
+
+                } );
+                
+            });
+        }
+
+    </script>
+
+    <script type="module">
+        import { Administration } from "./scripts/administration.js";
+
+        const administration = new Administration();
+
+        await administration.loadJourneysTableData();
+
+    </script>
+
+    
+
+</html>    

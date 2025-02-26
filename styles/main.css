@@ -1,6 +1,7 @@
 body
 {
     margin: 0;
+    font-family: Verdana, sans-serif;
 }
 
 header 
@@ -35,6 +36,12 @@ main
     background-image: url('../images/vintage-concrete.png');
     background-repeat: repeat;
     transition: margin-left 0.3s ease-in-out;
+}
+
+main.administration
+{
+    margin-left: 0;
+    padding-left: 10rem;
 }
 
 main.wide

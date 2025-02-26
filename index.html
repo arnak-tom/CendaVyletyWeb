@@ -13,6 +13,31 @@
 
     <link rel="stylesheet" href="styles/main.css">
 
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <script type="module" src="scripts/security.js"></script>
+
+    <script>
+
+      // function handleCredentialResponse(response) {
+      //           console.log("ID Token: " + response.credential);
+      //       }
+
+      // window.onload = function () 
+      // {
+      //    google.accounts.id.initialize(
+      //    {
+      //       client_id: "956516295528-c2pd3qrkaac71ace0qh7hgqkfm1pljir.apps.googleusercontent.com",
+      //       callback: handleCredentialResponse
+      //    });
+
+      //    google.accounts.id.renderButton(
+      //       document.getElementById("google-login-button"),
+      //       { theme: "outline", size: "large" }
+      //    );
+      // };
+    </script>
+
     <style>
       
 
@@ -34,7 +59,12 @@
   
     <header>
         <h1>Můj výletový deníček</h1>
+        <div id="google-login-button" style="position: absolute; top: 1rem; right: 5rem;"></div>
     </header>
+
+    <div id="logged-user-stripe" class="hidden" style="position: relative; top: 100px; padding-top: 1rem; padding-bottom: 0.5rem; background-color: skyblue; padding-left: 400px;">
+      <a href="admin.html" target="_self" style="text-decoration: none;">Administrace</a>
+    </div>
 
     <div style="position: fixed; top: 120px; z-index: 10; margin-left: 1rem;">
       <input type="text" id="search" placeholder="Hledat..." style="width: 100%; height: 1.6rem;" />
