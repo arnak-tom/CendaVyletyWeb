@@ -87,7 +87,21 @@ export class JourneyWebSecurity
     }
 }
 
-window.onload = function () 
+// window.onload = function () 
+// {
+//     google.accounts.id.initialize(
+//     {
+//         client_id: "956516295528-c2pd3qrkaac71ace0qh7hgqkfm1pljir.apps.googleusercontent.com",
+//         callback: JourneyWebSecurity.handleCredentialResponse
+//     });
+
+//     google.accounts.id.renderButton(
+//         document.getElementById("google-login-button"),
+//         { theme: "outline", size: "large" }
+//     );
+// };
+
+document.addEventListener("DOMContentLoaded", () => 
 {
     google.accounts.id.initialize(
     {
@@ -95,8 +109,17 @@ window.onload = function ()
         callback: JourneyWebSecurity.handleCredentialResponse
     });
 
-    google.accounts.id.renderButton(
-        document.getElementById("google-login-button"),
-        { theme: "outline", size: "large" }
-    );
-};
+    const idToken = sessionStorage.getItem("idToken");
+
+    if (idToken) 
+    {
+        JourneyWebSecurity.updateSigninStatus();
+    }
+    else
+    {
+        google.accounts.id.renderButton(
+            document.getElementById("google-login-button"),
+            { theme: "outline", size: "large" }
+        );
+    }
+});

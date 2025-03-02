@@ -62,7 +62,8 @@
         <div id="google-login-button" style="position: absolute; top: 1rem; right: 5rem;"></div>
     </header>
 
-    <div id="logged-user-stripe" class="hidden" style="position: relative; top: 100px; padding-top: 1rem; padding-bottom: 0.5rem; background-color: skyblue; padding-left: 400px;">
+    <div id="logged-user-stripe" class="hidden" 
+         style="position: fixed; top: 100px; padding-top: 1rem; padding-bottom: 0.5rem; background-color: skyblue; padding-left: 400px; width: 100%;">
       <a href="admin.html" target="_self" style="text-decoration: none;">Administrace</a>
     </div>
 
@@ -105,5 +106,22 @@
    </body>
 
    <script type="module" src="scripts/main.js"></script>
+
+   <script type="module">
+      import { JourneyWebSecurity } from "./scripts/security.js"
+
+      document.addEventListener("DOMContentLoaded", () => 
+      {
+         const idToken = sessionStorage.getItem("idToken");
+      
+         if (idToken) 
+         {
+            JourneyWebSecurity.updateSigninStatus();
+         }
+      });
+
+      //await administration.importData();
+
+   </script>
     
 </html>

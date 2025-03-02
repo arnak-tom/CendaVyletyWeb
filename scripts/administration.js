@@ -1,5 +1,6 @@
 import { db } from "./firebase-config.js";
-import { collection, getDoc, getDocs, updateDoc, doc, addDoc, deleteDoc, query, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { Firebase } from "./firebase.js";
+import { collection, getDoc, getDocs, updateDoc, doc, addDoc, deleteDoc, query, where, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
 export class Administration
@@ -21,30 +22,41 @@ export class Administration
     // Načtení dat
     async loadJourneysTableData() 
     {
-        const journeysCollection = collection(db, "journeys");
+        const journeysTable = document.getElementById("journeys-table");
 
-        const journeysQuery = query(journeysCollection, orderBy("journeyId", "asc"));
+        const year = journeysTable.dataset.year;
 
-        const journeysDocs = await getDocs(journeysQuery);
+        const orderByConditions = [["journeyDate", "asc"]];
 
-        const table = document.getElementById("dataTable");
+        const whereConditions = year 
+            ? this.getJourneyYearCondition(year)
+            : [];
 
-        table.innerHTML = "";
+        const journeysData = await Firebase.readDataAsync("journeys", whereConditions, orderByConditions);
 
-        journeysDocs.forEach(doc => 
+        this.#populateJourneysTable("dataTable", journeysData);
+    }
+
+    #populateJourneysTable(tbodyId, journeysData)
+    {
+        const tbody = document.getElementById(tbodyId);
+
+        tbody.innerHTML = "";
+
+        journeysData.forEach(journey => 
         {
-            const journey = doc.data();
-
-            table.innerHTML += `
-                <tr data-item-id="${doc.id}">
-                    <td>${journey.journeyId}</td>
-                    <td>${journey.year}</td>
+            tbody.innerHTML += `
+                <tr data-item-id="${journey.docId}">
                     <td>${journey.journeyDate ? this.#formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
                     <td>${journey.title}</td>
+                    <td style='text-align: right;'>${journey.routeLength ?? ''} km</td>
+                    <td style='text-align: right;'>${journey.metersClimbed ?? ''} m</td>
+                    <td style='text-align: right;'>${journey.altitudeLowest ?? ''} m</td>
+                    <td style='text-align: right;'>${journey.altitudeHighest ?? ''} m</td>
                     <td>${journey.status}</td>
                     <td>
-                        <button class="edit-button" data-doc-id="${doc.id}">✏️</button>
-                        <button class="delete-button" data-doc-id="${doc.id}" data-title="${journey.title}" >🗑️</button>
+                        <button class="edit-button" data-doc-id="${journey.docId}">✏️</button>
+                        <button class="delete-button" data-doc-id="${journey.docId}" data-title="${journey.title}" >🗑️</button>
                     </td>
                 </tr>`;
         });
@@ -65,6 +77,10 @@ export class Administration
                 journeyDate: new Date(document.getElementById("journeyDate").value),
                 year: new Date(document.getElementById("journeyDate").value).getFullYear(),
                 title: document.getElementById("journeyTitle").value,
+                routeLength: document.getElementById("routeLength").value,
+                metersClimbed: document.getElementById("metersClimbed").value,
+                altitudeLowest: document.getElementById("altitudeLowest").value,
+                altitudeHighest: document.getElementById("altitudeHighest").value,
                 status: document.getElementById("status").value
             };
 
@@ -117,6 +133,38 @@ export class Administration
         {
             await this.#deleteJourney(document.getElementById("itemToDelete-title").dataset.itemId);
         });
+
+        document.getElementById('export-journeys-from-firebase-button').addEventListener('click', async () =>
+        {
+            await this.#exportCollection("journeys");
+        });
+
+        document.getElementById("import-journeys-file").addEventListener("change", async (e) => 
+        {
+            await this.#importCollection(e, "journeys-imported") ;
+        });
+
+        document.getElementById("journeys-table-years-switch").addEventListener("click", (event) => 
+        {
+            if (event.target.classList.contains("switch-item")) 
+            {
+                const year = event.target.dataset.year;
+
+                const journeysTable = document.getElementById("journeys-table");
+
+                journeysTable.dataset.year = year ?? "";
+
+                this.loadJourneysTableData();
+
+                document.querySelectorAll("#journeys-table-years-switch .switch-item")
+                    .forEach((switchItem) => 
+                    {
+                        switchItem.classList.remove("current");
+                    });
+
+                event.target.classList.add("current");
+            }
+        });
     }
 
     // Reset formuláře
@@ -135,6 +183,10 @@ export class Administration
         document.getElementById("journeyId").value = journey.journeyId;
         document.getElementById("journeyDate").value = this.#formatFirestoreTimestampForForm(journey.journeyDate);
         document.getElementById("journeyTitle").value = journey.title;
+        document.getElementById("routeLength").value = journey.routeLength;
+        document.getElementById("metersClimbed").value = journey.metersClimbed;
+        document.getElementById("altitudeLowest").value = journey.altitudeLowest;
+        document.getElementById("altitudeHighest").value = journey.altitudeHighest;
         document.getElementById("status").value = journey.status;
     }
     
@@ -234,4 +286,81 @@ export class Administration
             console.error("Chyba při načítání dokumentu:", error);
         }
     }
+
+    async #exportCollection(collectionName) 
+    {
+        const querySnapshot = await getDocs(collection(db, collectionName));
+
+        const data = [];
+    
+        querySnapshot.forEach(doc => 
+        {
+            data.push({ id: doc.id, ...doc.data() }); // Uloží ID + data
+        });
+    
+        const jsonData = JSON.stringify(data, null, 2); // Krásně formátovaný JSON
+    
+        // Vytvoříme soubor ke stažení
+        const blob = new Blob([jsonData], { type: "application/json" });
+
+        const a = document.createElement("a");
+
+        a.href = URL.createObjectURL(blob);
+
+        a.download = `${collectionName}-backup.json`;
+
+        document.body.appendChild(a);
+
+        a.click();
+
+        document.body.removeChild(a);
+    }
+
+    async #importCollection(event, collectionName) 
+    {
+        const file = event.target.files[0];
+
+        if (!file) return;
+    
+        const reader = new FileReader();
+
+        reader.onload = async function(event) 
+        {
+            const jsonData = JSON.parse(event.target.result);
+    
+            for (const item of jsonData) 
+            {
+                const { id, ...data } = item; // ID ignorujeme (Firestore ho vytvoří sám)
+
+                await addDoc(collection(db, collectionName), data);
+            }
+    
+            alert("Data byla úspěšně obnovena!");
+        };
+
+        reader.readAsText(file);
+    }
+
+
+
+
+
+
+
+
+    getJourneyYearCondition(year)
+    {
+        const startOfYear = new Date(`${year}-01-01T00:00:00Z`);
+        const endOfYear = new Date(`${year}-12-31T23:59:59Z`);
+
+        return [["journeyDate", ">=", startOfYear], ["journeyDate", "<=", endOfYear]]
+    }
+
+
+
+
+
+ 
+   
+    
 }

@@ -229,6 +229,11 @@
                 "id" : "2025-02-22-grabstejn",
                 "label" : "Grabštejn 22.2.2025",
                 "status" : "inprogress"
+            },
+            {
+                "id" : "2025-03-01-spicak",
+                "label" : "Frýdlant 1.3.2025",
+                "status" : "todo"
             }
         ]
     }
