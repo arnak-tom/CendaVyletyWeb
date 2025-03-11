@@ -30,7 +30,7 @@ main.administration td
 }
 
 /* Překryvná vrstva modálního okna */
-body#administration-body .modal-overlay 
+.modal-overlay 
 {
     display: none; /* Skryto ve výchozím stavu */
     position: fixed;
@@ -75,6 +75,63 @@ body#administration-body .modal-overlay #cancelButton
     color: white;
 }
 
+#journeys-table
+{
+    width: 60rem;
+    table-layout: fixed;
+}
+
+#journeys-table th
+{
+    white-space: nowrap;
+}
+
+#journeys-table th button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sort-icon 
+{
+    font-size: 14px;
+    color: #007bff; /* Modrá pro zvýraznění */
+    transition: transform 0.2s ease-in-out;
+}
+
+.sort-icon.asc 
+{
+    transform: rotate(0deg);
+}
+
+.sort-icon.desc 
+{
+    transform: rotate(180deg);
+}
+
+#journeys-table td
+{
+    white-space: nowrap;   /* Zabrání zalamování textu */
+    overflow: hidden;      /* Skryje přebytečný text */
+    text-overflow: ellipsis; /* Přidá tři tečky, pokud je text moc dlouhý */
+}
+
+#journeys-table th:nth-child(1) { width: 12%; }  /* Den konání */
+#journeys-table th:nth-child(2) { width: 20%; }  /* Název */
+#journeys-table th:nth-child(3) { width: 10%; }  /* Délka */
+#journeys-table th:nth-child(4) { width: 13%; }  /* Nastoupáno */
+#journeys-table th:nth-child(5) { width: 13%; }  /* Nejnižší bod */
+#journeys-table th:nth-child(6) { width: 13%; }  /* Nejvyšší bod */
+#journeys-table th:nth-child(7) { width: 8%; }  /* Stav */
+#journeys-table th:nth-child(8) { width: 11%; }  /* tlačítka */
+
 #journeys-table-years-switch
 {
     display: flex; 
@@ -99,4 +156,14 @@ body#administration-body .modal-overlay #cancelButton
     border: 2px solid;
     font-weight: bold;
     background-color: chocolate;
+}
+
+fieldset#journey-form
+{
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem; 
+    width: 32rem;
+    /* min-width: 30rem; 
+    align-items: end; */
 }

@@ -1,5 +1,116 @@
+import { Firebase } from './firebase.js';
+import { DateUtil } from './date-util.js';
+import { ImageGallery } from './image-gallery.js';
+import { Navigation }   from './navigation.js';
+import { SearchField } from './search-field.js';
+import { Administration } from "./administration.js";
+import { JourneyWebSecurity } from "./security.js"
+
 export class JourneyWeb
 {
+    static #journeysCollectionName = "journeys";
+
+    static #journeyCardTemplate = document.getElementById("journey-card-template");
+
+    static #viewsCache = {};
+
+    static async showCardsViewAsync()
+    {
+        document.getElementById("loader").style.display = "flex";
+
+        await JourneyWeb.#loadViewAsync("/src/views/journeys-cards-view.html");
+
+        const whereConditions = [];
+
+        const orderByConditions = [["journeyDate", "desc"]];
+  
+        const journeysData = await Firebase.readDataAsync(JourneyWeb.#journeysCollectionName, whereConditions, orderByConditions);
+
+        journeysData.forEach(journey => 
+        {
+            const journeyCard = JourneyWeb.#journeyCardTemplate.content.cloneNode(true).firstElementChild;
+
+            journeyCard.id = journey.journeyId;
+
+            journeyCard.dataset.year = journey.year;
+
+            journeyCard.dataset.docId = journey.docId;
+
+            const journeyCardLabel = journeyCard.querySelector(".journey-card-label");
+
+            const journeyDateFormatted = DateUtil.formatFirestoreTimestampForDisplay(journey.journeyDate);
+
+            journeyCardLabel.querySelector("span").textContent = `${journey.title} ${journeyDateFormatted}`;
+
+            const statusDiv = journeyCard.querySelector(".journey-card-status");
+
+            if (journey.status)
+            {
+                statusDiv.classList.add(journey.status);
+            }
+            else
+            {
+                statusDiv.classList.add('todo');
+            }
+
+            journeyCardLabel.addEventListener('click', (e) => 
+            {
+                JourneyWeb.setJourneyCardContent(e, new ImageGallery());
+            });
+    
+            document.querySelector("main").appendChild(journeyCard);
+        });
+
+        const navigation = new Navigation();
+
+        navigation.buildNavigation();
+
+        const searchField = new SearchField()
+
+        await searchField.init();
+
+        const firstJourneyCardLabel = document.body.querySelector(".journey-card-label");
+
+        firstJourneyCardLabel.click();
+
+        window.scrollTo(0, 0);
+
+        document.getElementById("loader").style.display = "none";
+    }
+
+    static async showTableViewAsync()
+    {
+        document.getElementById("loader").style.display = "flex";
+
+        await JourneyWeb.#loadViewAsync("/src/views/journeys-table-view.html");
+
+        const administration = new Administration();
+
+        await administration.loadJourneysTableDataAsync();
+
+        JourneyWebSecurity.enableOrDisableAdminSections();
+
+        administration.addEventListeners();
+
+        window.scrollTo(0, 0);
+
+        document.getElementById("loader").style.display = "none";
+    }
+
+    static async #loadViewAsync(viewFileUrl) 
+    {
+        let viewCode = JourneyWeb.#viewsCache[viewFileUrl];
+
+        if (!viewCode) 
+        {
+            viewCode = await JourneyWeb.#fetchText(viewFileUrl);
+
+            JourneyWeb.#viewsCache[viewFileUrl] = viewCode;
+        } 
+
+        document.getElementById("view-content").innerHTML = viewCode;
+    }
+
     static async createCards()
     {
         let journeysByYear = await JourneyWeb.#fetchJson('/src/data/journey-list.json');
@@ -82,6 +193,18 @@ export class JourneyWeb
                     imageGallery.addThumbNailHandlers(journeyThumbnail);
                 }
 
+                const journey = await Firebase.readDocumentByIdAsync("journeys", journeyCard.dataset.docId); 
+
+                if (journey)
+                {
+                    const journeyRouteLength = journeyCard.querySelector('.journey-attribute-route-length .value');
+
+                    if (journey.routeLength && journeyRouteLength)
+                    {
+                        journeyRouteLength.textContent = journey.routeLength;
+                    }
+                }
+
                 journeyCard.dataset.isLoaded = "1";
             }
 
@@ -143,7 +266,7 @@ export class JourneyWeb
     {
         const elementPosition = journeyCard.getBoundingClientRect().top + window.scrollY;
 
-        const offset = 130; // Požadovaná vzdálenost od vrchu
+        const offset = 150; // Požadovaná vzdálenost od vrchu
 
         window.scrollTo({
                             top: elementPosition - offset,

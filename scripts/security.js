@@ -1,3 +1,6 @@
+import { db } from "./firebase-config.js";
+import { getDoc, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
 export class JourneyWebSecurity
 {
     static parseJwt(token) 
@@ -18,6 +21,13 @@ export class JourneyWebSecurity
     {
         const idToken = sessionStorage.getItem('idToken');
 
+        if (!idToken)
+        {
+            JourneyWebSecurity.signOut();
+
+            return;
+        }
+
         const userObject = JourneyWebSecurity.parseJwt(idToken);
 
         const userTitle = userObject.name;
@@ -28,7 +38,13 @@ export class JourneyWebSecurity
             ? `<img id="user-photo" src="${userObject.picture}" alt="Profilový obrázek" style="width: 32px; height: 32px; border-radius: 20%; margin-right: 10px;">`
             : "";
 
-        document.getElementById('logged-user-stripe').classList.remove("hidden");
+        document.querySelectorAll(".admin-section").forEach( item => 
+        {
+            if (item.classList.contains("hidden"))
+            {
+                item.classList.remove("hidden");
+            }
+        });
 
         if (userTitle) 
         {
@@ -53,7 +69,7 @@ export class JourneyWebSecurity
         }
     }
 
-    static handleCredentialResponse(response) 
+    static async handleCredentialResponse(response) 
     {
         const idToken = response.credential;
 
@@ -66,6 +82,8 @@ export class JourneyWebSecurity
         if (userObject)
         {
             JourneyWebSecurity.updateSigninStatus();
+
+            await JourneyWebSecurity.ensureUser(userObject);
         }
     }
 
@@ -75,7 +93,7 @@ export class JourneyWebSecurity
         sessionStorage.removeItem('idToken');
         sessionStorage.removeItem('userTitle');
 
-        document.getElementById('logged-user-stripe').classList.add("hidden");
+        JourneyWebSecurity.enableOrDisableAdminSections();
 
         google.accounts.id.disableAutoSelect();
 
@@ -85,21 +103,58 @@ export class JourneyWebSecurity
           { theme: 'outline', size: 'large' }
         );
     }
+
+    static enableOrDisableAdminSections()
+    {
+        const idToken = sessionStorage.getItem('idToken');
+
+        if (!idToken)
+        {
+            document.querySelectorAll(".admin-section").forEach( item => 
+            {
+                if (!item.classList.contains("hidden"))
+                {
+                    item.classList.add("hidden");
+                }
+            });
+        }
+        else
+        {
+            document.querySelectorAll(".admin-section").forEach( item => 
+            {
+                if (item.classList.contains("hidden"))
+                {
+                    item.classList.remove("hidden");
+                }
+            });
+        }
+    }
+
+    static async ensureUser(userObject)
+    {
+        const userRef = doc(db, "users", userObject.sub);
+
+        const userSnap = await getDoc(userRef);
+
+        if (!userSnap.exists()) 
+        {
+            await setDoc(userRef, 
+            {
+                email: userObject.email,
+                name: userObject.name,
+                picture: userObject.picture,
+                roles: ["reader"],
+                createdAt: new Date()
+            });
+
+            console.log("Uživatel byl přidán do Firestore");
+        } 
+        else 
+        {
+            console.log("Uživatel už existuje");
+        }
+    }
 }
-
-// window.onload = function () 
-// {
-//     google.accounts.id.initialize(
-//     {
-//         client_id: "956516295528-c2pd3qrkaac71ace0qh7hgqkfm1pljir.apps.googleusercontent.com",
-//         callback: JourneyWebSecurity.handleCredentialResponse
-//     });
-
-//     google.accounts.id.renderButton(
-//         document.getElementById("google-login-button"),
-//         { theme: "outline", size: "large" }
-//     );
-// };
 
 document.addEventListener("DOMContentLoaded", () => 
 {

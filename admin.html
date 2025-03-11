@@ -13,14 +13,6 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/administration.css">
 
-        <style>
-
-            
-
-            
-
-        </style>
-
     </head>
 
     <body id="administration-body">
@@ -30,7 +22,7 @@
             <div id="google-login-button" style="position: absolute; top: 1rem; right: 5rem;"></div>
         </header>
 
-        <div id="logged-user-stripe" class="hidden" style="position: relative; top: 100px; padding-top: 1rem; padding-bottom: 0.5rem; background-color: skyblue; padding-left: 400px;">
+        <div id="logged-user-stripe" class="" style="position: relative; top: 100px; padding-top: 1rem; padding-bottom: 0.5rem; background-color: skyblue; padding-left: 400px;">
             <a href="index.html" target="_self" style="text-decoration: none;">Web</a>
           </div>
         
@@ -49,17 +41,37 @@
                         <div class="switch-item" data-year="2024">2024</div>
                     </div>
 
-                    <table id="journeys-table">
+                    <table id="journeys-table" data-sort-column="journeyDate" data-sort-direction="asc">
                         <thead>
                             <tr>
-                                <th>Den konání</th>
+                                <th>
+                                    <button class="sort-button" data-sort-column="journeyDate">
+                                        Den konání<span class="sort-icon asc">▲</span>
+                                    </button>
+                                </th>
                                 <th>Název</th>
-                                <th>Délka</th>
-                                <th>Nastoupáno</th>
-                                <th>Nejnižší bod</th>
-                                <th>Nejvyšší bod</th>
+                                <th>
+                                    <button class="sort-button" data-sort-column="routeLength">
+                                        Délka<span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="sort-button" data-sort-column="metersClimbed">
+                                        Nastoupáno<span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="sort-button" data-sort-column="altitudeLowest">
+                                        Nejnižší bod<span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button class="sort-button" data-sort-column="altitudeHighest">
+                                        Nejvyšší bod<span class="sort-icon"></span>
+                                    </button>
+                                </th>
                                 <th>Stav</th>
-                                <th></th>
+                                <th class="admin-section hidden"></th>
                             </tr>
                         </thead>
                         <tbody id="dataTable">
@@ -77,10 +89,10 @@
 
                 </div>
 
-                <form id="dataForm">
+                <form id="dataForm" class="admin-section hidden">
                     <input type="hidden" id="docId"/>
 
-                    <fieldset style="display: flex; flex-direction: column; gap: 2rem; min-width: 30rem; align-items: end;">
+                    <fieldset id="journey-form" >
 
                         <legend>Výlet</legend>
 
@@ -101,27 +113,27 @@
 
                         <div>
                             <label for="routeLength">Délka trasy v km</label>
-                            <input type="number" min="1" max="100" step="1" id="routeLength" placeholder="např. 20" required />
+                            <input type="number" min="1" max="100" step="1" id="routeLength" placeholder="např. 20" />
                         </div>
 
                         <div>
                             <label for="metersClimbed">Nastoupané metry</label>
-                            <input type="number" min="1" max="2000" step="1" id="metersClimbed" placeholder="např. 200" required />
+                            <input type="number" min="1" max="2000" step="1" id="metersClimbed" placeholder="např. 200" />
                         </div>
 
                         <div>
                             <label for="altitudeLowest">Nejnižší nadmořská výška v m</label>
-                            <input type="number" min="0" max="2000" step="1" id="altitudeLowest" placeholder="např. 200" required />
+                            <input type="number" min="0" max="2000" step="1" id="altitudeLowest" placeholder="např. 200" />
                         </div>
 
                         <div>
                             <label for="altitudeHighest">Nejvyšší nadmořská výška v m</label>
-                            <input type="number" min="0" max="2000" step="1" id="altitudeHighest" placeholder="např. 300" required />
+                            <input type="number" min="0" max="2000" step="1" id="altitudeHighest" placeholder="např. 300" />
                         </div>
 
                         <div>
-                            <div>Obrázky do fotogalerie</div>
-                            <div id="photo-gallery-items"></div>
+                            <div style="margin-bottom: 0.5rem;">Obrázky do fotogalerie</div>
+                            <div id="photo-gallery-items" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;"></div>
                             <button type="button" onclick="addPhotoGalleryItem();">Přidat položku</button>
                         </div>
 
@@ -157,6 +169,20 @@
             </div>
         </div>
 
+        <!-- Uložená šablona položky formuláře pro přidání nové fotografie do galerie -->
+        <template id="photo-gallery-item-template">
+            <div class="item">
+                <div style='display: flex; flex-direction: row;'>
+                    <div style='display: flex; flex-direction: column;'>
+
+                    </div>
+                    <div style='display: flex;'>
+                        <button type="button" class="remove-btn" onclick="removeItem(this)">X</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
     </body>
 
     <script>
@@ -168,17 +194,26 @@
             div.classList.add("item");
 
             div.innerHTML = `
-                <input style='display: block;' type="url" name="url[]" placeholder="URL" required>
-                <input type="text" name="description[]" placeholder="Popisek" required>
-                <button type="button" class="remove-btn" onclick="removeItem(this)">X</button>
+                <div style='display: flex; flex-direction: row;'>
+                    <div style='display: flex; flex-direction: column;'>
+                        <input style='width: 30rem;' type="url" name="url[]" placeholder="URL" required>
+                        <input type="text" name="description[]" placeholder="Popisek" required>
+                    </div>
+                    <div style='display: flex;'>
+                        <button type="button" class="remove-btn" onclick="removeItem(this)">X</button>
+                    </div>
+                </div>
             `;
             
             container.appendChild(div);
         }
 
-        // function removeItem(button) {
-        //     button.parentElement.remove();
-        // }
+        function removeItem(button) 
+        {
+            const parentElement = button.closest(".item");
+
+            parentElement.remove();
+        }
 
         // document.getElementById("objectForm").addEventListener("submit", function(event) {
         //     event.preventDefault(); // Zabránit klasickému odeslání formuláře
@@ -200,11 +235,13 @@
         import { Administration } from "./scripts/administration.js";
         import { JourneyWebSecurity } from "./scripts/security.js"
 
+        JourneyWebSecurity.updateSigninStatus();
+
         const administration = new Administration();
 
         await administration.loadJourneysTableData();
 
-        JourneyWebSecurity.updateSigninStatus();
+        
 
     </script>
 

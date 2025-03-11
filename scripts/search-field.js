@@ -9,7 +9,7 @@ export class SearchField
     #dataJsonUrl = '/src/data/journey-list.json';
 
     #searchInput     = document.getElementById("search");
-    suggestionsList = document.getElementById("suggestions");
+    #suggestionsList = document.getElementById("suggestions");
 
     selectedIndex = -1; // Index vybraného prvku v seznamu návrhů
 
@@ -29,6 +29,9 @@ export class SearchField
     {
         await this.#readData();
 
+        this.#searchInput     = document.getElementById("search");
+        this.#suggestionsList = document.getElementById("suggestions");
+
         this.#addEventListeners(this);
 
         return this; // Vrací instanci pro další použití
@@ -36,12 +39,12 @@ export class SearchField
 
     #addEventListeners(searchField)
     {
-        this.#searchInput.addEventListener("input", function () 
+        searchField.#searchInput.addEventListener("input", function () 
         {
             const query = this.value.toLowerCase();
 
-            searchField.suggestionsList.innerHTML     = "";
-            searchField.suggestionsList.style.display = "none";
+            searchField.#suggestionsList.innerHTML     = "";
+            searchField.#suggestionsList.style.display = "none";
 
             searchField.selectedIndex = -1;
 
@@ -56,7 +59,7 @@ export class SearchField
 
             if (matches.length > 0) 
             {
-                searchField.suggestionsList.style.display = "block";
+                searchField.#suggestionsList.style.display = "block";
 
                 matches.forEach((match, index) => 
                 {
@@ -64,14 +67,14 @@ export class SearchField
                     li.innerHTML = searchField.highlightText(match.label, query);
                     li.dataset.journeyCardId = match.id;
                     li.addEventListener("click", () => searchField.selectItem(match.id));
-                    searchField.suggestionsList.appendChild(li);
+                    searchField.#suggestionsList.appendChild(li);
                 });
             }
         });
 
-        this.#searchInput.addEventListener("keydown", function (event) 
+        searchField.#searchInput.addEventListener("keydown", function (event) 
         {
-            const items = searchField.suggestionsList.querySelectorAll("li");
+            const items = searchField.#suggestionsList.querySelectorAll("li");
 
             if (items.length === 0) 
             {
@@ -106,7 +109,7 @@ export class SearchField
         {
             if (e.target !== searchField.#searchInput) 
             {
-                searchField.suggestionsList.style.display = "none"; 
+                searchField.#suggestionsList.style.display = "none"; 
 
                 searchField.#searchInput.value = "";
             }
@@ -145,7 +148,7 @@ export class SearchField
     {
         this.#searchInput.value = "";
 
-        this.suggestionsList.style.display = "none";
+        this.#suggestionsList.style.display = "none";
 
         const journeyCardLabel = document.body.querySelector(`.journey-card[id='${journeyCardId}'] .journey-card-label`);
 

@@ -1,0 +1,157 @@
+<main class="administration">
+
+    <h1 style="text-align: center;">Výlety - tabulkový pohled</h1>
+
+    
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: start; gap: 2rem;">
+
+        <!-- Tabulka pro zobrazení dat -->
+        <div>
+            <div id="journeys-table-years-switch">
+                <div class="switch-item current">Vše</div>
+                <div class="switch-item" data-year="2025">2025</div>
+                <div class="switch-item" data-year="2024">2024</div>
+            </div>
+
+            <table id="journeys-table" data-sort-column="journeyDate" data-sort-direction="asc">
+                <thead>
+                    <tr>
+                        <th>
+                            <button class="sort-button" data-sort-column="journeyDate">
+                                Den konání<span class="sort-icon asc">▲</span>
+                            </button>
+                        </th>
+                        <th>Název</th>
+                        <th>
+                            <button class="sort-button" data-sort-column="routeLength">
+                                Délka<span class="sort-icon"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="sort-button" data-sort-column="metersClimbed">
+                                Nastoupáno<span class="sort-icon"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="sort-button" data-sort-column="altitudeLowest">
+                                Nejnižší bod<span class="sort-icon"></span>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="sort-button" data-sort-column="altitudeHighest">
+                                Nejvyšší bod<span class="sort-icon"></span>
+                            </button>
+                        </th>
+                        <th>Stav</th>
+                        <th class="admin-section hidden"></th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+
+                </tbody>
+            </table>
+
+            <div class="admin-section hidden">
+                <button type="button" id="export-journeys-from-firebase-button">Export</button>
+            </div>
+            <div class="admin-section hidden">
+                <label for="import-journeys-file">Importovat ze souboru do Firebase</label>
+                <input type="file" id="import-journeys-file">
+            </div>
+
+        </div>
+
+        <form id="dataForm" class="admin-section hidden">
+            <input type="hidden" id="docId"/>
+
+            <fieldset id="journey-form" >
+
+                <legend>Výlet</legend>
+
+                <div style="margin-top: 1em;">
+                    <label for="journeyId">Srozumitelný jednoznačný identifikátor</label>
+                    <input type="text" id="journeyId" placeholder="např. 2030-12-31-sevpol" required />
+                </div>
+
+                <div>
+                    <label for="journeyDate">Datum konání</label>
+                    <input type="date" id="journeyDate" placeholder="datum" required />
+                </div>
+                
+                <div>
+                    <label for="journeyTitle">Název (jedno symbolické místo trasy)</label>
+                    <input type="text" id="journeyTitle" placeholder="např. Severní pól" required />
+                </div>
+
+                <div>
+                    <label for="routeLength">Délka trasy v km</label>
+                    <input type="number" min="1" max="100" step="1" id="routeLength" placeholder="např. 20" />
+                </div>
+
+                <div>
+                    <label for="metersClimbed">Nastoupané metry</label>
+                    <input type="number" min="1" max="2000" step="1" id="metersClimbed" placeholder="např. 200" />
+                </div>
+
+                <div>
+                    <label for="altitudeLowest">Nejnižší nadmořská výška v m</label>
+                    <input type="number" min="0" max="2000" step="1" id="altitudeLowest" placeholder="např. 200" />
+                </div>
+
+                <div>
+                    <label for="altitudeHighest">Nejvyšší nadmořská výška v m</label>
+                    <input type="number" min="0" max="2000" step="1" id="altitudeHighest" placeholder="např. 300" />
+                </div>
+
+                <div>
+                    <div style="margin-bottom: 0.5rem;">Obrázky do fotogalerie</div>
+                    <div id="photo-gallery-items" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;"></div>
+                    <button id="add-photo-gallery-item-button" type="button">Přidat položku</button>
+                </div>
+
+                <div>
+                    <label for="status">Stav zpracování karty výletu</label>
+                    <select id="status">
+                        <option value="todo">Nový</option>
+                        <option value="inprogress">Rozpracovaný</option>
+                        <option value="finished">Hotový</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <button type="submit">Uložit</button>
+                </div>
+                
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</main>
+
+<!-- Překryvná vrstva modálního okna -->
+<div id="modalOverlay" class="modal-overlay">
+    <!-- Obsah modálního okna -->
+    <div class="modal-content">
+    <h2>Potvrzení</h2>
+    <p>Opravdu chcete smazat položku '<span id="itemToDelete-title"></span>'?</p>
+    <button id="confirmButton">Ano</button>
+    <button id="cancelButton">Ne</button>
+    </div>
+</div>
+
+<!-- Uložená šablona položky formuláře pro přidání nové fotografie do galerie -->
+<template id="photo-gallery-item-template">
+    <div class="item">
+        <div style='display: flex; flex-direction: row;'>
+            <div style='display: flex; flex-direction: column;'>
+                <input style='width: 30rem;' type="url" name="url[]" placeholder="URL" required>
+                <input type="text" name="description[]" placeholder="Popisek" required>
+            </div>
+            <div style='display: flex;'>
+                <button type="button" class="remove-btn" onclick="this.closest('.item').remove();">X</button>
+            </div>
+        </div>
+    </div>
+</template>

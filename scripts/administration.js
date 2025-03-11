@@ -1,6 +1,7 @@
 import { db } from "./firebase-config.js";
 import { Firebase } from "./firebase.js";
-import { collection, getDoc, getDocs, updateDoc, doc, addDoc, deleteDoc, query, where, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { DateUtil } from "./date-util.js"
+import { collection, getDoc, getDocs, updateDoc, doc, addDoc, deleteDoc, Timestamp  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
 export class Administration
@@ -15,22 +16,24 @@ export class Administration
         }
 
         Administration.#instance = this;
-
-        this.#addEventListeners();
     }
 
     // Načtení dat
-    async loadJourneysTableData() 
+    async loadJourneysTableDataAsync() 
     {
         const journeysTable = document.getElementById("journeys-table");
 
         const year = journeysTable.dataset.year;
 
-        const orderByConditions = [["journeyDate", "asc"]];
-
         const whereConditions = year 
-            ? this.getJourneyYearCondition(year)
+            ? this.#getJourneyYearCondition(year)
             : [];
+
+        const sortColumn = journeysTable.dataset.sortColumn;
+
+        const sortDirection = journeysTable.dataset.sortDirection;
+
+        const orderByConditions = [[sortColumn, sortDirection]];
 
         const journeysData = await Firebase.readDataAsync("journeys", whereConditions, orderByConditions);
 
@@ -39,6 +42,10 @@ export class Administration
 
     #populateJourneysTable(tbodyId, journeysData)
     {
+        const idToken = sessionStorage.getItem('idToken');
+
+        const adminSectionClass = idToken ? "admin-section" : "admin-section hidden";
+
         const tbody = document.getElementById(tbodyId);
 
         tbody.innerHTML = "";
@@ -47,14 +54,14 @@ export class Administration
         {
             tbody.innerHTML += `
                 <tr data-item-id="${journey.docId}">
-                    <td>${journey.journeyDate ? this.#formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
+                    <td>${journey.journeyDate ? DateUtil.formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
                     <td>${journey.title}</td>
                     <td style='text-align: right;'>${journey.routeLength ?? ''} km</td>
                     <td style='text-align: right;'>${journey.metersClimbed ?? ''} m</td>
                     <td style='text-align: right;'>${journey.altitudeLowest ?? ''} m</td>
                     <td style='text-align: right;'>${journey.altitudeHighest ?? ''} m</td>
                     <td>${journey.status}</td>
-                    <td>
+                    <td class="${adminSectionClass}">
                         <button class="edit-button" data-doc-id="${journey.docId}">✏️</button>
                         <button class="delete-button" data-doc-id="${journey.docId}" data-title="${journey.title}" >🗑️</button>
                     </td>
@@ -62,7 +69,7 @@ export class Administration
         });
     }
 
-    #addEventListeners()
+    addEventListeners()
     {
         // Přidání / Aktualizace dat
         document.getElementById("dataForm").addEventListener("submit", async (e) =>
@@ -96,7 +103,7 @@ export class Administration
 
                     this.#resetForm();
 
-                    await this.loadJourneysTableData();
+                    await this.loadJourneysTableDataAsync();
                 } 
                 catch (error) 
                 {
@@ -124,6 +131,10 @@ export class Administration
             else if (event.target.classList.contains("delete-button")) 
             {
                 this.#confirmDelete(event.target.dataset.docId, event.target.dataset.title);
+            }
+            else if (event.target.classList.contains("sort-button")) 
+            {
+                this.#sortJourneys(event.target);
             }
         });
 
@@ -154,7 +165,7 @@ export class Administration
 
                 journeysTable.dataset.year = year ?? "";
 
-                this.loadJourneysTableData();
+                this.loadJourneysTableDataAsync();
 
                 document.querySelectorAll("#journeys-table-years-switch .switch-item")
                     .forEach((switchItem) => 
@@ -164,6 +175,23 @@ export class Administration
 
                 event.target.classList.add("current");
             }
+        });
+
+        document.getElementById("add-photo-gallery-item-button").addEventListener("click", (event) => 
+        {
+            const template = document.getElementById("photo-gallery-item-template");
+
+            const container = document.getElementById("photo-gallery-items");
+
+            const div = document.createElement("div");
+
+            div.classList.add("item");
+
+            const clone = template.content.cloneNode(true);
+
+            div.appendChild(clone.firstElementChild);
+            
+            container.appendChild(div);
         });
     }
 
@@ -177,11 +205,11 @@ export class Administration
     // Úprava záznamu
     async #populateForm(docId) 
     {
-        const journey = await this.#getFireBaseDocumentById("journeys", docId);
+        const journey = await Firebase.readDocumentByIdAsync("journeys", docId); 
 
         document.getElementById("docId").value = docId;
         document.getElementById("journeyId").value = journey.journeyId;
-        document.getElementById("journeyDate").value = this.#formatFirestoreTimestampForForm(journey.journeyDate);
+        document.getElementById("journeyDate").value = DateUtil.formatFirestoreTimestampForForm(journey.journeyDate);
         document.getElementById("journeyTitle").value = journey.title;
         document.getElementById("routeLength").value = journey.routeLength;
         document.getElementById("metersClimbed").value = journey.metersClimbed;
@@ -233,69 +261,46 @@ export class Administration
         modalOverlay.style.display = 'none';
     }
 
-    #formatFirestoreTimestampForDisplay(firestoreTimestamp) 
-    {
-        const date = new Date(firestoreTimestamp.seconds * 1000); // Převod sekund na milisekundy
+    // async #getFireBaseDocumentById(collectionName, docId) 
+    // {
+    //     try 
+    //     {
+    //         const docRef = doc(db, collectionName, docId);
 
-        const day = String(date.getDate()).padStart(2, '0');
+    //         const docSnap = await getDoc(docRef);
 
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // Měsíce jsou indexovány od 0
-
-        const year = date.getFullYear();
-
-        return `${day}.${month}.${year}`;
-    }
-
-    #formatFirestoreTimestampForForm(timestamp) 
-    {
-        if (!timestamp)
-        {
-            return "";
-        }
-
-        const date = new Date(timestamp.seconds * 1000); // Převod sekund na milisekundy
-
-        const year = date.getFullYear();
-
-        const month = String(date.getMonth() + 1).padStart(2, '0'); // Měsíce jsou indexovány od 0
-
-        const day = String(date.getDate()).padStart(2, '0');
-
-        return `${year}-${month}-${day}`;
-    }
-
-    async #getFireBaseDocumentById(collectionName, docId) 
-    {
-        try 
-        {
-            const docRef = doc(db, collectionName, docId);
-
-            const docSnap = await getDoc(docRef);
-
-            if (docSnap.exists) 
-            {
-                console.log("Data dokumentu:", docSnap.data());
-                return docSnap.data();
-            } else {
-            console.log("Dokument neexistuje.");
-            return null;
-            }
-        } 
-        catch (error) 
-        {
-            console.error("Chyba při načítání dokumentu:", error);
-        }
-    }
+    //         if (docSnap.exists) 
+    //         {
+    //             console.log("Data dokumentu:", docSnap.data());
+    //             return docSnap.data();
+    //         } else {
+    //         console.log("Dokument neexistuje.");
+    //         return null;
+    //         }
+    //     } 
+    //     catch (error) 
+    //     {
+    //         console.error("Chyba při načítání dokumentu:", error);
+    //     }
+    // }
 
     async #exportCollection(collectionName) 
     {
         const querySnapshot = await getDocs(collection(db, collectionName));
 
-        const data = [];
-    
-        querySnapshot.forEach(doc => 
+        const data = querySnapshot.docs.map(doc => 
         {
-            data.push({ id: doc.id, ...doc.data() }); // Uloží ID + data
+            const docData = doc.data();
+            
+            // Převod Firestore Timestamp na čitelný formát
+            if (docData.journeyDate && docData.journeyDate.seconds) 
+            {
+                const date = new Date(docData.journeyDate.seconds * 1000);
+                //docData.journeyDate = date.toISOString();  // Např. "2024-07-06T00:00:00.000Z"
+                docData.journeyDate = date;
+            }
+    
+            return { id: doc.id, docData };
         });
     
         const jsonData = JSON.stringify(data, null, 2); // Krásně formátovaný JSON
@@ -332,7 +337,13 @@ export class Administration
             {
                 const { id, ...data } = item; // ID ignorujeme (Firestore ho vytvoří sám)
 
-                await addDoc(collection(db, collectionName), data);
+                // Převod ISO stringu na Firestore Timestamp
+                if (typeof data.docData.journeyDate === "string") 
+                {
+                    data.docData.journeyDate = Timestamp.fromDate(new Date(data.docData.journeyDate));
+                }
+
+                await addDoc(collection(db, collectionName), data.docData);
             }
     
             alert("Data byla úspěšně obnovena!");
@@ -341,14 +352,7 @@ export class Administration
         reader.readAsText(file);
     }
 
-
-
-
-
-
-
-
-    getJourneyYearCondition(year)
+    #getJourneyYearCondition(year)
     {
         const startOfYear = new Date(`${year}-01-01T00:00:00Z`);
         const endOfYear = new Date(`${year}-12-31T23:59:59Z`);
@@ -356,11 +360,44 @@ export class Administration
         return [["journeyDate", ">=", startOfYear], ["journeyDate", "<=", endOfYear]]
     }
 
+    #sortJourneys(sortButton)
+    {
+        const journeysTable = document.getElementById("journeys-table");
 
+        const sortColumnOriginal = journeysTable.dataset.sortColumn;
 
+        const sortColumnNew = sortButton.dataset.sortColumn;
 
+        const sortDirectionOriginal = journeysTable.dataset.sortDirection;
 
- 
-   
-    
+        let sortDirectionNew = "desc";
+
+        if ((sortColumnOriginal !== sortColumnNew) || (sortDirectionOriginal === "desc"))
+        {
+            sortDirectionNew = "asc";
+        }
+
+        journeysTable.dataset.sortDirection = sortDirectionNew;
+
+        journeysTable.dataset.sortColumn = sortColumnNew;
+
+        const sortIcon = sortButton.querySelector(".sort-icon");
+
+        if (sortColumnOriginal !== sortColumnNew)
+        {
+            document.querySelectorAll(".sort-icon").forEach(icon => 
+            {
+                icon.innerHTML = "";
+            });
+
+            sortIcon.innerHTML = "▲";
+        }
+
+        sortIcon.classList.remove("asc");
+        sortIcon.classList.remove("desc");
+
+        sortIcon.classList.add(sortDirectionNew);
+
+        this.loadJourneysTableDataAsync();
+    }
 }

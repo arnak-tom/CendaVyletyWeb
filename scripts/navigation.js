@@ -12,13 +12,13 @@ export class Navigation
         }
 
         Navigation.#instance = this;
-
-        this.#buildNavigation();
     }
 
-    #buildNavigation()
+    buildNavigation()
     {
         const ulElement = document.querySelector("#leftNavigation ul");
+
+        ulElement.replaceChildren();
 
         const years = this.#getUniqueYears();
 

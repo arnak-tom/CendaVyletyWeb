@@ -1,6 +1,6 @@
 import { db } from "./firebase-config.js";
 
-import { getFirestore, collection, query, where, orderBy, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { collection, query, where, orderBy, doc, getDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
 export class Firebase
@@ -52,6 +52,38 @@ export class Firebase
         {
             console.error("Chyba při načítání dat:", error);
             return [];
+        }
+    }
+
+    /**
+     * Načte jeden dokument z Firebase podle docId.
+     * @param {string} collectionName - Název kolekce
+     * @param {string} docId - ID dokumentu 
+     */
+    static async readDocumentByIdAsync(collectionName, docId) 
+    {
+        try 
+        {
+            const docRef = doc(db, collectionName, docId);
+
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists) 
+            {
+                console.log("Data dokumentu:", docSnap.data());
+
+                return docSnap.data();
+            } 
+            else 
+            {
+                console.log("Dokument neexistuje.");
+
+                return null;
+            }
+        } 
+        catch (error) 
+        {
+            console.error("Chyba při načítání dokumentu:", error);
         }
     }
 }
