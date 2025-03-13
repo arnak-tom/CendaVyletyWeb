@@ -197,11 +197,18 @@ export class JourneyWeb
 
                 if (journey)
                 {
-                    const journeyRouteLength = journeyCard.querySelector('.journey-attribute-route-length .value');
+                    const routeLengthElement = journeyCard.querySelector('.journey-attribute-route-length .value');
 
-                    if (journey.routeLength && journeyRouteLength)
+                    if (journey.routeLength && routeLengthElement)
                     {
-                        journeyRouteLength.textContent = journey.routeLength;
+                        routeLengthElement.textContent = journey.routeLength;
+                    }
+
+                    const metersClimbedElement = journeyCard.querySelector('.journey-attribute-meters-climbed .value');
+
+                    if (journey.metersClimbed && metersClimbedElement)
+                    {
+                        metersClimbedElement.textContent = journey.metersClimbed;
                     }
                 }
 
@@ -210,7 +217,16 @@ export class JourneyWeb
 
             const journeyCardContent = journeyCard.querySelector(".journey-card-content");
 
-            journeyCardContent.classList.toggle("hidden");
+            if (journeyCard.dataset.forceOpen === "true")
+            {
+                journeyCardContent.classList.remove("hidden");
+
+                journeyCard.dataset.forceOpen = "";
+            }
+            else
+            {
+                journeyCardContent.classList.toggle("hidden");
+            }
         }
     }
 

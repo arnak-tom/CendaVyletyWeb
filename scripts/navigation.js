@@ -55,10 +55,12 @@ export class Navigation
 
                 JourneyWeb.moveToJourneyCard(journeyCard);
 
-                if (journeyCard.dataset.isLoaded !== "1")
-                {
+                journeyCard.dataset.forceOpen = "true";
+
+                // if (journeyCard.dataset.isLoaded !== "1")
+                // {
                     journeyCard.querySelector(".journey-card-label").click();
-                }
+                // }
             });
         });
     }
