@@ -1,3 +1,4 @@
+import { DateUtil } from './date-util.js';
 import { JourneyWeb }   from './journey-web.js';
 
 export class Navigation
@@ -14,40 +15,44 @@ export class Navigation
         Navigation.#instance = this;
     }
 
-    buildNavigation()
+    buildNavigation(journeysData)
     {
         const ulElement = document.querySelector("#leftNavigation ul");
 
         ulElement.replaceChildren();
 
-        const years = this.#getUniqueYears();
+        const yearsSet = this.#getUniqueYearsSet(journeysData);
 
-        years.forEach(y => 
+        const yearsDesc = [...yearsSet].sort((a, b) => b - a);
+
+        yearsDesc.forEach(y => 
         {
             const journeyListElement = this.#addYearNode(ulElement, y);
 
-            this.#addYearJourneyNodes(y, journeyListElement);
+            const journeysOfYear = journeysData.filter(j => j.year === y);
+
+            this.#addYearJourneyNodes(journeysOfYear, journeyListElement);
         });
 
         this.#addNavToggleEventListener();
     }
 
-    #addYearJourneyNodes(year, journeyListElement)
+    #addYearJourneyNodes(journeysOfYear, journeyListElement)
     {
-        const journeyCards = document.querySelectorAll(`.journey-card[data-year='${year}']`);
+        const journeysOfYearSorted = journeysOfYear.sort((a, b) => new Date(a.journeyDate) - new Date(b.journeyDate));;
 
-        journeyCards.forEach(journeyCard => 
+        journeysOfYearSorted.forEach(journey => 
         {
-            const labelDiv = journeyCard.querySelector(".journey-card-label");
-
             const newListItem = document.createElement("li");
 
-            newListItem.textContent = labelDiv.textContent;
-
+            newListItem.innerHTML = `<div>${journey.title}</div><div class='journey-date'>${DateUtil.formatFirestoreTimestampForDisplay(journey.journeyDate)}</div>`;
+            
             journeyListElement.appendChild(newListItem);
 
             newListItem.addEventListener('click', (e) => 
             {
+                const journeyCard = document.querySelector(`.journey-card[data-doc-id="${journey.docId}"]`);
+
                 JourneyWeb.moveToJourneyCard(journeyCard);
 
                 if (journeyCard.dataset.isLoaded !== "1")
@@ -102,11 +107,9 @@ export class Navigation
         });
     }
 
-    #getUniqueYears()
+    #getUniqueYearsSet(journeysData)
     {
-        const allCardsArray = [...document.querySelectorAll('.journey-card')];
-
-        const allYears = allCardsArray.map(c => c.dataset.year)
+        const allYears = journeysData.map(j => j.year);
 
         const yearsSet = new Set(allYears);
 

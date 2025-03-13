@@ -12,7 +12,7 @@ body
 #loader 
 {
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -133,6 +133,11 @@ nav#leftNavigation .main-navigation-list
 nav#leftNavigation .main-nav-toggle .material-symbols-outlined
 {
     font-size: 35px;
+}
+
+nav#leftNavigation .journey-date
+{
+    font-size: 0.8rem;
 }
 
 nav ul 

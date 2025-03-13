@@ -1,5 +1,6 @@
 import { db } from "./firebase-config.js";
 import { getDoc, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { UserDto } from "./typescript/dto/UserDto.js";
 
 export class JourneyWebSecurity
 {
@@ -21,34 +22,30 @@ export class JourneyWebSecurity
     {
         const idToken = sessionStorage.getItem('idToken');
 
-        if (!idToken)
+        const userDto = JSON.parse(sessionStorage.getItem("user"));
+
+        if (!idToken || !userDto)
         {
             JourneyWebSecurity.signOut();
 
             return;
         }
 
-        const userObject = JourneyWebSecurity.parseJwt(idToken);
-
-        const userTitle = userObject.name;
-
         const signinButton = document.getElementById('google-login-button');
 
-        const userPhoto = userObject.picture
-            ? `<img id="user-photo" src="${userObject.picture}" alt="Profilový obrázek" style="width: 32px; height: 32px; border-radius: 20%; margin-right: 10px;">`
+        const userPhoto = userDto.pictureUrl
+            ? `<img id="user-photo" src="${userDto.pictureUrl}" alt="Profilový obrázek" style="width: 32px; height: 32px; border-radius: 20%; margin-right: 10px;">`
             : "";
 
-        document.querySelectorAll(".admin-section").forEach( item => 
-        {
-            if (item.classList.contains("hidden"))
-            {
-                item.classList.remove("hidden");
-            }
-        });
+        JourneyWebSecurity.enableOrDisableAdminSections();
 
-        if (userTitle) 
+        if (userDto.name) 
         {
-            sessionStorage.setItem('userTitle', userTitle);
+            sessionStorage.setItem('userTitle', userDto.name);
+
+            const userTitle = userDto.roles && userDto.roles.includes("admin")
+                ? `${userDto.name} (admin)`
+                : userDto.name;
 
             signinButton.innerHTML = `
             <div style='display: flex; flex-direction: column; align-items: flex-end;'>
@@ -81,9 +78,11 @@ export class JourneyWebSecurity
 
         if (userObject)
         {
-            JourneyWebSecurity.updateSigninStatus();
+            const userDto = await JourneyWebSecurity.ensureUserAsync(userObject);
 
-            await JourneyWebSecurity.ensureUser(userObject);
+            sessionStorage.setItem('user', JSON.stringify(userDto));
+
+            JourneyWebSecurity.updateSigninStatus();
         }
     }
 
@@ -108,7 +107,9 @@ export class JourneyWebSecurity
     {
         const idToken = sessionStorage.getItem('idToken');
 
-        if (!idToken)
+        const userDto = JSON.parse(sessionStorage.getItem("user"));
+
+        if (!idToken || (!userDto || !userDto.roles || !userDto.roles.includes("admin")))
         {
             document.querySelectorAll(".admin-section").forEach( item => 
             {
@@ -130,7 +131,7 @@ export class JourneyWebSecurity
         }
     }
 
-    static async ensureUser(userObject)
+    static async ensureUserAsync(userObject)
     {
         const userRef = doc(db, "users", userObject.sub);
 
@@ -138,20 +139,32 @@ export class JourneyWebSecurity
 
         if (!userSnap.exists()) 
         {
+            const createdAt = new Date();
+
             await setDoc(userRef, 
             {
                 email: userObject.email,
                 name: userObject.name,
                 picture: userObject.picture,
                 roles: ["reader"],
-                createdAt: new Date()
+                createdAt: createdAt
             });
 
             console.log("Uživatel byl přidán do Firestore");
+
+            const userDto = new UserDto(userObject.name, userObject.email, userObject.picture, createdAt, ["reader"]);
+
+            return userDto;
         } 
         else 
         {
+            const userData = userSnap.data();
+
             console.log("Uživatel už existuje");
+
+            const userDto = new UserDto(userData.name, userData.email, userData.picture, userData.createdAt, userData.roles);
+
+            return userDto;
         }
     }
 }
