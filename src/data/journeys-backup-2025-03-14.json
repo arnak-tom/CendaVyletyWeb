@@ -1,0 +1,824 @@
+[
+    {
+      "id": "3UIo6h0mXnjBJP1UmlMe",
+      "docData": {
+        "journeyDate": "2024-07-06T00:00:00.000Z",
+        "title": "Nový Oldřichov",
+        "altitudeLowest": "325",
+        "altitudeHighest": "611",
+        "year": 2024,
+        "journeyId": "2024-07-06-noldrichov",
+        "status": "todo",
+        "routeLength": 16,
+        "metersClimbed": "367"
+      }
+    },
+    {
+      "id": "3bn2ZQekevKjQ5ojxV4F",
+      "docData": {
+        "journeyId": "2024-08-29-jablonecnj",
+        "status": "todo",
+        "journeyDate": "2024-08-29T00:00:00.000Z",
+        "title": "Jablonec n. J.",
+        "routeLength": 20,
+        "altitudeLowest": "446",
+        "metersClimbed": "516",
+        "year": 2024,
+        "altitudeHighest": "958"
+      }
+    },
+    {
+      "id": "4fZPKu4mZGB2jYpPamn0",
+      "docData": {
+        "year": 2024,
+        "journeyDate": "2024-03-02T00:00:00.000Z",
+        "altitudeLowest": "275",
+        "journeyId": "2024-03-02-lomnice",
+        "status": "todo",
+        "routeLength": 30,
+        "metersClimbed": "610",
+        "title": "Lomnice",
+        "altitudeHighest": "544"
+      }
+    },
+    {
+      "id": "56GMmVYno9Pi5ew9rq9G",
+      "docData": {
+        "routeLength": 24,
+        "altitudeHighest": "1026",
+        "status": "todo",
+        "journeyId": "2024-08-28-spicak",
+        "year": 2024,
+        "title": "kemp Špičák",
+        "journeyDate": "2024-08-28T00:00:00.000Z",
+        "metersClimbed": "820",
+        "altitudeLowest": "374"
+      }
+    },
+    {
+      "id": "5D9g65lLXNUbqED8R464",
+      "docData": {
+        "year": 2025,
+        "altitudeHighest": "681",
+        "altitudeLowest": "315",
+        "routeLength": 32,
+        "journeyId": "2025-03-07-tabor",
+        "status": "todo",
+        "title": "Tábor",
+        "journeyDate": "2025-03-07T00:00:00.000Z",
+        "metersClimbed": "936"
+      }
+    },
+    {
+      "id": "5swATMzjKhTZffaWWYr3",
+      "docData": {
+        "altitudeHighest": "684",
+        "title": "Javorník",
+        "altitudeLowest": "353",
+        "metersClimbed": "478",
+        "routeLength": 16,
+        "status": "todo",
+        "journeyDate": "2024-07-13T00:00:00.000Z",
+        "year": 2024,
+        "journeyId": "2024-07-13-javornik"
+      }
+    },
+    {
+      "id": "9OEIxH436COcdH1qdE3y",
+      "docData": {
+        "year": 2024,
+        "altitudeLowest": "190",
+        "journeyId": "2024-03-23-oldrichov",
+        "routeLength": 20,
+        "altitudeHighest": "503",
+        "metersClimbed": "770",
+        "status": "todo",
+        "title": "Nový Oldřichov",
+        "journeyDate": "2024-03-23T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "B0IN3oQCXNWRRgfLjmKL",
+      "docData": {
+        "year": 2025,
+        "altitudeLowest": "232",
+        "routeLength": 30,
+        "journeyId": "2025-02-08-vysker",
+        "altitudeHighest": "467",
+        "metersClimbed": "753",
+        "status": "finished",
+        "title": "Vyskeř",
+        "journeyDate": "2025-02-08T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "BLkJ08jmDDVPfdmWAVfe",
+      "docData": {
+        "status": "inprogress",
+        "routeLength": 20,
+        "journeyDate": "2025-02-22T00:00:00.000Z",
+        "metersClimbed": "232",
+        "year": 2025,
+        "altitudeHighest": "349",
+        "title": "Grabštejn",
+        "altitudeLowest": "235",
+        "journeyId": "2025-02-22-grabstejn"
+      }
+    },
+    {
+      "id": "Bt3kJH85EEBezLCVdfHL",
+      "docData": {
+        "metersClimbed": "663",
+        "journeyDate": "2024-01-27T00:00:00.000Z",
+        "altitudeLowest": "433",
+        "routeLength": 28,
+        "journeyId": "2024-01-27-lucany",
+        "year": 2024,
+        "title": "Lučany",
+        "status": "todo",
+        "altitudeHighest": "682"
+      }
+    },
+    {
+      "id": "CzHx4UKRAqbF8pyvVdNC",
+      "docData": {
+        "routeLength": 11,
+        "metersClimbed": "62",
+        "year": 2024,
+        "title": "Turnov",
+        "journeyId": "2024-03-16-turnov",
+        "journeyDate": "2024-03-16T00:00:00.000Z",
+        "altitudeHighest": "275",
+        "altitudeLowest": "234",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "D2fUySow757mKtyeoDjd",
+      "docData": {
+        "title": "Ještěd",
+        "journeyDate": "2024-08-11T00:00:00.000Z",
+        "altitudeHighest": "1010",
+        "routeLength": 16,
+        "journeyId": "2024-08-11-jested",
+        "metersClimbed": "614",
+        "altitudeLowest": "367",
+        "year": 2024,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "DJu2lm2h3tKKX1JItxdR",
+      "docData": {
+        "status": "finished",
+        "journeyDate": "2025-01-25T00:00:00.000Z",
+        "year": 2025,
+        "altitudeHighest": "411",
+        "altitudeLowest": "234",
+        "metersClimbed": "448",
+        "journeyId": "2025-01-25-valdstejn",
+        "routeLength": 18,
+        "title": "Valdštejn"
+      }
+    },
+    {
+      "id": "Ey2RXgJ0LwTJ7uaEyWCe",
+      "docData": {
+        "journeyId": "2024-08-30-Semily",
+        "status": "todo",
+        "year": 2024,
+        "routeLength": 21,
+        "title": "Semily",
+        "metersClimbed": "572",
+        "altitudeLowest": "315",
+        "journeyDate": "2024-08-30T00:00:00.000Z",
+        "altitudeHighest": "700"
+      }
+    },
+    {
+      "id": "GLRFvGD9OkVgrQSWcymJ",
+      "docData": {
+        "year": 2024,
+        "altitudeHighest": "637",
+        "altitudeLowest": "400",
+        "routeLength": 7,
+        "journeyId": "2024-07-11-milire",
+        "status": "todo",
+        "title": "Milíře",
+        "journeyDate": "2024-07-11T00:00:00.000Z",
+        "metersClimbed": "294"
+      }
+    },
+    {
+      "id": "HaTXUTXG3qpDXORSzhcH",
+      "docData": {
+        "routeLength": 11,
+        "metersClimbed": "310",
+        "altitudeHighest": "465",
+        "year": 2024,
+        "journeyId": "2024-04-06-rovensko",
+        "title": "Rovensko p. Tr.",
+        "journeyDate": "2024-04-06T00:00:00.000Z",
+        "altitudeLowest": "264",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "IC4drDumUXQggBZt0k0B",
+      "docData": {
+        "year": 2024,
+        "journeyDate": "2024-10-19T00:00:00.000Z",
+        "title": "J. Paseky - Rychnov 19.10.2024",
+        "journeyId": "2024-10-19-zpasek",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "KSlYQaO1hVBPuIGi3R8u",
+      "docData": {
+        "altitudeHighest": "657",
+        "journeyDate": "2024-01-14T00:00:00.000Z",
+        "title": "Turnov",
+        "status": "todo",
+        "journeyId": "2024-01-14-turnov",
+        "metersClimbed": "406",
+        "altitudeLowest": "247",
+        "year": 2024,
+        "routeLength": 20
+      }
+    },
+    {
+      "id": "LR2nLtlDEbOX0Sbntico",
+      "docData": {
+        "journeyId": "2024-02-03-liberec",
+        "year": 2024,
+        "routeLength": 17,
+        "title": "Liberec",
+        "altitudeLowest": "373",
+        "status": "todo",
+        "altitudeHighest": "574",
+        "journeyDate": "2024-02-03T00:00:00.000Z",
+        "metersClimbed": "255"
+      }
+    },
+    {
+      "id": "LyKpkAHPXUZ4aE0npINZ",
+      "docData": {
+        "altitudeLowest": "262",
+        "routeLength": 18,
+        "journeyId": "2025-03-09-rohozec",
+        "journeyDate": "2025-03-09T00:00:00.000Z",
+        "title": "Malý Rohozec",
+        "status": "todo",
+        "metersClimbed": "265",
+        "year": 2025,
+        "altitudeHighest": "594"
+      }
+    },
+    {
+      "id": "PAAKh1KP7vrVmCJIR5UN",
+      "docData": {
+        "journeyId": "2024-10-05-zkina",
+        "year": 2024,
+        "routeLength": 16,
+        "title": "Z kina domů",
+        "altitudeLowest": "353",
+        "status": "todo",
+        "altitudeHighest": "576",
+        "journeyDate": "2024-10-05T00:00:00.000Z",
+        "metersClimbed": "341"
+      }
+    },
+    {
+      "id": "QZUgVaaO81UBuOxPZ41q",
+      "docData": {
+        "metersClimbed": "400",
+        "routeLength": 15,
+        "altitudeHighest": "721",
+        "altitudeLowest": "287",
+        "journeyId": "2025-03-01-spicak",
+        "journeyDate": "2025-03-01T00:00:00.000Z",
+        "year": 2025,
+        "title": "Frýdlant",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "QigYABVETaa1UMKYbqPB",
+      "docData": {
+        "journeyId": "2025-02-16-prosec",
+        "altitudeLowest": "349",
+        "title": "Proseč",
+        "metersClimbed": "383",
+        "journeyDate": "2025-02-16T00:00:00.000Z",
+        "year": 2025,
+        "status": "inprogress",
+        "altitudeHighest": "629",
+        "routeLength": 19
+      }
+    },
+    {
+      "id": "TLPlFtZayQr1uwmwjdD6",
+      "docData": {
+        "journeyId": "2024-04-13-milire",
+        "metersClimbed": "297",
+        "altitudeHighest": "597",
+        "status": "todo",
+        "journeyDate": "2024-04-13T00:00:00.000Z",
+        "title": "Milíře",
+        "year": 2024,
+        "altitudeLowest": "402",
+        "routeLength": 7
+      }
+    },
+    {
+      "id": "Tv95KypiK0VWB06GkUWg",
+      "docData": {
+        "status": "todo",
+        "altitudeLowest": "351",
+        "metersClimbed": "780",
+        "title": "Maliník",
+        "year": 2024,
+        "altitudeHighest": "774",
+        "journeyDate": "2024-02-24T00:00:00.000Z",
+        "routeLength": 28,
+        "journeyId": "2024-02-24-malinik"
+      }
+    },
+    {
+      "id": "UancWy7I34kkFJaflmVQ",
+      "docData": {
+        "altitudeHighest": "850",
+        "routeLength": 16,
+        "metersClimbed": "542",
+        "status": "todo",
+        "title": "Orienťácké derby",
+        "journeyDate": "2024-11-16T00:00:00.000Z",
+        "altitudeLowest": "532",
+        "year": 2024,
+        "journeyId": "2024-11-16-derby"
+      }
+    },
+    {
+      "id": "UnE2HLGyGZ5nvLgeXJvj",
+      "docData": {
+        "routeLength": 19,
+        "metersClimbed": "587",
+        "year": 2025,
+        "status": "finished",
+        "altitudeHighest": "744",
+        "title": "Kozákov",
+        "journeyId": "2025-01-01-kozakov",
+        "altitudeLowest": "247",
+        "journeyDate": "2025-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "V39PheSTT68BeGfJSNMi",
+      "docData": {
+        "altitudeLowest": "247",
+        "routeLength": 10,
+        "altitudeHighest": "268",
+        "year": 2024,
+        "title": "Turnov",
+        "status": "todo",
+        "journeyId": "2024-08-25-turnov",
+        "journeyDate": "2024-08-25T00:00:00.000Z",
+        "metersClimbed": "38"
+      }
+    },
+    {
+      "id": "WaScOyyutSSG8Rs4BQW9",
+      "docData": {
+        "altitudeHighest": "629",
+        "routeLength": 12,
+        "metersClimbed": "281",
+        "status": "todo",
+        "title": "Žižkův Vrch",
+        "journeyDate": "2024-07-21T00:00:00.000Z",
+        "altitudeLowest": "433",
+        "year": 2024,
+        "journeyId": "2024-07-21-jablonec"
+      }
+    },
+    {
+      "id": "Y8UOOVXujCQOyxMSBcdf",
+      "docData": {
+        "journeyId": "2025-02-01-hradek",
+        "status": "inprogress",
+        "altitudeHighest": "491",
+        "routeLength": 19,
+        "journeyDate": "2025-02-01T00:00:00.000Z",
+        "title": "Hrádek n. N.",
+        "altitudeLowest": "240",
+        "metersClimbed": "309",
+        "year": 2025
+      }
+    },
+    {
+      "id": "YEvkAchMjWFk4fN35IgG",
+      "docData": {
+        "altitudeHighest": "785",
+        "routeLength": 15,
+        "altitudeLowest": "490",
+        "year": 2025,
+        "journeyId": "2025-01-11-nisanka",
+        "journeyDate": "2025-01-11T00:00:00.000Z",
+        "status": "inprogress",
+        "title": "Bramberk",
+        "metersClimbed": "440"
+      }
+    },
+    {
+      "id": "ZnLb4551YPpS5sDRwOUD",
+      "docData": {
+        "altitudeLowest": "312",
+        "journeyId": "2024-07-27-malevil",
+        "routeLength": 14,
+        "journeyDate": "2024-07-27T00:00:00.000Z",
+        "altitudeHighest": "405",
+        "title": "Malevil",
+        "year": 2024,
+        "metersClimbed": "170",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "aTI9BNA76CaNQwXoguI4",
+      "docData": {
+        "metersClimbed": "633",
+        "journeyDate": "2024-10-12T00:00:00.000Z",
+        "title": "Javorník",
+        "routeLength": 14,
+        "journeyId": "2024-10-12-javornik",
+        "altitudeHighest": "684",
+        "year": 2024,
+        "status": "todo",
+        "altitudeLowest": "367"
+      }
+    },
+    {
+      "id": "ah6IEdrXQq8efsxz2Fr2",
+      "docData": {
+        "altitudeLowest": "355",
+        "metersClimbed": "337",
+        "journeyId": "2024-03-17-klic",
+        "title": "Klíč",
+        "altitudeHighest": "760",
+        "status": "todo",
+        "journeyDate": "2024-03-17T00:00:00.000Z",
+        "routeLength": 9,
+        "year": 2024
+      }
+    },
+    {
+      "id": "bWFD6mh50qj72mqxdOeH",
+      "docData": {
+        "title": "test",
+        "journeyDate": "2025-03-14T00:00:00.000Z",
+        "altitudeLowest": 5,
+        "status": "todo",
+        "altitudeHighest": 2,
+        "metersClimbed": null,
+        "routeLength": 5,
+        "year": 2025,
+        "journeyId": "test"
+      }
+    },
+    {
+      "id": "eCYCF5R5wg4O9YWJBcSA",
+      "docData": {
+        "journeyDate": "2024-11-02T00:00:00.000Z",
+        "altitudeHighest": "623",
+        "status": "todo",
+        "year": 2024,
+        "metersClimbed": "471",
+        "journeyId": "2024-11-02-lomnice",
+        "routeLength": 18,
+        "altitudeLowest": "276",
+        "title": "Lomnice n. P."
+      }
+    },
+    {
+      "id": "eZdaXPXhILyogZt10zHs",
+      "docData": {
+        "year": 2025,
+        "routeLength": 11,
+        "title": "Mladá Boleslav",
+        "journeyId": "2025-03-04-boleslav",
+        "status": "todo",
+        "metersClimbed": "101",
+        "altitudeHighest": "260",
+        "journeyDate": "2025-03-04T00:00:00.000Z",
+        "altitudeLowest": "204"
+      }
+    },
+    {
+      "id": "eb3XFO6CSIlawzyuoVIp",
+      "docData": {
+        "year": 2024,
+        "altitudeHighest": "627",
+        "status": "todo",
+        "routeLength": 12,
+        "journeyId": "2024-04-28-kumburk",
+        "metersClimbed": "313",
+        "journeyDate": "2024-04-28T00:00:00.000Z",
+        "title": "Kumburk",
+        "altitudeLowest": "321"
+      }
+    },
+    {
+      "id": "fK9kVBmQuDi9ZjJrW1se",
+      "docData": {
+        "year": 2024,
+        "journeyDate": "2024-02-10T00:00:00.000Z",
+        "altitudeHighest": "540",
+        "routeLength": 24,
+        "journeyId": "2024-02-10-sychrov",
+        "status": "todo",
+        "altitudeLowest": "248",
+        "title": "Sychrov",
+        "metersClimbed": "273"
+      }
+    },
+    {
+      "id": "hZgwqQAeFCreHmtwwag2",
+      "docData": {
+        "year": 2024,
+        "journeyDate": "2024-11-09T00:00:00.000Z",
+        "altitudeLowest": "432",
+        "journeyId": "2024-11-09-javornik",
+        "status": "todo",
+        "routeLength": 12,
+        "metersClimbed": "405",
+        "title": "Javorník",
+        "altitudeHighest": "742"
+      }
+    },
+    {
+      "id": "iY3I9hxYkv6u8ok0ztDB",
+      "docData": {
+        "journeyDate": "2024-03-09T00:00:00.000Z",
+        "altitudeHighest": "559",
+        "status": "todo",
+        "year": 2024,
+        "metersClimbed": "237",
+        "journeyId": "2024-03-09-zizkac",
+        "routeLength": 7,
+        "altitudeLowest": "432",
+        "title": "Žižkův Vrch"
+      }
+    },
+    {
+      "id": "jNqiwr0wCGA0JFusJnHt",
+      "docData": {
+        "year": 2024,
+        "altitudeHighest": "447",
+        "status": "todo",
+        "routeLength": 26,
+        "journeyId": "2024-06-28-varnsdorf",
+        "metersClimbed": "229",
+        "journeyDate": "2024-06-28T00:00:00.000Z",
+        "title": "Varnsdorf",
+        "altitudeLowest": "318"
+      }
+    },
+    {
+      "id": "jaEaznH4ZukjJwA3stI0",
+      "docData": {
+        "journeyId": "2024-06-25-skamenice",
+        "metersClimbed": "534",
+        "altitudeHighest": "433",
+        "journeyDate": "2024-06-25T00:00:00.000Z",
+        "status": "todo",
+        "year": 2024,
+        "title": "Srbská Kamenice",
+        "altitudeLowest": "120",
+        "routeLength": 28
+      }
+    },
+    {
+      "id": "kcsNBwqP5Uh6bKPbYoh9",
+      "docData": {
+        "altitudeLowest": "223",
+        "year": 2024,
+        "metersClimbed": "322",
+        "altitudeHighest": "346",
+        "journeyDate": "2024-03-10T00:00:00.000Z",
+        "routeLength": 26,
+        "journeyId": "2024-03-10-svijany",
+        "title": "Svijany",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "lg0z3W1dJdCHJjrqKS8h",
+      "docData": {
+        "year": 2024,
+        "altitudeLowest": "316",
+        "status": "todo",
+        "journeyDate": "2024-02-27T00:00:00.000Z",
+        "journeyId": "2024-02-27-bor",
+        "altitudeHighest": "400",
+        "routeLength": 8,
+        "title": "Nový Bor",
+        "metersClimbed": "177"
+      }
+    },
+    {
+      "id": "nXrud8nVXeNefRVYgo1F",
+      "docData": {
+        "status": "todo",
+        "metersClimbed": "60",
+        "title": "Jablonné v P.",
+        "routeLength": 4,
+        "altitudeLowest": "306",
+        "year": 2024,
+        "altitudeHighest": "365",
+        "journeyDate": "2024-07-26T00:00:00.000Z",
+        "journeyId": "2024-07-26-jablonne"
+      }
+    },
+    {
+      "id": "pzhg0mnHzKc82LxbUtn5",
+      "docData": {
+        "year": 2024,
+        "routeLength": 9,
+        "status": "todo",
+        "journeyDate": "2024-07-28T00:00:00.000Z",
+        "altitudeHighest": "380",
+        "journeyId": "2024-07-28-rynoltice",
+        "altitudeLowest": "306",
+        "metersClimbed": "116",
+        "title": "Rynoltice"
+      }
+    },
+    {
+      "id": "q8ZZXHJ5u0t1ywLf4YKI",
+      "docData": {
+        "title": "Kozákov",
+        "altitudeHighest": "744",
+        "altitudeLowest": "247",
+        "metersClimbed": "555",
+        "routeLength": 19,
+        "status": "todo",
+        "journeyDate": "2024-01-01T00:00:00.000Z",
+        "year": 2024,
+        "journeyId": "2024-01-01-kozakov"
+      }
+    },
+    {
+      "id": "qhlSNI67AXc9120yvqLY",
+      "docData": {
+        "title": "Praha",
+        "year": 2025,
+        "altitudeHighest": "",
+        "routeLength": "",
+        "journeyDate": "2025-03-05T00:00:00.000Z",
+        "altitudeLowest": "",
+        "status": "todo",
+        "metersClimbed": "",
+        "journeyId": "2025-03-05-praha"
+      }
+    },
+    {
+      "id": "r9F6jlXrbpDdIo8rE3MP",
+      "docData": {
+        "status": "todo",
+        "metersClimbed": "315",
+        "routeLength": 13,
+        "title": "Bramberk",
+        "altitudeLowest": "491",
+        "year": 2024,
+        "altitudeHighest": "788",
+        "journeyDate": "2024-02-18T00:00:00.000Z",
+        "journeyId": "2024-02-18-bramberk"
+      }
+    },
+    {
+      "id": "tMYb71zc8rSwphUAtPYP",
+      "docData": {
+        "routeLength": 29,
+        "metersClimbed": "684",
+        "altitudeLowest": "306",
+        "year": 2024,
+        "status": "todo",
+        "journeyId": "2024-02-17-jablonne",
+        "journeyDate": "2024-02-17T00:00:00.000Z",
+        "altitudeHighest": "771",
+        "title": "Jablonné v Podještědí"
+      }
+    },
+    {
+      "id": "trsSH4XPWIorHB6cWDYN",
+      "docData": {
+        "title": "Hejnice",
+        "altitudeHighest": "870",
+        "routeLength": 27,
+        "journeyDate": "2024-08-27T00:00:00.000Z",
+        "status": "todo",
+        "metersClimbed": "712",
+        "year": 2024,
+        "journeyId": "2024-08-27-hejnice",
+        "altitudeLowest": "350"
+      }
+    },
+    {
+      "id": "ttUcUZ0VPJsHu1oWeV1F",
+      "docData": {
+        "metersClimbed": "410",
+        "status": "todo",
+        "title": "Šluknov",
+        "routeLength": 24,
+        "altitudeLowest": "336",
+        "year": 2024,
+        "altitudeHighest": "563",
+        "journeyId": "2024-06-27-sluknov",
+        "journeyDate": "2024-06-27T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "v4ohrwws0cYjebNgyVlQ",
+      "docData": {
+        "title": "Ještěd",
+        "altitudeHighest": "1010",
+        "journeyId": "2024-01-20-jested",
+        "metersClimbed": "635",
+        "year": 2024,
+        "journeyDate": "2024-01-20T00:00:00.000Z",
+        "routeLength": 11,
+        "status": "todo",
+        "altitudeLowest": "432"
+      }
+    },
+    {
+      "id": "v9mFR0CFGIg64JTENGiU",
+      "docData": {
+        "altitudeLowest": "275",
+        "journeyId": "2024-01-06-chrastava",
+        "routeLength": 19,
+        "journeyDate": "2024-01-06T00:00:00.000Z",
+        "altitudeHighest": "583",
+        "year": 2024,
+        "title": "Chrastavská šlápota",
+        "metersClimbed": "406",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "wCxwlkbQsw2nMqSCmsNo",
+      "docData": {
+        "journeyDate": "2024-12-28T00:00:00.000Z",
+        "altitudeLowest": "433",
+        "routeLength": 24,
+        "status": "todo",
+        "journeyId": "2024-12-28-berany",
+        "metersClimbed": "522",
+        "altitudeHighest": "783",
+        "year": 2024,
+        "title": "penzion Berany"
+      }
+    },
+    {
+      "id": "xXl8dpJ5tW7yIOC6EKlC",
+      "docData": {
+        "title": "Krásná Lípa",
+        "routeLength": 27,
+        "journeyId": "2024-06-26-klipa",
+        "status": "todo",
+        "metersClimbed": "882",
+        "altitudeHighest": "486",
+        "altitudeLowest": "202",
+        "year": 2024,
+        "journeyDate": "2024-06-26T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "ye40A4ILXraxytR0TjKL",
+      "docData": {
+        "journeyDate": "2025-01-19T00:00:00.000Z",
+        "metersClimbed": "472",
+        "altitudeHighest": "609",
+        "altitudeLowest": "247",
+        "title": "Hamštejn",
+        "routeLength": 18,
+        "journeyId": "2025-01-19-hamstejn",
+        "year": 2025,
+        "status": "inprogress"
+      }
+    },
+    {
+      "id": "zwbw7v5dlHsCA4nhcfzg",
+      "docData": {
+        "routeLength": 12,
+        "year": 2025,
+        "altitudeLowest": "357",
+        "altitudeHighest": "681",
+        "status": "inprogress",
+        "journeyDate": "2025-01-05T00:00:00.000Z",
+        "metersClimbed": "476",
+        "title": "Javorník",
+        "journeyId": "2025-01-05-javornik"
+      }
+    }
+  ]

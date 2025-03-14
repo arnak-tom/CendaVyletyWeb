@@ -1,6 +1,6 @@
 import { db } from "./firebase-config.js";
 import { Firebase } from "./firebase.js";
-import { DateUtil } from "./date-util.js"
+import { ConvertUtil } from "./convert-util.js"
 import { collection, getDoc, getDocs, updateDoc, doc, addDoc, deleteDoc, Timestamp  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
@@ -54,7 +54,7 @@ export class Administration
         {
             tbody.innerHTML += `
                 <tr data-item-id="${journey.docId}">
-                    <td>${journey.journeyDate ? DateUtil.formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
+                    <td>${journey.journeyDate ? ConvertUtil.formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
                     <td>${journey.title}</td>
                     <td style='text-align: right;'>${journey.routeLength ?? ''} km</td>
                     <td style='text-align: right;'>${journey.metersClimbed ?? ''} m</td>
@@ -77,17 +77,17 @@ export class Administration
             e.preventDefault();
 
             const docId = document.getElementById("docId").value;
-
+            
             const data = 
             {
                 journeyId: document.getElementById("journeyId").value,
                 journeyDate: new Date(document.getElementById("journeyDate").value),
                 year: new Date(document.getElementById("journeyDate").value).getFullYear(),
                 title: document.getElementById("journeyTitle").value,
-                routeLength: document.getElementById("routeLength").value,
-                metersClimbed: document.getElementById("metersClimbed").value,
-                altitudeLowest: document.getElementById("altitudeLowest").value,
-                altitudeHighest: document.getElementById("altitudeHighest").value,
+                routeLength:     ConvertUtil.convertToNumberOrNull( document.getElementById("routeLength").value ),
+                metersClimbed:   ConvertUtil.convertToNumberOrNull( document.getElementById("metersClimbed").value ),
+                altitudeLowest:  ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeLowest").value ),
+                altitudeHighest: ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeHighest").value ),
                 status: document.getElementById("status").value
             };
 
@@ -116,7 +116,7 @@ export class Administration
 
                 this.#resetForm();
 
-                await Administration.#instance.loadJourneysTableData();
+                await this.loadJourneysTableDataAsync();
             }
 
             
@@ -153,6 +153,7 @@ export class Administration
         document.getElementById("import-journeys-file").addEventListener("change", async (e) => 
         {
             await this.#importCollection(e, "journeys-imported") ;
+            // await this.#importCollection(e, "journeys") ;
         });
 
         document.getElementById("journeys-table-years-switch").addEventListener("click", (event) => 
@@ -209,7 +210,7 @@ export class Administration
 
         document.getElementById("docId").value = docId;
         document.getElementById("journeyId").value = journey.journeyId;
-        document.getElementById("journeyDate").value = DateUtil.formatFirestoreTimestampForForm(journey.journeyDate);
+        document.getElementById("journeyDate").value = ConvertUtil.formatFirestoreTimestampForForm(journey.journeyDate);
         document.getElementById("journeyTitle").value = journey.title;
         document.getElementById("routeLength").value = journey.routeLength;
         document.getElementById("metersClimbed").value = journey.metersClimbed;
@@ -261,29 +262,6 @@ export class Administration
         modalOverlay.style.display = 'none';
     }
 
-    // async #getFireBaseDocumentById(collectionName, docId) 
-    // {
-    //     try 
-    //     {
-    //         const docRef = doc(db, collectionName, docId);
-
-    //         const docSnap = await getDoc(docRef);
-
-    //         if (docSnap.exists) 
-    //         {
-    //             console.log("Data dokumentu:", docSnap.data());
-    //             return docSnap.data();
-    //         } else {
-    //         console.log("Dokument neexistuje.");
-    //         return null;
-    //         }
-    //     } 
-    //     catch (error) 
-    //     {
-    //         console.error("Chyba při načítání dokumentu:", error);
-    //     }
-    // }
-
     async #exportCollection(collectionName) 
     {
         const querySnapshot = await getDocs(collection(db, collectionName));
@@ -299,6 +277,11 @@ export class Administration
                 //docData.journeyDate = date.toISOString();  // Např. "2024-07-06T00:00:00.000Z"
                 docData.journeyDate = date;
             }
+
+            docData.routeLength     = ConvertUtil.convertToNumberOrNull(docData.routeLength);
+            docData.metersClimbed   = ConvertUtil.convertToNumberOrNull(docData.metersClimbed);
+            docData.altitudeLowest  = ConvertUtil.convertToNumberOrNull(docData.altitudeLowest);
+            docData.altitudeHighest = ConvertUtil.convertToNumberOrNull(docData.altitudeHighest);
     
             return { id: doc.id, docData };
         });

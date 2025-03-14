@@ -1,4 +1,4 @@
-import { DateUtil } from './date-util.js';
+import { ConvertUtil } from './convert-util.js';
 import { JourneyWeb }   from './journey-web.js';
 
 export class Navigation
@@ -45,7 +45,7 @@ export class Navigation
         {
             const newListItem = document.createElement("li");
 
-            newListItem.innerHTML = `<div>${journey.title}</div><div class='journey-date'>${DateUtil.formatFirestoreTimestampForDisplay(journey.journeyDate)}</div>`;
+            newListItem.innerHTML = `<div>${journey.title}</div><div class='journey-date'>${ConvertUtil.formatFirestoreTimestampForDisplay(journey.journeyDate)}</div>`;
             
             journeyListElement.appendChild(newListItem);
 

@@ -12,11 +12,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/administration.css">
 
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-    <!-- <script type="module" src="scripts/security.js"></script> -->
+    <script type="module" src="scripts/security.js"></script>
+
+    <script>
+
+      // function handleCredentialResponse(response) {
+      //           console.log("ID Token: " + response.credential);
+      //       }
+
+      // window.onload = function () 
+      // {
+      //    google.accounts.id.initialize(
+      //    {
+      //       client_id: "956516295528-c2pd3qrkaac71ace0qh7hgqkfm1pljir.apps.googleusercontent.com",
+      //       callback: handleCredentialResponse
+      //    });
+
+      //    google.accounts.id.renderButton(
+      //       document.getElementById("google-login-button"),
+      //       { theme: "outline", size: "large" }
+      //    );
+      // };
+    </script>
+
+    <style>
+      
+
+    </style>
 
    </head>
   
@@ -37,13 +62,32 @@
         <div id="google-login-button" style="position: absolute; top: 1rem; right: 5rem;"></div>
     </header>
 
-    <div id="journeys-view-switcher">
-      <button data-view="journeys-cards-view" class="view-switcher-button current">Karty</button>
-      <button data-view="journeys-table-view" class="view-switcher-button">Tabulka</button>
+    <div id="logged-user-stripe" class="" 
+         style="position: fixed; top: 100px; padding-top: 1rem; padding-bottom: 0.5rem; background-color: skyblue; padding-left: 400px; width: 100%;">
+      <a href="admin.html" target="_self" style="text-decoration: none;">Administrace</a>
     </div>
 
-   <div id="view-content">
-   </div>
+    <div style="position: fixed; top: 120px; z-index: 10; margin-left: 1rem;">
+      <input type="text" id="search" placeholder="Hledat..." style="width: 100%; height: 1.6rem;" />
+      <ul id="suggestions"></ul>
+    </div>
+
+    <nav id="leftNavigation">
+
+         <div class="main-nav-toggle" style="display: flex;">
+            <span class="material-symbols-outlined" >
+                arrow_menu_close
+            </span>
+         </div>
+     
+      
+      <ul class="main-navigation-list">
+      </ul>
+    </nav>
+    
+    <main> <!-- Karty s výlety budou vytvořeny Javascriptem z načtených dat. -->
+
+    </main>
     
     <footer>
       Autor: Čenda & spol.
@@ -57,17 +101,14 @@
       <img id="pictureModal-img" src="" ondragstart="return false;">    
       <span class="next" style="right: 10%;">&#8250;</span>
       <div class="image-label"></div>
-    </div>     
-    
-    <div id="loader" style="display: none;">
-      <div class="spinner"></div>
-   </div>
+    </div>      
 
    </body>
 
+   <script type="module" src="scripts/main.js"></script>
+
    <script type="module">
       import { JourneyWebSecurity } from "./scripts/security.js"
-      import { JourneyWeb } from "./scripts/journey-web.js"
 
       document.addEventListener("DOMContentLoaded", () => 
       {
@@ -79,31 +120,7 @@
          }
       });
 
-      document.getElementById("journeys-view-switcher").addEventListener("click", async (event) => 
-      {
-         if (!event.target.classList.contains("view-switcher-button"))
-         {
-            return;
-         }
-
-         document.querySelectorAll('#journeys-view-switcher button.view-switcher-button').forEach(button => 
-         {
-            button.classList.remove("current");
-         });
-         
-         event.target.classList.add("current");
-
-         if (event.target.dataset.view === "journeys-table-view")
-         {
-            await JourneyWeb.showTableViewAsync();
-         }
-         else if (event.target.dataset.view === "journeys-cards-view")
-         {
-            await JourneyWeb.showCardsViewAsync();
-         }
-      });
-
-      await JourneyWeb.showCardsViewAsync();
+      //await administration.importData();
 
    </script>
     

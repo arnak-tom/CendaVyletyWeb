@@ -1,5 +1,5 @@
 import { Firebase } from './firebase.js';
-import { DateUtil } from './date-util.js';
+import { ConvertUtil } from './convert-util.js';
 import { ImageGallery } from './image-gallery.js';
 import { Navigation }   from './navigation.js';
 import { SearchField } from './search-field.js';
@@ -38,7 +38,7 @@ export class JourneyWeb
 
             const journeyCardLabel = journeyCard.querySelector(".journey-card-label");
 
-            const journeyDateFormatted = DateUtil.formatFirestoreTimestampForDisplay(journey.journeyDate);
+            const journeyDateFormatted = ConvertUtil.formatFirestoreTimestampForDisplay(journey.journeyDate);
 
             journeyCardLabel.querySelector("span").textContent = `${journey.title} ${journeyDateFormatted}`;
 
@@ -71,7 +71,10 @@ export class JourneyWeb
 
         const firstJourneyCardLabel = document.body.querySelector(".journey-card-label");
 
-        firstJourneyCardLabel.click();
+        if (firstJourneyCardLabel)
+        {
+            firstJourneyCardLabel.click();
+        }
 
         window.scrollTo(0, 0);
 
@@ -209,6 +212,20 @@ export class JourneyWeb
                     if (journey.metersClimbed && metersClimbedElement)
                     {
                         metersClimbedElement.textContent = journey.metersClimbed;
+                    }
+
+                    const altitudeLowestElement = journeyCard.querySelector('.journey-attribute-altitude-lowest .value');
+
+                    if (journey.altitudeLowest && altitudeLowestElement)
+                    {
+                        altitudeLowestElement.textContent = journey.altitudeLowest;
+                    }
+
+                    const altitudeHighestElement = journeyCard.querySelector('.journey-attribute-altitude-highest .value');
+
+                    if (journey.altitudeHighest && altitudeHighestElement)
+                    {
+                        altitudeHighestElement.textContent = journey.altitudeHighest;
                     }
                 }
 

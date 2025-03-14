@@ -1,4 +1,4 @@
-export class DateUtil
+export class ConvertUtil
 {
     static formatFirestoreTimestampForDisplay(firestoreTimestamp) 
     {
@@ -29,5 +29,29 @@ export class DateUtil
         const day = String(date.getDate()).padStart(2, '0');
 
         return `${year}-${month}-${day}`;
+    }
+
+    static convertToNumberOrNull(value) 
+    {
+        if (typeof value === "number") 
+        {
+            return value; // Pokud je to číslo, vrátí se jak je
+        }
+
+        if (typeof value === "string") 
+        {
+            const trimmed = value.trim();
+
+            if (trimmed === "") 
+            {
+                return null; // Prázdný string → null
+            }
+
+            const num = Number(trimmed);
+
+            return isNaN(num) ? null : num; // Pokud je to číslo, převede ho, jinak vrátí null
+        }
+        
+        return null; // Pro všechny ostatní případy (např. undefined, objekty) vrátí null
     }
 }
