@@ -76,6 +76,8 @@ export class JourneyWeb
             firstJourneyCardLabel.click();
         }
 
+        JourneyWeb.#setLeftNavigationInitialState();
+
         window.scrollTo(0, 0);
 
         document.getElementById("loader").style.display = "none";
@@ -113,53 +115,6 @@ export class JourneyWeb
 
         document.getElementById("view-content").innerHTML = viewCode;
     }
-
-    // static async createCards()
-    // {
-    //     let journeysByYear = await JourneyWeb.#fetchJson('/src/data/journey-list.json');
-
-    //     if (journeysByYear == null)
-    //     {
-    //         return;
-    //     }
-
-    //     const template = document.getElementById("journey-card-template");
-
-    //     journeysByYear = journeysByYear.sort((a, b) => b.year - a.year);
-        
-
-    //     journeysByYear.forEach((journeysOfYear) => 
-    //     {
-    //         const journeysSorted = journeysOfYear.journeys.sort((a, b) => b.id.localeCompare(a.id));
-
-    //         journeysSorted.forEach( (journeyData) => 
-    //         {
-    //             const clone = template.content.cloneNode(true);
-
-    //             const journeyCard = clone.firstElementChild;
-
-    //             journeyCard.id = journeyData.id;
-
-    //             journeyCard.dataset.year = journeysOfYear.year;
-
-    //             journeyCard.querySelector(".journey-card-label span").textContent = journeyData.label;
-
-    //             const statusDiv = journeyCard.querySelector(".journey-card-status");
-
-    //             if (journeyData.status)
-    //             {
-    //                 statusDiv.classList.add(journeyData.status);
-    //             }
-    //             else
-    //             {
-    //                 statusDiv.classList.add('todo');
-    //             }
-
-    //             document.querySelector("main").appendChild(journeyCard);
-    //         } );
-            
-    //     });
-    // }
 
     static async setJourneyCardContent(pointerEvent, imageGallery)
     {
@@ -305,5 +260,29 @@ export class JourneyWeb
                             top: elementPosition - offset,
                             behavior: "smooth" // Plynulé scrollování
                         });
+    }
+
+    static #setLeftNavigationInitialState()
+    {
+        // const leftNavigationElement = document.querySelector("nav#leftNavigation");
+
+        const leftNavToggle = document.body.querySelector(".main-nav-toggle .material-symbols-outlined");
+
+        if (leftNavToggle)
+        {
+            if (window.innerWidth <= 768) 
+            {
+                leftNavToggle.click();
+            }
+        }
+
+        // if (window.innerWidth <= 768) 
+        // {
+        //     leftNavigationElement.classList.add("closed");
+        // } 
+        // else 
+        // {
+        //     leftNavigationElement.classList.remove("closed");
+        // }
     }
 }

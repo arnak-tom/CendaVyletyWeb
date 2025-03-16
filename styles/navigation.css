@@ -1,0 +1,134 @@
+.navigation-search
+{
+    position: fixed; 
+    top: 120px; 
+    z-index: 10; 
+    margin-left: 1rem;
+}
+
+nav 
+{
+    position: fixed;
+    top: 100px; /* Height of header */
+    left: 0;
+    width: 250px;
+    /* height: calc(100% - 100px); */
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    background-color: #d4d4d4;
+    padding: 1rem;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    transition: left 0.3s ease-in-out;
+}
+
+nav#leftNavigation.closed
+{
+    left: -240px;
+}
+
+nav#leftNavigation .year
+{
+    font-weight: bold;
+}
+nav#leftNavigation .journeys-list li:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav#leftNavigation .main-nav-toggle 
+{
+    position: absolute; /* Uvnitř sidebaru */
+    top: 15px;
+    right: 0;
+    color: rgb(208,134,63);
+    cursor: pointer;
+    user-select: none;
+}
+
+nav#leftNavigation .main-navigation-list
+{
+    margin-top: 50px;
+}
+
+nav#leftNavigation .main-nav-toggle .material-symbols-outlined
+{
+    font-size: 35px;
+}
+
+nav#leftNavigation .journey-date
+{
+    font-size: 0.8rem;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li 
+{
+    margin-bottom: 10px;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li ul 
+{
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+nav ul li ul li a 
+{
+    font-weight: normal;
+    color: #555;
+}
+
+@media (max-width: 768px) 
+{
+    main
+    {
+        margin-top: 5rem;
+        padding-top: 0.5rem;
+    }
+
+    .navigation-search
+    {
+        top: 6rem; 
+    }
+
+    nav 
+    {
+        width: 20rem;
+        height: 100vh;
+        /* position: relative; */
+        border-right: none;
+        top: 5.1rem;
+        padding: 0;
+    }
+
+    nav#leftNavigation.closed
+    {
+        left: -17rem;
+    }
+
+    nav ul 
+    {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    nav ul li 
+    {
+        margin: 5px;
+    }
+}

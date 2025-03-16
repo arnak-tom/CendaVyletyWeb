@@ -77,6 +77,30 @@ export class Administration
             e.preventDefault();
 
             const docId = document.getElementById("docId").value;
+
+            const urls = document.querySelectorAll('input[name="url[]"]');
+            const descriptions = document.querySelectorAll('input[name="description[]"]');
+
+            const photoData = [];
+
+            if (urls && descriptions)
+            {
+                urls.forEach((urlInput, index) => 
+                {
+                    const urlValue = urlInput.value.trim();
+
+                    const descriptionValue = descriptions[index]?.value.trim();
+
+                    if (urlValue) 
+                    {
+                        photoData.push(
+                        {
+                            url: urlValue,
+                            description: descriptionValue ?? null
+                        });
+                    }
+                });
+            }
             
             const data = 
             {
@@ -88,6 +112,7 @@ export class Administration
                 metersClimbed:   ConvertUtil.convertToNumberOrNull( document.getElementById("metersClimbed").value ),
                 altitudeLowest:  ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeLowest").value ),
                 altitudeHighest: ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeHighest").value ),
+                photoGalleryItems: photoData,
                 status: document.getElementById("status").value
             };
 
@@ -217,6 +242,8 @@ export class Administration
         document.getElementById("altitudeLowest").value = journey.altitudeLowest;
         document.getElementById("altitudeHighest").value = journey.altitudeHighest;
         document.getElementById("status").value = journey.status;
+
+        
     }
     
     #confirmDelete(id, title)
