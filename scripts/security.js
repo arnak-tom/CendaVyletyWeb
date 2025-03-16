@@ -145,7 +145,7 @@ export class JourneyWebSecurity
             {
                 email: userObject.email,
                 name: userObject.name,
-                picture: userObject.picture,
+                picture: userObject.picture ?? null,
                 roles: ["reader"],
                 createdAt: createdAt
             });
