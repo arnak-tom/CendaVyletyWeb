@@ -182,6 +182,19 @@ export class JourneyWeb
                     {
                         altitudeHighestElement.textContent = journey.altitudeHighest;
                     }
+
+                    const journeyThumbnailImgElement = journeyCard.querySelector('.journey-card-summary img.journey-thumbnail');
+
+                    if (journey.photoGalleryThumbnailUrl && journeyThumbnailImgElement)
+                    {
+                        journeyThumbnailImgElement.src = journey.photoGalleryThumbnailUrl;
+                        journeyThumbnailImgElement.alt = `${journey.title} ${journey.year}`;
+
+                        if (journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
+                        {
+                            journeyThumbnailImgElement.dataset.images = JSON.stringify(journey.photoGalleryItems);
+                        }
+                    }
                 }
 
                 journeyCard.dataset.isLoaded = "1";
@@ -264,8 +277,6 @@ export class JourneyWeb
 
     static #setLeftNavigationInitialState()
     {
-        // const leftNavigationElement = document.querySelector("nav#leftNavigation");
-
         const leftNavToggle = document.body.querySelector(".main-nav-toggle .material-symbols-outlined");
 
         if (leftNavToggle)
@@ -275,14 +286,5 @@ export class JourneyWeb
                 leftNavToggle.click();
             }
         }
-
-        // if (window.innerWidth <= 768) 
-        // {
-        //     leftNavigationElement.classList.add("closed");
-        // } 
-        // else 
-        // {
-        //     leftNavigationElement.classList.remove("closed");
-        // }
     }
 }

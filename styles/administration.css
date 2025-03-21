@@ -44,7 +44,7 @@ main.administration td
 }
 
 /* Obsah modálního okna */
-body#administration-body .modal-content 
+.modal-overlay .modal-content 
 {
     background-color: #fff;
     padding: 20px;
@@ -54,7 +54,7 @@ body#administration-body .modal-content
 }
 
 /* Stylování tlačítek uvnitř modálního okna */
-body#administration-body .modal-content button 
+.modal-overlay .modal-content button 
 {
     margin: 5px;
     padding: 10px 20px;
@@ -63,13 +63,13 @@ body#administration-body .modal-content button
     cursor: pointer;
 }
 
-body#administration-body .modal-overlay #confirmButton 
+.modal-overlay #confirmButton 
 {
     background-color: #d9534f; /* Červená barva pro potvrzení */
     color: white;
 }
 
-body#administration-body .modal-overlay #cancelButton 
+.modal-overlay #cancelButton 
 {
     background-color: #5bc0de; /* Modrá barva pro zrušení */
     color: white;
@@ -79,6 +79,7 @@ body#administration-body .modal-overlay #cancelButton
 {
     width: 60rem;
     table-layout: fixed;
+    counter-reset: row-counter;
 }
 
 #journeys-table th
@@ -97,6 +98,21 @@ body#administration-body .modal-overlay #cancelButton
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+#journeys-table tbody td:first-child
+{
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-right: 1px solid;
+    font-size: 0.7rem;
+}
+
+#journeys-table tbody td:first-child::before
+{
+    counter-increment: row-counter;
+    content: counter(row-counter);
 }
 
 .sort-icon 
@@ -123,14 +139,15 @@ body#administration-body .modal-overlay #cancelButton
     text-overflow: ellipsis; /* Přidá tři tečky, pokud je text moc dlouhý */
 }
 
-#journeys-table th:nth-child(1) { width: 12%; }  /* Den konání */
-#journeys-table th:nth-child(2) { width: 20%; }  /* Název */
-#journeys-table th:nth-child(3) { width: 10%; }  /* Délka */
-#journeys-table th:nth-child(4) { width: 13%; }  /* Nastoupáno */
-#journeys-table th:nth-child(5) { width: 13%; }  /* Nejnižší bod */
-#journeys-table th:nth-child(6) { width: 13%; }  /* Nejvyšší bod */
-#journeys-table th:nth-child(7) { width: 8%; }  /* Stav */
-#journeys-table th:nth-child(8) { width: 11%; }  /* tlačítka */
+#journeys-table th:nth-child(1) { width: 2%; }   /* Č. řádku */
+#journeys-table th:nth-child(2) { width: 13%; }  /* Den konání */
+#journeys-table th:nth-child(3) { width: 20%; }  /* Název */
+#journeys-table th:nth-child(4) { width: 10%; }  /* Délka */
+#journeys-table th:nth-child(5) { width: 13%; }  /* Nastoupáno */
+#journeys-table th:nth-child(6) { width: 13%; }  /* Nejnižší bod */
+#journeys-table th:nth-child(7) { width: 13%; }  /* Nejvyšší bod */
+#journeys-table th:nth-child(8) { width: 5%; }   /* Stav */
+#journeys-table th:nth-child(9) { width: 11%; }  /* tlačítka */
 
 #journeys-table-years-switch
 {

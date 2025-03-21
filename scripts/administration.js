@@ -54,6 +54,7 @@ export class Administration
         {
             tbody.innerHTML += `
                 <tr data-item-id="${journey.docId}">
+                    <td></td>
                     <td>${journey.journeyDate ? ConvertUtil.formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
                     <td>${journey.title}</td>
                     <td style='text-align: right;'>${journey.routeLength ?? ''} km</td>
@@ -112,6 +113,9 @@ export class Administration
                 metersClimbed:   ConvertUtil.convertToNumberOrNull( document.getElementById("metersClimbed").value ),
                 altitudeLowest:  ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeLowest").value ),
                 altitudeHighest: ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeHighest").value ),
+                photoGalleryThumbnailUrl: document.getElementById("photoGalleryThumbnailUrl").value?.trim(),
+                journeyRouteThumbnailUrl: document.getElementById("journeyRouteThumbnailUrl").value?.trim(),
+                journeyRouteUrl: document.getElementById("journeyRouteUrl").value?.trim(),
                 photoGalleryItems: photoData,
                 status: document.getElementById("status").value
             };
@@ -145,6 +149,11 @@ export class Administration
             }
 
             
+        });
+
+        document.getElementById("reset-journey-form-button").addEventListener("click", () => 
+        {
+            this.#resetForm();
         });
 
         document.getElementById("journeys-table").addEventListener("click", (event) => 
@@ -205,20 +214,35 @@ export class Administration
 
         document.getElementById("add-photo-gallery-item-button").addEventListener("click", (event) => 
         {
-            const template = document.getElementById("photo-gallery-item-template");
-
-            const container = document.getElementById("photo-gallery-items");
-
-            const div = document.createElement("div");
-
-            div.classList.add("item");
-
-            const clone = template.content.cloneNode(true);
-
-            div.appendChild(clone.firstElementChild);
-            
-            container.appendChild(div);
+            this.#addPhotoGalleryItem();
         });
+    }
+
+    #addPhotoGalleryItem(url, description)
+    {
+        const template = document.getElementById("photo-gallery-item-template");
+
+        const container = document.getElementById("photo-gallery-items");
+
+        const div = document.createElement("div");
+
+        div.classList.add("item");
+
+        const clone = template.content.cloneNode(true);
+
+        if (url)
+        {
+            clone.querySelector('input[name="url[]"]').value = url;
+        }
+
+        if (description)
+        {
+            clone.querySelector('input[name="description[]"]').value = description;
+        }
+
+        div.appendChild(clone.firstElementChild);
+        
+        container.appendChild(div);
     }
 
     // Reset formuláře
@@ -226,6 +250,7 @@ export class Administration
     {
         document.getElementById("dataForm").reset();
         document.getElementById("docId").value = "";
+        document.getElementById("photo-gallery-items").innerHTML = "";
     }
 
     // Úprava záznamu
@@ -241,9 +266,20 @@ export class Administration
         document.getElementById("metersClimbed").value = journey.metersClimbed;
         document.getElementById("altitudeLowest").value = journey.altitudeLowest;
         document.getElementById("altitudeHighest").value = journey.altitudeHighest;
+        document.getElementById("photoGalleryThumbnailUrl").value = journey.photoGalleryThumbnailUrl ?? "";
+        document.getElementById("journeyRouteThumbnailUrl").value = journey.journeyRouteThumbnailUrl ?? "";
+        document.getElementById("journeyRouteUrl").value = journey.journeyRouteUrl ?? "";
         document.getElementById("status").value = journey.status;
 
-        
+        document.getElementById("photo-gallery-items").innerHTML = "";
+
+        if (journey.photoGalleryItems)
+        {
+            journey.photoGalleryItems.forEach(i => 
+            {
+                this.#addPhotoGalleryItem(i.url, i.description);
+            });
+        }
     }
     
     #confirmDelete(id, title)

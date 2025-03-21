@@ -11,11 +11,16 @@
                 <div class="switch-item current">Vše</div>
                 <div class="switch-item" data-year="2025">2025</div>
                 <div class="switch-item" data-year="2024">2024</div>
+                <div class="switch-item" data-year="2023">2023</div>
+                <div class="switch-item" data-year="2022">2022</div>
+                <div class="switch-item" data-year="2021">2021</div>
+                <div class="switch-item" data-year="2020">2020</div>
             </div>
 
             <table id="journeys-table" data-sort-column="journeyDate" data-sort-direction="asc">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>
                             <button class="sort-button" data-sort-column="journeyDate">
                                 Den konání<span class="sort-icon asc">▲</span>
@@ -64,6 +69,10 @@
         <form id="dataForm" class="admin-section hidden">
             <input type="hidden" id="docId"/>
 
+            <div style="text-align: right; padding-right: 1rem;">
+                <button id="reset-journey-form-button" type="reset">X</button>
+            </div>
+
             <fieldset id="journey-form" >
 
                 <legend>Výlet</legend>
@@ -101,6 +110,21 @@
                 <div>
                     <label for="altitudeHighest">Nejvyšší nadmořská výška v m</label>
                     <input type="number" min="0" max="2000" step="1" id="altitudeHighest" placeholder="např. 300" />
+                </div>
+
+                <div>
+                    <div>Obrázek náhledu do fotogalerie</div>
+                    <div>
+                        <input style='width: 30rem;' type="url" id="photoGalleryThumbnailUrl" placeholder="URL" >
+                    </div>
+                </div>
+
+                <div>
+                    <div>Náhled na trasu</div>
+                    <div>
+                        <input style='width: 30rem;' type="url" id="journeyRouteThumbnailUrl" placeholder="URL obrázku náhledu" >
+                        <input style='width: 30rem;' type="url" id="journeyRouteUrl" placeholder="URL trasy" >
+                    </div>
                 </div>
 
                 <div>

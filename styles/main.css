@@ -189,6 +189,13 @@ main.wide
     z-index: 1000;
 }
 
+#pictureModal .image-label
+{
+    position: absolute;
+    top: 97%;
+    color: white;
+}
+
 #pictureModal .close 
 {
     position: absolute;
@@ -331,6 +338,12 @@ img.journey-route
     {
         width: 100%;
     }
+
+    .journey-card-status
+    {
+        display: none;
+    }
+
 
     /* img.journey-route
     {

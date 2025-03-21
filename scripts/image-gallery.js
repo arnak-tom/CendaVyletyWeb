@@ -62,9 +62,11 @@ export class ImageGallery
         // Načtení JSON z atributu data-images
         const images = JSON.parse(imagesJson);
 
-        this.#modalImg.src = images[0];
+        this.#modalImg.src = images[0].url;
 
         this.#modalImg.style.cursor = "grab";
+
+        document.querySelector("#pictureModal .image-label").innerHTML = images[0].description ?? "";
     }
 
     // Zavření galerie fotek
@@ -147,7 +149,9 @@ export class ImageGallery
 
         this.#modalDiv.setAttribute('data-images-current-index', currentIndex);
 
-        this.#modalImg.src = images[currentIndex];
+        this.#modalImg.src = images[currentIndex].url;
+
+        document.querySelector("#pictureModal .image-label").innerHTML = images[currentIndex].description ?? "";
     }
 
     #moveAt(pageX, pageY) 
