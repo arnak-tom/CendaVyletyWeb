@@ -1,0 +1,16 @@
+.journey-card-content .journey-card-summary .journey-thumbnail-container
+{
+    position: relative;
+    display: inline-block;
+}
+
+.journey-card-content .journey-card-summary .journey-thumbnail-container .images-count
+{
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.4rem;
+}

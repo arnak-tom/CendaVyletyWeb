@@ -146,6 +146,16 @@ export class SearchField
 
     selectItem(journeyCardId) 
     {
+        const leftNavToggle = document.body.querySelector(".main-nav-toggle .material-symbols-outlined");
+
+        if (leftNavToggle)
+        {
+            if (window.innerWidth <= 768) 
+            {
+                leftNavToggle.click();
+            }
+        }
+
         this.#searchInput.value = "";
 
         this.#suggestionsList.style.display = "none";

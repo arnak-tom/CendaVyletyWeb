@@ -51,16 +51,23 @@ export class Navigation
 
             newListItem.addEventListener('click', (e) => 
             {
+                const leftNavToggle = document.body.querySelector(".main-nav-toggle .material-symbols-outlined");
+
+                if (leftNavToggle)
+                {
+                    if (window.innerWidth <= 768) 
+                    {
+                        leftNavToggle.click();
+                    }
+                }
+
                 const journeyCard = document.querySelector(`.journey-card[data-doc-id="${journey.docId}"]`);
 
                 JourneyWeb.moveToJourneyCard(journeyCard);
 
                 journeyCard.dataset.forceOpen = "true";
 
-                // if (journeyCard.dataset.isLoaded !== "1")
-                // {
-                    journeyCard.querySelector(".journey-card-label").click();
-                // }
+                journeyCard.querySelector(".journey-card-label").click();
             });
         });
     }

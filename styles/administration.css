@@ -10,6 +10,8 @@ main.administration th
 {
     background-color: darkgrey;
     padding: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
     border-bottom: 1px solid black;
 }
 
@@ -90,7 +92,7 @@ main.administration td
 #journeys-table th button {
     border: none;
     background: none;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: bold;
     font-family: Verdana, sans-serif;
     cursor: pointer;
@@ -98,6 +100,8 @@ main.administration td
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 100%;
+    justify-content: end;
 }
 
 #journeys-table tbody td:first-child
@@ -139,15 +143,15 @@ main.administration td
     text-overflow: ellipsis; /* Přidá tři tečky, pokud je text moc dlouhý */
 }
 
-#journeys-table th:nth-child(1) { width: 2%; }   /* Č. řádku */
-#journeys-table th:nth-child(2) { width: 13%; }  /* Den konání */
-#journeys-table th:nth-child(3) { width: 20%; }  /* Název */
-#journeys-table th:nth-child(4) { width: 10%; }  /* Délka */
-#journeys-table th:nth-child(5) { width: 13%; }  /* Nastoupáno */
-#journeys-table th:nth-child(6) { width: 13%; }  /* Nejnižší bod */
-#journeys-table th:nth-child(7) { width: 13%; }  /* Nejvyšší bod */
-#journeys-table th:nth-child(8) { width: 5%; }   /* Stav */
-#journeys-table th:nth-child(9) { width: 11%; }  /* tlačítka */
+#journeys-table th:nth-child(1) { width: 2rem; }   /* Č. řádku */
+#journeys-table th:nth-child(2) { width: 7rem; }  /* Den konání */
+#journeys-table th:nth-child(3) { width: 12rem;  }  /* Název */
+#journeys-table th:nth-child(4) { width: 5rem;  }  /* Délka */
+#journeys-table th:nth-child(5) { width: 5rem; }  /* Nastoupáno */
+#journeys-table th:nth-child(6) { width: 5rem;  }  /* Nejnižší bod */
+#journeys-table th:nth-child(7) { width: 5rem; }  /* Nejvyšší bod */
+#journeys-table th:nth-child(8) { width: 3rem; }   /* Počet fotek */
+#journeys-table th:nth-child(9) { width: 6rem; }  /* tlačítka */
 
 #journeys-table-years-switch
 {

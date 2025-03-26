@@ -12,14 +12,15 @@ nav
     top: 100px; /* Height of header */
     left: 0;
     width: 250px;
-    /* height: calc(100% - 100px); */
-    height: 100vh;
+    height: calc(100vh - 130px);
+    /* height: 100vh; */
     font-family: Verdana, sans-serif;
     background-color: #d4d4d4;
     padding: 1rem;
     overflow-y: auto;
     border-right: 1px solid #ddd;
     transition: left 0.3s ease-in-out;
+    z-index: 1;
 }
 
 nav#leftNavigation.closed
@@ -107,7 +108,7 @@ nav ul li ul li a
     nav 
     {
         width: 20rem;
-        height: 100vh;
+        height: calc(100vh - 5.1rem);
         /* position: relative; */
         border-right: none;
         top: 5.1rem;

@@ -260,6 +260,7 @@ ul#suggestions {
     background-color: burlywood; 
     padding-left: 400px; 
     width: 100%;
+    z-index: 1;
 }
 
 #journeys-view-switcher button
@@ -288,8 +289,20 @@ img.journey-route
     padding-top: 10px;
 }
 
+#journeys-table .material-symbols-outlined 
+{
+    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    cursor: default;
+}
+
+
 @media (max-width: 768px) 
 {
+    .mobile-hidden-section
+    {
+        display: none;
+    }
+
     header
     {
         height: 1.5rem;

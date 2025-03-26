@@ -28,27 +28,34 @@
                         </th>
                         <th>Název</th>
                         <th>
-                            <button class="sort-button" data-sort-column="routeLength">
-                                Délka<span class="sort-icon"></span>
+                            <button class="sort-button" data-sort-column="routeLength" title="Délka">
+                                <img src="/images/icons/length_24.svg" class="sort-button-img" style="width: 1.7rem;" alt="Délka"/>
+                                <span class="sort-icon"></span>
                             </button>
                         </th>
-                        <th>
-                            <button class="sort-button" data-sort-column="metersClimbed">
-                                Nastoupáno<span class="sort-icon"></span>
+                        <th class="mobile-hidden-section">
+                            <button class="sort-button" data-sort-column="metersClimbed" title="Nastoupáno">
+                                <img src="/images/icons/stairs_24.svg" class="sort-button-img" style="width: 1.7rem;" alt="Nastoupáno"/>
+                                <span class="sort-icon"></span>
                             </button>
                         </th>
-                        <th>
-                            <button class="sort-button" data-sort-column="altitudeLowest">
-                                Nejnižší bod<span class="sort-icon"></span>
+                        <th class="mobile-hidden-section">
+                            <button class="sort-button" data-sort-column="altitudeLowest" title="Nejnižší bod">
+                                <img src="/images/icons/altitude_24_lowest.svg" class="sort-button-img" style="width: 1.7rem;" alt="Nejnižší bod"/>
+                                <span class="sort-icon"></span>
                             </button>
                         </th>
-                        <th>
-                            <button class="sort-button" data-sort-column="altitudeHighest">
-                                Nejvyšší bod<span class="sort-icon"></span>
+                        <th class="mobile-hidden-section">
+                            <button class="sort-button" data-sort-column="altitudeHighest" title="Nejvyšší bod">
+                                <img src="/images/icons/altitude_24_highest.svg" class="sort-button-img" style="width: 1.7rem;" alt="Nejvyšší bod"/>
+                                <span class="sort-icon"></span>
                             </button>
                         </th>
-                        <th>Stav</th>
-                        <th class="admin-section hidden"></th>
+                        <th class="mobile-hidden-section">
+                            <span class="material-symbols-outlined" title="Počet fotografií v galerii">
+                                photo_camera
+                            </span></th>
+                        <th class="admin-section mobile-hidden-section hidden"></th>
                     </tr>
                 </thead>
                 <tbody id="dataTable">
@@ -56,17 +63,17 @@
                 </tbody>
             </table>
 
-            <div class="admin-section hidden">
+            <div class="admin-section mobile-hidden-section hidden">
                 <button type="button" id="export-journeys-from-firebase-button">Export</button>
             </div>
-            <div class="admin-section hidden">
+            <div class="admin-section mobile-hidden-section hidden">
                 <label for="import-journeys-file">Importovat ze souboru do Firebase</label>
                 <input type="file" id="import-journeys-file">
             </div>
 
         </div>
 
-        <form id="dataForm" class="admin-section hidden">
+        <form id="dataForm" class="admin-section mobile-hidden-section hidden">
             <input type="hidden" id="docId"/>
 
             <div style="text-align: right; padding-right: 1rem;">

@@ -190,6 +190,13 @@ export class JourneyWeb
                         journeyThumbnailImgElement.src = journey.photoGalleryThumbnailUrl;
                         journeyThumbnailImgElement.alt = `${journey.title} ${journey.year}`;
 
+                        const imagesCountElement = journeyCard.querySelector(".journey-thumbnail-container .images-count");
+
+                        if (imagesCountElement && journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
+                        {
+                            imagesCountElement.textContent = journey.photoGalleryItems.length;
+                        }
+
                         if (journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
                         {
                             journeyThumbnailImgElement.dataset.images = JSON.stringify(journey.photoGalleryItems);

@@ -58,11 +58,11 @@ export class Administration
                     <td>${journey.journeyDate ? ConvertUtil.formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
                     <td>${journey.title}</td>
                     <td style='text-align: right;'>${journey.routeLength ?? ''} km</td>
-                    <td style='text-align: right;'>${journey.metersClimbed ?? ''} m</td>
-                    <td style='text-align: right;'>${journey.altitudeLowest ?? ''} m</td>
-                    <td style='text-align: right;'>${journey.altitudeHighest ?? ''} m</td>
-                    <td>${journey.status}</td>
-                    <td class="${adminSectionClass}">
+                    <td class='mobile-hidden-section' style='text-align: right;'>${journey.metersClimbed ?? ''} m</td>
+                    <td class='mobile-hidden-section' style='text-align: right;'>${journey.altitudeLowest ?? ''} m</td>
+                    <td class='mobile-hidden-section' style='text-align: right;'>${journey.altitudeHighest ?? ''} m</td>
+                    <td class='mobile-hidden-section' style='text-align: center;'>${journey.photoGalleryItems && journey.photoGalleryItems.length ? journey.photoGalleryItems.length : ""}</td>
+                    <td class="${adminSectionClass} mobile-hidden-section">
                         <button class="edit-button" data-doc-id="${journey.docId}">✏️</button>
                         <button class="delete-button" data-doc-id="${journey.docId}" data-title="${journey.title}" >🗑️</button>
                     </td>
@@ -169,6 +169,10 @@ export class Administration
             else if (event.target.classList.contains("sort-button")) 
             {
                 this.#sortJourneys(event.target);
+            }
+            else if (event.target.classList.contains("sort-button-img") || event.target.classList.contains("sort-icon")) 
+            {
+                this.#sortJourneys(event.target.closest(".sort-button"));
             }
         });
 
