@@ -25,3 +25,12 @@
 {
     width: 100%;
 } */
+
+
+@media (max-width: 768px) 
+{
+    .journey-card-content .journey-card-summary .journey-route-thumbnail
+    {
+        width: 100%;
+    }
+}
