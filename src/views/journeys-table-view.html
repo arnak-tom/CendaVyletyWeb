@@ -7,8 +7,8 @@
 
         <!-- Tabulka pro zobrazení dat -->
         <div>
-            <div id="journeys-table-years-switch">
-                <div class="switch-item current">Vše</div>
+            <div id="journeys-table-years-switch" >
+                <div class="switch-item ">Vše</div>
                 <div class="switch-item" data-year="2025">2025</div>
                 <div class="switch-item" data-year="2024">2024</div>
                 <div class="switch-item" data-year="2023">2023</div>
@@ -17,10 +17,21 @@
                 <div class="switch-item" data-year="2020">2020</div>
             </div>
 
+            <div id="journeys-table-years-mobile-switch">
+                <select>
+                    <option>2025</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                </select>
+            </div>
+
             <table id="journeys-table" data-sort-column="journeyDate" data-sort-direction="asc">
                 <thead>
                     <tr>
-                        <th></th>
+                        <th class="mobile-hidden-section"></th>
                         <th>
                             <button class="sort-button" data-sort-column="journeyDate">
                                 Den konání<span class="sort-icon asc">▲</span>
@@ -138,6 +149,17 @@
                     <div style="margin-bottom: 0.5rem;">Obrázky do fotogalerie</div>
                     <div id="photo-gallery-items" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;"></div>
                     <button id="add-photo-gallery-item-button" type="button">Přidat položku</button>
+                </div>
+
+                <div class="whisperer">
+                    <label for="journeyRoutePoint">Podstatné body na trase</label>
+                    <input type="text" id="journeyRoutePoint" placeholder="Vyber nebo zadej bod trasy">
+                    <ul id="journeyRoutePointSuggestions" ></ul>
+                    <ul id="journeyRoutePointsSelected" ></ul>
+                </div>
+
+                <div class="form-restaurant">
+                    <div id="rich-text-editor-restaurant"></div>
                 </div>
 
                 <div>

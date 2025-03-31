@@ -1,0 +1,80 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  } */
+  
+  /* .whisperer input#journeyRoutePoint 
+  {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } */
+  
+  .whisperer ul 
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .whisperer #journeyRoutePointSuggestions 
+  {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    background: white;
+    position: absolute;
+    /* width: calc(100% - 20px);
+    border-radius: 5px; */
+  }
+  
+  .whisperer #journeyRoutePointSuggestions li 
+  {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .whisperer #journeyRoutePointSuggestions li:hover 
+  {
+    background-color: #f0f0f0;
+  }
+  
+  .whisperer #journeyRoutePointsSelected 
+  {
+    margin-top: 10px;
+  }
+
+    
+  
+  .whisperer #journeyRoutePointsSelected li 
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightgray;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0.2rem 0;
+    border-radius: 0.2rem;
+  }
+  
+  .whisperer button 
+  {
+    padding: 5px 10px;
+    border: none;
+    background-color: darkgray;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .whisperer button:hover 
+  {
+    color: red;
+  }
+  

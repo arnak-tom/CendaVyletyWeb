@@ -1,7 +1,9 @@
 import { db } from "./firebase-config.js";
 import { Firebase } from "./firebase.js";
-import { ConvertUtil } from "./convert-util.js"
-import { collection, getDoc, getDocs, updateDoc, doc, addDoc, deleteDoc, Timestamp  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { ConvertUtil } from "./convert-util.js";
+import { Whisperer } from "./whisperer.js";
+import { RichTextEditor } from "./typescript/components/RichTextEditor.js";
+import { collection, getDocs, updateDoc, doc, addDoc, deleteDoc, Timestamp  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
 export class Administration
@@ -14,6 +16,14 @@ export class Administration
         {
             return Administration.#instance;
         }
+
+        this.routePointWhisperer = new Whisperer("route-points", "journeyRoutePoint", "journeyRoutePointSuggestions", "journeyRoutePointsSelected");
+
+        this.routePointWhisperer.loadData();
+
+        this.restaurantEditor = new RichTextEditor("rich-text-editor-restaurant");
+
+        this.restaurantEditor.setContent("<p>Toto je testovací text</p>");
 
         Administration.#instance = this;
     }
@@ -54,7 +64,7 @@ export class Administration
         {
             tbody.innerHTML += `
                 <tr data-item-id="${journey.docId}">
-                    <td></td>
+                    <td class='mobile-hidden-section'></td>
                     <td>${journey.journeyDate ? ConvertUtil.formatFirestoreTimestampForDisplay(journey.journeyDate) : ''}</td>
                     <td>${journey.title}</td>
                     <td style='text-align: right;'>${journey.routeLength ?? ''} km</td>
@@ -77,78 +87,7 @@ export class Administration
         {
             e.preventDefault();
 
-            const docId = document.getElementById("docId").value;
-
-            const urls = document.querySelectorAll('input[name="url[]"]');
-            const descriptions = document.querySelectorAll('input[name="description[]"]');
-
-            const photoData = [];
-
-            if (urls && descriptions)
-            {
-                urls.forEach((urlInput, index) => 
-                {
-                    const urlValue = urlInput.value.trim();
-
-                    const descriptionValue = descriptions[index]?.value.trim();
-
-                    if (urlValue) 
-                    {
-                        photoData.push(
-                        {
-                            url: urlValue,
-                            description: descriptionValue ?? null
-                        });
-                    }
-                });
-            }
-            
-            const data = 
-            {
-                journeyId: document.getElementById("journeyId").value,
-                journeyDate: new Date(document.getElementById("journeyDate").value),
-                year: new Date(document.getElementById("journeyDate").value).getFullYear(),
-                title: document.getElementById("journeyTitle").value,
-                routeLength:     ConvertUtil.convertToNumberOrNull( document.getElementById("routeLength").value ),
-                metersClimbed:   ConvertUtil.convertToNumberOrNull( document.getElementById("metersClimbed").value ),
-                altitudeLowest:  ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeLowest").value ),
-                altitudeHighest: ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeHighest").value ),
-                photoGalleryThumbnailUrl: document.getElementById("photoGalleryThumbnailUrl").value?.trim(),
-                journeyRouteThumbnailUrl: document.getElementById("journeyRouteThumbnailUrl").value?.trim(),
-                journeyRouteUrl: document.getElementById("journeyRouteUrl").value?.trim(),
-                photoGalleryItems: photoData,
-                status: document.getElementById("status").value
-            };
-
-            if (docId) 
-            {
-                try 
-                {
-                    const docRef = doc(db, "journeys", docId);
-
-                    await updateDoc(docRef, data);
-
-                    console.log("Dokument úspěšně aktualizován!");
-
-                    this.#resetForm();
-
-                    await this.loadJourneysTableDataAsync();
-                } 
-                catch (error) 
-                {
-                    console.error("Chyba při aktualizaci:", error);
-                }
-            } 
-            else 
-            {
-                await addDoc(collection(db, "journeys"), data);
-
-                this.#resetForm();
-
-                await this.loadJourneysTableDataAsync();
-            }
-
-            
+            await this.#submitJourneyForm();
         });
 
         document.getElementById("reset-journey-form-button").addEventListener("click", () => 
@@ -222,6 +161,83 @@ export class Administration
         });
     }
 
+    async #submitJourneyForm()
+    {
+        const docId = document.getElementById("docId").value;
+
+        const urls = document.querySelectorAll('input[name="url[]"]');
+        const descriptions = document.querySelectorAll('input[name="description[]"]');
+
+        const photoData = [];
+
+        if (urls && descriptions)
+        {
+            urls.forEach((urlInput, index) => 
+            {
+                const urlValue = urlInput.value.trim();
+
+                const descriptionValue = descriptions[index]?.value.trim();
+
+                if (urlValue) 
+                {
+                    photoData.push(
+                    {
+                        url: urlValue,
+                        description: descriptionValue ?? null
+                    });
+                }
+            });
+        }
+
+        const routePoints = Array.from(document.querySelectorAll("#journeyRoutePointsSelected li")).map(li => li.firstChild.textContent.trim());
+            
+        const data = 
+        {
+            journeyId: document.getElementById("journeyId").value,
+            journeyDate: new Date(document.getElementById("journeyDate").value),
+            year: new Date(document.getElementById("journeyDate").value).getFullYear(),
+            title: document.getElementById("journeyTitle").value,
+            routeLength:     ConvertUtil.convertToNumberOrNull( document.getElementById("routeLength").value ),
+            metersClimbed:   ConvertUtil.convertToNumberOrNull( document.getElementById("metersClimbed").value ),
+            altitudeLowest:  ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeLowest").value ),
+            altitudeHighest: ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeHighest").value ),
+            photoGalleryThumbnailUrl: document.getElementById("photoGalleryThumbnailUrl").value?.trim(),
+            journeyRouteThumbnailUrl: document.getElementById("journeyRouteThumbnailUrl").value?.trim(),
+            journeyRouteUrl: document.getElementById("journeyRouteUrl").value?.trim(),
+            photoGalleryItems: photoData,
+            routePoints : routePoints,
+            status: document.getElementById("status").value
+        };
+
+        if (docId) 
+        {
+            try 
+            {
+                const docRef = doc(db, "journeys", docId);
+
+                await updateDoc(docRef, data);
+
+                console.log("Dokument úspěšně aktualizován!");
+
+                this.#resetForm();
+
+                await this.loadJourneysTableDataAsync();
+            } 
+            catch (error) 
+            {
+                console.error("Chyba při aktualizaci:", error);
+            }
+        } 
+        else 
+        {
+            await addDoc(collection(db, "journeys"), data);
+
+            this.#resetForm();
+
+            await this.loadJourneysTableDataAsync();
+        }
+    }
+
     #addPhotoGalleryItem(url, description)
     {
         const template = document.getElementById("photo-gallery-item-template");
@@ -255,6 +271,10 @@ export class Administration
         document.getElementById("dataForm").reset();
         document.getElementById("docId").value = "";
         document.getElementById("photo-gallery-items").innerHTML = "";
+        document.getElementById("journeyRoutePointSuggestions").innerHTML = "";
+        document.getElementById("journeyRoutePointsSelected").innerHTML = "";
+
+        this.routePointWhisperer.removeAllSelectedItems();
     }
 
     // Úprava záznamu
@@ -282,6 +302,18 @@ export class Administration
             journey.photoGalleryItems.forEach(i => 
             {
                 this.#addPhotoGalleryItem(i.url, i.description);
+            });
+        }
+
+        this.routePointWhisperer.removeAllSelectedItems();
+
+        document.getElementById("journeyRoutePointsSelected").innerHTML = "";
+
+        if (journey.routePoints)
+        {
+            journey.routePoints.forEach(rp => 
+            {
+                this.routePointWhisperer.addSelectedItem(rp);
             });
         }
     }

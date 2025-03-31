@@ -1,6 +1,6 @@
 import { db } from "./firebase-config.js";
 
-import { collection, query, where, orderBy, doc, getDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { collection, query, where, orderBy, doc, getDoc, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 
 export class Firebase
@@ -85,5 +85,17 @@ export class Firebase
         {
             console.error("Chyba při načítání dokumentu:", error);
         }
+    }
+
+    /**
+     * Přidá objekt do kolekce.
+     * @param {*} collectionName Název kolekce
+     * @param {*} objectToAdd Objekt, který se má do kolekce přidat
+     */
+    static async addObjectToCollection(collectionName, objectToAdd)
+    {
+        const collectionRef = collection(db, collectionName);
+
+        await addDoc(collectionRef, objectToAdd);
     }
 }

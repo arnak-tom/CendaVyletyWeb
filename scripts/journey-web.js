@@ -91,6 +91,19 @@ export class JourneyWeb
 
         const administration = new Administration();
 
+        const journeysTable = document.getElementById("journeys-table");
+
+        const currentYear = new Date().getFullYear();
+
+        journeysTable.dataset.year = currentYear;
+
+        const currentYearSwitcherDiv = document.querySelector(`#journeys-table-years-switch .switch-item[data-year='${currentYear}']`);
+
+        if (currentYearSwitcherDiv)
+        {
+            currentYearSwitcherDiv.classList.add("current");
+        }
+
         await administration.loadJourneysTableDataAsync();
 
         JourneyWebSecurity.enableOrDisableAdminSections();
@@ -135,7 +148,8 @@ export class JourneyWeb
                         {
                             dataFound = true;
 
-                            labelElement.insertAdjacentHTML("afterend", data);
+                            //labelElement.insertAdjacentHTML("afterend", data);
+                            journeyCard.querySelector(".journey-card-content").innerHTML = data;
                         } 
                     } );
 
@@ -201,6 +215,28 @@ export class JourneyWeb
                         {
                             journeyThumbnailImgElement.dataset.images = JSON.stringify(journey.photoGalleryItems);
                         }
+                    }
+
+                    const journeyRouteLinkElement = journeyCard.querySelector('.journey-card-summary a.journey-route-link');
+
+                    if (journeyRouteLinkElement && journey.journeyRouteUrl)
+                    {
+                        journeyRouteLinkElement.href = journey.journeyRouteUrl;
+                        journeyRouteLinkElement.classList.remove("hidden");
+
+                        const journeyRouteThumbnailElement = journeyCard.querySelector('.journey-card-summary a.journey-route-link .journey-route-thumbnail');
+
+                        if (journeyRouteThumbnailElement && journey.journeyRouteThumbnailUrl)
+                        {
+                            journeyRouteThumbnailElement.src = journey.journeyRouteThumbnailUrl;
+                        }
+                    }
+
+                    const journeyRoutePointsElement = journeyCard.querySelector('.journey-card-summary .journey-attribute-route-points .value');
+
+                    if (journeyRoutePointsElement && journey.routePoints && journey.routePoints.length > 0)
+                    {
+                        journeyRoutePointsElement.textContent = journey.routePoints.join(" > ");
                     }
                 }
 

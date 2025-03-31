@@ -188,3 +188,27 @@ fieldset#journey-form
     /* min-width: 30rem; 
     align-items: end; */
 }
+
+#journeys-table-years-mobile-switch
+{
+    display: none;
+}
+
+@media (max-width: 768px) 
+{
+    #journeys-table-years-switch
+    {
+        display: none;
+    }
+
+    #journeys-table-years-mobile-switch
+    {
+        display: block;
+    }
+
+    #journeys-table
+    {
+        width: 90%;
+        table-layout: fixed;
+    }
+}

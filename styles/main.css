@@ -283,12 +283,6 @@ ul#suggestions {
     width: 300px;
 }
 
-img.journey-route
-{
-    width: 300px; 
-    padding-top: 10px;
-}
-
 #journeys-table .material-symbols-outlined 
 {
     font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
@@ -347,27 +341,21 @@ img.journey-route
         flex-direction: column;
     }
 
-    .journey-thumbnail, img.journey-route
-    {
-        width: 100%;
-    }
-
     .journey-card-status
     {
         display: none;
     }
-
-
-    /* img.journey-route
-    {
-        padding-top: 10px;
-    } */
 
     main 
     {
         margin: 0;
         margin-top: 120px; /* Adjust for header and nav */
         padding: 0;
+    }
+
+    main.administration
+    {
+        padding-left: 0;
     }
 
     #google-login-button, footer
