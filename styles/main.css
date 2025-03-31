@@ -346,6 +346,11 @@ ul#suggestions {
         display: none;
     }
 
+    .journey-thumbnail
+    {
+        width: 100%;
+    }
+
     main 
     {
         margin: 0;
