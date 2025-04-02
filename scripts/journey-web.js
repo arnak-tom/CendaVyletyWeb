@@ -8,7 +8,7 @@ import { JourneyWebSecurity } from "./security.js"
 
 export class JourneyWeb
 {
-    static #journeysCollectionName = "journeys";
+    static journeysCollectionName = "journeys";
 
     static #journeyCardTemplate = document.getElementById("journey-card-template");
 
@@ -24,7 +24,7 @@ export class JourneyWeb
 
         const orderByConditions = [["journeyDate", "desc"]];
   
-        const journeysData = await Firebase.readDataAsync(JourneyWeb.#journeysCollectionName, whereConditions, orderByConditions);
+        const journeysData = await Firebase.readDataAsync(JourneyWeb.journeysCollectionName, whereConditions, orderByConditions);
 
         journeysData.forEach(journey => 
         {
@@ -149,7 +149,8 @@ export class JourneyWeb
                             dataFound = true;
 
                             //labelElement.insertAdjacentHTML("afterend", data);
-                            journeyCard.querySelector(".journey-card-content").innerHTML = data;
+                            //journeyCard.querySelector(".journey-card-content").innerHTML = data;
+                            journeyCard.querySelector(".journey-attributes").innerHTML = data;
                         } 
                     } );
 
@@ -197,7 +198,7 @@ export class JourneyWeb
                         altitudeHighestElement.textContent = journey.altitudeHighest;
                     }
 
-                    const journeyThumbnailImgElement = journeyCard.querySelector('.journey-card-summary img.journey-thumbnail');
+                    const journeyThumbnailImgElement = journeyCard.querySelector('.journey-card-images img.journey-thumbnail');
 
                     if (journey.photoGalleryThumbnailUrl && journeyThumbnailImgElement)
                     {
@@ -217,14 +218,14 @@ export class JourneyWeb
                         }
                     }
 
-                    const journeyRouteLinkElement = journeyCard.querySelector('.journey-card-summary a.journey-route-link');
+                    const journeyRouteLinkElement = journeyCard.querySelector('.journey-card-images a.journey-route-link');
 
                     if (journeyRouteLinkElement && journey.journeyRouteUrl)
                     {
                         journeyRouteLinkElement.href = journey.journeyRouteUrl;
                         journeyRouteLinkElement.classList.remove("hidden");
 
-                        const journeyRouteThumbnailElement = journeyCard.querySelector('.journey-card-summary a.journey-route-link .journey-route-thumbnail');
+                        const journeyRouteThumbnailElement = journeyCard.querySelector('.journey-card-images a.journey-route-link .journey-route-thumbnail');
 
                         if (journeyRouteThumbnailElement && journey.journeyRouteThumbnailUrl)
                         {
@@ -232,7 +233,7 @@ export class JourneyWeb
                         }
                     }
 
-                    const journeyRoutePointsElement = journeyCard.querySelector('.journey-card-summary .journey-attribute-route-points .value');
+                    const journeyRoutePointsElement = journeyCard.querySelector('.journey-attribute-route-points .value');
 
                     if (journeyRoutePointsElement && journey.routePoints && journey.routePoints.length > 0)
                     {

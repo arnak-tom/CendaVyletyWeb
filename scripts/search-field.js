@@ -1,4 +1,6 @@
+import { Firebase } from './firebase.js';
 import { JourneyWeb }   from './journey-web.js';
+import { ConvertUtil } from './convert-util.js';
 
 export class SearchField
 {
@@ -53,8 +55,12 @@ export class SearchField
                 return;
             }
 
+            // let matches = searchField.data
+            //     .filter(journey => journey.label.toLowerCase().includes(query))
+            //     .slice(0, SearchField.MAX_SUGGESTIONS_COUNT);
+
             let matches = searchField.data
-                .filter(journey => journey.label.toLowerCase().includes(query))
+                .filter(journey => journey.title.toLowerCase().includes(query))
                 .slice(0, SearchField.MAX_SUGGESTIONS_COUNT);
 
             if (matches.length > 0) 
@@ -63,10 +69,12 @@ export class SearchField
 
                 matches.forEach((match, index) => 
                 {
+                    const journeyDateFormatted = ConvertUtil.formatFirestoreTimestampForDisplay(match.journeyDate);
+
                     const li = document.createElement("li");
-                    li.innerHTML = searchField.highlightText(match.label, query);
-                    li.dataset.journeyCardId = match.id;
-                    li.addEventListener("click", () => searchField.selectItem(match.id));
+                    li.innerHTML = `${searchField.highlightText(match.title, query)} ${journeyDateFormatted}`;
+                    li.dataset.journeyCardId = match.journeyId;
+                    li.addEventListener("click", () => searchField.selectItem(match.journeyId));
                     searchField.#suggestionsList.appendChild(li);
                 });
             }
@@ -120,14 +128,11 @@ export class SearchField
     {
         try 
         {
-            const response = await fetch(this.#dataJsonUrl);
-    
-            if (!response.ok) 
-            {
-                throw new Error(`Chyba HTTP: ${response.status} ${response.statusText}`);
-            }
-    
-            this.data = (await response.json()).flatMap(year => year.journeys);
+            const whereConditions = [];
+            
+            const orderByConditions = [["journeyDate", "desc"]];
+
+            this.data = await Firebase.readDataAsync(JourneyWeb.journeysCollectionName, whereConditions, orderByConditions);
         } 
         catch (error) 
         {
@@ -162,9 +167,11 @@ export class SearchField
 
         const journeyCardLabel = document.body.querySelector(`.journey-card[id='${journeyCardId}'] .journey-card-label`);
 
-        journeyCardLabel.click();
-
         const journeyCard = journeyCardLabel.closest(".journey-card");
+
+        journeyCard.dataset.forceOpen = "true";
+
+        journeyCardLabel.click();
 
         const journeyCardContent = journeyCard.querySelector(".journey-card-content");
 

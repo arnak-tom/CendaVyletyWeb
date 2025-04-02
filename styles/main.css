@@ -135,22 +135,17 @@ main.wide
     background-color: green;
 }
 
-.journey-card-content
-{
-    padding: 2em;
-}
-
 .journey-thumbnail
 {
     cursor: pointer;
 }
 
-.journey-card-summary
+/* .journey-card-summary
 {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 1rem;
-}
+} */
 
 .journey-card-details
 {
@@ -330,16 +325,13 @@ ul#suggestions {
         margin-top: 1rem;
     }
 
-    .journey-card-content
-    {
-        padding: 1rem;
-    }
+ 
 
-    .journey-card-summary
+    /* .journey-card-summary
     {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .journey-card-status
     {

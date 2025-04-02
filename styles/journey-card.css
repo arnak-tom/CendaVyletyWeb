@@ -1,10 +1,29 @@
-.journey-card-content .journey-card-summary .journey-thumbnail-container
+.journey-card-content
+{
+    padding: 2rem;
+    display: inline-block;
+}
+
+.journey-card-content.hidden
+{
+    display: none;
+}
+
+.journey-card-images
+{
+    float: left;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.journey-card-content .journey-card-images .journey-thumbnail-container
 {
     position: relative;
     display: inline-block;
 }
 
-.journey-card-content .journey-card-summary .journey-thumbnail-container .images-count
+.journey-card-content .journey-card-images .journey-thumbnail-container .images-count
 {
     position: absolute;
     bottom: 3px;
@@ -15,22 +34,37 @@
     padding: 0.2rem 0.4rem;
 }
 
-.journey-card-content .journey-card-summary .journey-route-thumbnail
+.journey-card-content .journey-card-images .journey-route-thumbnail
 {
     width: 300px; 
     padding-top: 10px;
 }
 
-/* .journey-thumbnail, img.journey-route
+.journey-card-content .journey-attributes
 {
-    width: 100%;
-} */
-
+    min-width: 40rem;
+}
 
 @media (max-width: 768px) 
 {
-    .journey-card-content .journey-card-summary .journey-route-thumbnail
+    .journey-card-content
+    {
+        padding: 1rem;
+        display: inline-block;
+    }
+
+    .journey-card-content .journey-card-images
     {
         width: 100%;
+    }
+
+    .journey-card-content .journey-card-images .journey-route-thumbnail
+    {
+        width: 100%;
+    }
+
+    .journey-card-content .journey-attributes
+    {
+        min-width: unset;
     }
 }

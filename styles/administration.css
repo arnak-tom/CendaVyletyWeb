@@ -204,11 +204,23 @@ fieldset#journey-form
     #journeys-table-years-mobile-switch
     {
         display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #journeys-table-years-mobile-switch select
+    {
+        font-size: 1rem;
     }
 
     #journeys-table
     {
         width: 90%;
         table-layout: fixed;
+        margin: auto;
     }
+
+    #journeys-table th:nth-child(3) { width: 10rem;  }  /* Název */
 }
