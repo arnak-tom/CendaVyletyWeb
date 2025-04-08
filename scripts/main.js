@@ -19,7 +19,7 @@ journeyCards.forEach((journeyCard) =>
 
     journeyCardLabel.addEventListener('click', (e) => 
     {
-        JourneyWeb.setJourneyCardContent(e, imageGallery);
+        JourneyWeb.setJourneyCardContent(e.target, imageGallery);
     });
 });
 

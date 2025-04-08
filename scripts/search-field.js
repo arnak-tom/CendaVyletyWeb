@@ -1,6 +1,7 @@
 import { Firebase } from './firebase.js';
 import { JourneyWeb }   from './journey-web.js';
 import { ConvertUtil } from './convert-util.js';
+import { ImageGallery } from './image-gallery.js';
 
 export class SearchField
 {
@@ -74,13 +75,13 @@ export class SearchField
                     const li = document.createElement("li");
                     li.innerHTML = `${searchField.highlightText(match.title, query)} ${journeyDateFormatted}`;
                     li.dataset.journeyCardId = match.journeyId;
-                    li.addEventListener("click", () => searchField.selectItem(match.journeyId));
+                    li.addEventListener("click", async () => searchField.selectItem(match.journeyId));
                     searchField.#suggestionsList.appendChild(li);
                 });
             }
         });
 
-        searchField.#searchInput.addEventListener("keydown", function (event) 
+        searchField.#searchInput.addEventListener("keydown", async function (event) 
         {
             const items = searchField.#suggestionsList.querySelectorAll("li");
 
@@ -109,7 +110,7 @@ export class SearchField
             {
                 event.preventDefault();
 
-                searchField.selectItem(items[searchField.selectedIndex].dataset.journeyCardId);
+                await searchField.selectItem(items[searchField.selectedIndex].dataset.journeyCardId);
             }
         });
 
@@ -149,7 +150,7 @@ export class SearchField
         return text.replace(regex, `<span class="highlight">$1</span>`);
     }
 
-    selectItem(journeyCardId) 
+    async selectItem(journeyCardId) 
     {
         const leftNavToggle = document.body.querySelector(".main-nav-toggle .material-symbols-outlined");
 
@@ -171,14 +172,16 @@ export class SearchField
 
         journeyCard.dataset.forceOpen = "true";
 
-        journeyCardLabel.click();
+        //journeyCardLabel.click();
 
-        const journeyCardContent = journeyCard.querySelector(".journey-card-content");
+        await JourneyWeb.setJourneyCardContent(journeyCardLabel, new ImageGallery());
 
-        if (journeyCardContent && journeyCardContent.classList.contains("hidden"))
-        {
-            journeyCardContent.classList.remove("hidden");
-        }
+        // const journeyCardContent = journeyCard.querySelector(".journey-card-content");
+
+        // if (journeyCardContent && journeyCardContent.classList.contains("hidden"))
+        // {
+        //     journeyCardContent.classList.remove("hidden");
+        // }
 
         JourneyWeb.moveToJourneyCard(journeyCard);
     }

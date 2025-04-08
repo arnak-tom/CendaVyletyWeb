@@ -55,7 +55,7 @@ export class JourneyWeb
 
             journeyCardLabel.addEventListener('click', (e) => 
             {
-                JourneyWeb.setJourneyCardContent(e, new ImageGallery());
+                JourneyWeb.setJourneyCardContent(e.target, new ImageGallery());
             });
     
             document.querySelector("main").appendChild(journeyCard);
@@ -129,35 +129,40 @@ export class JourneyWeb
         document.getElementById("view-content").innerHTML = viewCode;
     }
 
-    static async setJourneyCardContent(pointerEvent, imageGallery)
+    static async setJourneyCardContent(labelElement, imageGallery)
     {
-        const labelElement = pointerEvent.target;
-
         if (labelElement) 
         {
             const journeyCard = labelElement.closest(".journey-card");
 
             if (journeyCard.dataset.isLoaded !== "1")
             {
-                let dataFound = false;
+                // let dataFound = false;
 
-                await JourneyWeb.#fetchText(`/src/journey-card-content/${journeyCard.dataset.year}/${journeyCard.id}.html`)
-                    .then(data => 
-                    {
-                        if (data) 
-                        {
-                            dataFound = true;
+                // await JourneyWeb.#fetchText(`/src/journey-card-content/${journeyCard.dataset.year}/${journeyCard.id}.html`)
+                //     .then(data => 
+                //     {
+                //         if (data) 
+                //         {
+                //             dataFound = true;
 
-                            //labelElement.insertAdjacentHTML("afterend", data);
-                            //journeyCard.querySelector(".journey-card-content").innerHTML = data;
-                            journeyCard.querySelector(".journey-attributes").innerHTML = data;
-                        } 
-                    } );
+                //             journeyCard.querySelector(".journey-attributes").innerHTML = data;
+                //         } 
+                //     } );
 
-                if (!dataFound)
+                // if (!dataFound)
+                // {
+                //     return;
+                // }
+
+                const innerHtml = await JourneyWeb.#fetchText(`/src/journey-card-content/${journeyCard.dataset.year}/${journeyCard.id}.html`);
+
+                if (!innerHtml)
                 {
                     return;
                 }
+
+                journeyCard.querySelector(".journey-attributes").innerHTML = innerHtml;
 
                 const journeyThumbnail = journeyCard.querySelector('.journey-thumbnail');
 
@@ -244,17 +249,23 @@ export class JourneyWeb
                 journeyCard.dataset.isLoaded = "1";
             }
 
-            const journeyCardContent = journeyCard.querySelector(".journey-card-content");
 
-            if (journeyCard.dataset.forceOpen === "true")
-            {
-                journeyCardContent.classList.remove("hidden");
 
-                journeyCard.dataset.forceOpen = "";
-            }
-            else
+
+            const journeyCardContentCurrent = journeyCard.querySelector(".journey-card-content");
+
+            const wasCurrentHidden = journeyCardContentCurrent.classList.contains("hidden");
+            
+
+            const journeyCardContentActiveAll = document.querySelectorAll(".journey-card-content:not(.hidden)");
+
+            journeyCardContentActiveAll.forEach(c => c.classList.add("hidden"));
+
+            // const journeyCardContentCurrent = journeyCard.querySelector(".journey-card-content");
+
+            if (wasCurrentHidden)
             {
-                journeyCardContent.classList.toggle("hidden");
+                journeyCardContentCurrent.classList.remove("hidden");
             }
         }
     }

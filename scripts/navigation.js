@@ -1,5 +1,6 @@
 import { ConvertUtil } from './convert-util.js';
 import { JourneyWeb }   from './journey-web.js';
+import { ImageGallery } from './image-gallery.js';
 
 export class Navigation
 {
@@ -49,7 +50,7 @@ export class Navigation
             
             journeyListElement.appendChild(newListItem);
 
-            newListItem.addEventListener('click', (e) => 
+            newListItem.addEventListener('click', async (e) => 
             {
                 const leftNavToggle = document.body.querySelector(".main-nav-toggle .material-symbols-outlined");
 
@@ -63,11 +64,13 @@ export class Navigation
 
                 const journeyCard = document.querySelector(`.journey-card[data-doc-id="${journey.docId}"]`);
 
-                JourneyWeb.moveToJourneyCard(journeyCard);
-
                 journeyCard.dataset.forceOpen = "true";
 
-                journeyCard.querySelector(".journey-card-label").click();
+                const journeyLabelElement = journeyCard.querySelector('.journey-card-label');
+
+                await JourneyWeb.setJourneyCardContent(journeyLabelElement, new ImageGallery());
+
+                JourneyWeb.moveToJourneyCard(journeyCard);
             });
         });
     }
