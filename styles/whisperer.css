@@ -23,7 +23,7 @@
   .whisperer #journeyRoutePointSuggestions 
   {
     border: 1px solid #ccc;
-    max-height: 150px;
+    max-height: 20rem;
     overflow-y: auto;
     background: white;
     position: absolute;
@@ -71,6 +71,7 @@
     color: white;
     cursor: pointer;
     border-radius: 3px;
+    margin-left: 1rem;
   }
   
   .whisperer button:hover 

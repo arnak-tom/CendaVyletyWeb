@@ -3,7 +3,7 @@
     <h1 style="text-align: center;">Výlety - tabulkový pohled</h1>
 
     
-    <div style="display: flex; flex-direction: row; justify-content: center; align-items: start; gap: 2rem;">
+    <div class="table-view-wrapper" >
 
         <!-- Tabulka pro zobrazení dat -->
         <div>
@@ -74,12 +74,14 @@
                 </tbody>
             </table>
 
-            <div class="admin-section mobile-hidden-section hidden">
-                <button type="button" id="export-journeys-from-firebase-button">Export</button>
-            </div>
-            <div class="admin-section mobile-hidden-section hidden">
-                <label for="import-journeys-file">Importovat ze souboru do Firebase</label>
-                <input type="file" id="import-journeys-file">
+            <div class="admin-section mobile-hidden-section hidden" style="margin-top: 3rem;">
+                <div>
+                    <button type="button" id="export-journeys-from-firebase-button">Export</button>
+                </div>
+                <div>
+                    <label for="import-journeys-file">Importovat ze souboru do Firebase</label>
+                    <input type="file" id="import-journeys-file">
+                </div>
             </div>
 
         </div>
@@ -95,45 +97,49 @@
 
                 <legend>Výlet</legend>
 
-                <div style="margin-top: 1em;">
+                <div class="form-field" style="margin-top: 1em;">
                     <label for="journeyId">Srozumitelný jednoznačný identifikátor</label>
                     <input type="text" id="journeyId" placeholder="např. 2030-12-31-sevpol" required />
                 </div>
 
-                <div>
+                <div class="form-field">
                     <label for="journeyDate">Datum konání</label>
                     <input type="date" id="journeyDate" placeholder="datum" required />
                 </div>
-                
-                <div>
+
+                <div class="form-field">
                     <label for="journeyTitle">Název (jedno symbolické místo trasy)</label>
-                    <input type="text" id="journeyTitle" placeholder="např. Severní pól" required />
+                    <input type="text" id="journeyTitle" placeholder="např. Severní pól" style="width: 15rem;" required />
                 </div>
 
-                <div>
+                <div class="form-field">
                     <label for="routeLength">Délka trasy v km</label>
                     <input type="number" min="1" max="100" step="1" id="routeLength" placeholder="např. 20" />
                 </div>
 
-                <div>
+                <div class="form-field">
                     <label for="metersClimbed">Nastoupané metry</label>
                     <input type="number" min="1" max="2000" step="1" id="metersClimbed" placeholder="např. 200" />
                 </div>
-
-                <div>
+                
+                <div class="form-field">
                     <label for="altitudeLowest">Nejnižší nadmořská výška v m</label>
                     <input type="number" min="0" max="2000" step="1" id="altitudeLowest" placeholder="např. 200" />
                 </div>
 
-                <div>
+                <div class="form-field">
                     <label for="altitudeHighest">Nejvyšší nadmořská výška v m</label>
                     <input type="number" min="0" max="2000" step="1" id="altitudeHighest" placeholder="např. 300" />
                 </div>
 
-                <div>
-                    <div>Obrázek náhledu do fotogalerie</div>
-                    <div>
-                        <input style='width: 30rem;' type="url" id="photoGalleryThumbnailUrl" placeholder="URL" >
+                <div class="route-points-form-field" >
+                    <div class="form-field-label" >
+                        <label for="journeyRoutePoint">Podstatné body na trase</label>
+                    </div>
+                    <div class="whisperer">
+                        <input type="text" id="journeyRoutePoint" placeholder="Vyber nebo zadej bod trasy" >
+                        <ul id="journeyRoutePointSuggestions" ></ul>
+                        <ul id="journeyRoutePointsSelected" ></ul>
                     </div>
                 </div>
 
@@ -146,16 +152,16 @@
                 </div>
 
                 <div>
+                    <div>Obrázek náhledu do fotogalerie</div>
+                    <div>
+                        <input style='width: 30rem;' type="url" id="photoGalleryThumbnailUrl" placeholder="URL" >
+                    </div>
+                </div>
+
+                <div>
                     <div style="margin-bottom: 0.5rem;">Obrázky do fotogalerie</div>
                     <div id="photo-gallery-items" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;"></div>
                     <button id="add-photo-gallery-item-button" type="button">Přidat položku</button>
-                </div>
-
-                <div class="whisperer">
-                    <label for="journeyRoutePoint">Podstatné body na trase</label>
-                    <input type="text" id="journeyRoutePoint" placeholder="Vyber nebo zadej bod trasy">
-                    <ul id="journeyRoutePointSuggestions" ></ul>
-                    <ul id="journeyRoutePointsSelected" ></ul>
                 </div>
 
                 <div class="form-restaurant">

@@ -77,7 +77,6 @@ main
 main.administration
 {
     margin-left: 0;
-    padding-left: 10rem;
 }
 
 main.wide
@@ -139,13 +138,6 @@ main.wide
 {
     cursor: pointer;
 }
-
-/* .journey-card-summary
-{
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 1rem;
-} */
 
 .journey-card-details
 {
@@ -253,9 +245,9 @@ ul#suggestions {
     padding-top: 1rem; 
     padding-bottom: 0.5rem; 
     background-color: burlywood; 
-    padding-left: 400px; 
     width: 100%;
     z-index: 1;
+    text-align: center;
 }
 
 #journeys-view-switcher button

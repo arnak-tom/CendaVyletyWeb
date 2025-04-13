@@ -12,6 +12,8 @@ export class Whisperer
         this.suggestionsList = document.getElementById(suggestionsListId);
         this.selectedList    = document.getElementById(selectedListId);
 
+        this.selectedIndex = -1; // Index vybraného prvku v seznamu návrhů
+        
         this.selectedItems = [];
 
         this.#addEventListeners();
@@ -32,6 +34,8 @@ export class Whisperer
         // Našeptávač - zobrazení návrhů
         this.searchInput.addEventListener("input", () => 
         {
+            this.selectedIndex = -1;
+
             const query = this.searchInput.value.toLowerCase();
 
             if (!query)
@@ -55,14 +59,57 @@ export class Whisperer
                     });
         });
 
-        // Umožnit přidání nového bodu Enterem
+        
         this.searchInput.addEventListener("keydown", (event) =>
         {
-            if (event.key === "Enter" && this.searchInput.value.trim() !== "") 
+            const suggestionsListItems = this.suggestionsList.querySelectorAll("li");
+
+            if (event.key === "ArrowDown") 
             {
                 event.preventDefault();
 
-                const newItem = this.searchInput.value.trim();
+                if (suggestionsListItems && suggestionsListItems.length > 0)
+                {
+                    this.selectedIndex = (this.selectedIndex + 1) % suggestionsListItems.length;
+
+                    console.debug(`selectedIndex = ${this.selectedIndex}`);
+
+                    this.markSelectedItem(suggestionsListItems);
+                }
+            } 
+            else if (event.key === "ArrowUp") 
+            {
+                event.preventDefault();
+
+                if (suggestionsListItems && suggestionsListItems.length > 0)
+                {
+                    this.selectedIndex = (this.selectedIndex - 1 + suggestionsListItems.length) % suggestionsListItems.length;
+
+                    console.debug(`selectedIndex = ${this.selectedIndex}`);
+
+                    this.markSelectedItem(suggestionsListItems);
+                }
+            } 
+            // Umožnit přidání nového bodu Enterem
+            else if (event.key === "Enter" && this.searchInput.value.trim() !== "") 
+            {
+                event.preventDefault();
+
+                console.debug(`selectedIndex = ${this.selectedIndex}`);
+
+                let newItem = this.searchInput.value.trim();
+
+                const suggestionsListItems = this.suggestionsList.querySelectorAll("li");
+
+                if (suggestionsListItems && this.selectedIndex > -1)
+                {
+                    const selectedItem = suggestionsListItems[this.selectedIndex];
+
+                    if (selectedItem)
+                    {
+                        newItem = selectedItem.textContent;
+                    }
+                }
             
                 if (!this.selectedItems.includes(newItem)) 
                 {
@@ -72,6 +119,18 @@ export class Whisperer
                 this.searchInput.value = "";
 
                 this.suggestionsList.innerHTML = ""; // Schovat našeptávač
+            }
+        });
+
+        document.addEventListener("click", (e) => 
+        {
+            if (e.target !== this.searchInput) 
+            {
+                this.suggestionsList.innerHTML = "";
+
+                this.searchInput.value = "";
+
+                this.selectedIndex = -1;
             }
         });
     }
@@ -109,6 +168,16 @@ export class Whisperer
         this.searchInput.value = "";
 
         this.suggestionsList.innerHTML = "";
+
+        this.selectedIndex = -1;
+    }
+
+    markSelectedItem(items) 
+    {
+        items.forEach((item, index) => 
+        {
+            item.style.background = index === this.selectedIndex ? "#ddd" : "white";
+        });
     }
   
     async #addItemToFirestoreIfNeeded(itemToAdd) 

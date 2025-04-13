@@ -183,15 +183,50 @@ fieldset#journey-form
 {
     display: flex; 
     flex-direction: column; 
-    gap: 2rem; 
-    width: 32rem;
-    /* min-width: 30rem; 
-    align-items: end; */
+    gap: 1.5rem;
+}
+
+#journey-form .form-field label
+{
+    display: inline-block;
+    width:40%;
+    padding-right: 1rem;
+    text-align: right;
 }
 
 #journeys-table-years-mobile-switch
 {
     display: none;
+}
+
+.administration .table-view-wrapper
+{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem;
+}
+
+.administration .form-row 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 5rem;
+}
+
+.route-points-form-field
+{
+    display: flex; 
+    flex-direction: row;
+}
+
+.route-points-form-field .form-field-label
+{
+    width: 40%; 
+    text-align: right; 
+    padding-right: 1rem;
 }
 
 @media (max-width: 768px) 

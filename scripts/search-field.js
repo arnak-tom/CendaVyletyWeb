@@ -9,8 +9,6 @@ export class SearchField
 
     static MAX_SUGGESTIONS_COUNT = 20;
 
-    #dataJsonUrl = '/src/data/journey-list.json';
-
     #searchInput     = document.getElementById("search");
     #suggestionsList = document.getElementById("suggestions");
 
@@ -55,10 +53,6 @@ export class SearchField
             {
                 return;
             }
-
-            // let matches = searchField.data
-            //     .filter(journey => journey.label.toLowerCase().includes(query))
-            //     .slice(0, SearchField.MAX_SUGGESTIONS_COUNT);
 
             let matches = searchField.data
                 .filter(journey => journey.title.toLowerCase().includes(query))
