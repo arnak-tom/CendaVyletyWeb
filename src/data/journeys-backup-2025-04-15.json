@@ -1,0 +1,3730 @@
+[
+    {
+      "id": "07Rq8ftpxZi6MiYV5VdI",
+      "docData": {
+        "altitudeLowest": 433,
+        "altitudeHighest": 682,
+        "year": 2024,
+        "metersClimbed": 663,
+        "journeyId": "2024-01-27-lucany",
+        "status": "todo",
+        "journeyDate": "2024-01-27T00:00:00.000Z",
+        "title": "Lučany",
+        "routeLength": 28
+      }
+    },
+    {
+      "id": "1Nvy8fE13FzLBohqsbkV",
+      "docData": {
+        "altitudeLowest": null,
+        "title": "Pecka",
+        "journeyDate": "2023-06-28T00:00:00.000Z",
+        "year": 2023,
+        "status": "todo",
+        "metersClimbed": null,
+        "photoGalleryItems": [],
+        "journeyId": "2023-06-28-pecka",
+        "routeLength": null,
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "1aQ16AAA6stbM3edtMVa",
+      "docData": {
+        "title": "Bramberk",
+        "photoGalleryItems": [],
+        "journeyRouteUrl": "",
+        "journeyId": "2020-12-13-bramberk",
+        "routeLength": null,
+        "journeyDate": "2020-12-13T00:00:00.000Z",
+        "status": "todo",
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "altitudeLowest": null,
+        "year": 2020
+      }
+    },
+    {
+      "id": "23ZVqS3iaupdzHSeel6O",
+      "docData": {
+        "photoGalleryItems": [],
+        "title": "Kozákov",
+        "journeyRouteUrl": "",
+        "journeyId": "2021-08-15-kozakov",
+        "routeLength": null,
+        "journeyDate": "2021-08-15T00:00:00.000Z",
+        "status": "todo",
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "altitudeLowest": null,
+        "year": 2021
+      }
+    },
+    {
+      "id": "2KwH7nknE6NpWk9D5RIq",
+      "docData": {
+        "journeyId": "2023-03-26-frydlant",
+        "altitudeHighest": null,
+        "journeyDate": "2023-03-26T00:00:00.000Z",
+        "year": 2023,
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "status": "todo",
+        "title": "Frýdlant",
+        "routeLength": null,
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "2pNDnigbG9dmr6tvFbf2",
+      "docData": {
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "routeLength": null,
+        "status": "todo",
+        "journeyDate": "2023-09-09T00:00:00.000Z",
+        "year": 2023,
+        "altitudeHighest": null,
+        "title": "Proseč",
+        "photoGalleryItems": [],
+        "journeyId": "2023-09-09-prosec"
+      }
+    },
+    {
+      "id": "34Zpb5tajzP49LGWL3La",
+      "docData": {
+        "title": "Osečná",
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2022-07-02-osecna",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "metersClimbed": null,
+        "status": "todo",
+        "journeyRouteUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "year": 2022,
+        "routeLength": null,
+        "journeyDate": "2022-07-02T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "3sxAZgENwnVGFmP036PA",
+      "docData": {
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "status": "todo",
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2022-08-15-holany",
+        "journeyRouteUrl": "",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "routeLength": null,
+        "journeyDate": "2022-08-15T00:00:00.000Z",
+        "title": "Holany",
+        "year": 2022
+      }
+    },
+    {
+      "id": "45Z4RrCiGrwIbWeXYqfC",
+      "docData": {
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "year": 2021,
+        "routeLength": null,
+        "journeyDate": "2021-01-02T00:00:00.000Z",
+        "journeyId": "2021-01-02-studnice",
+        "journeyRouteUrl": "",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "status": "todo",
+        "title": "Černá Studnice",
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "4P1JpFB4IQtsMa74dxfV",
+      "docData": {
+        "status": "todo",
+        "journeyId": "2021-03-13-pelikovice",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "year": 2021,
+        "journeyDate": "2021-03-13T00:00:00.000Z",
+        "altitudeLowest": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "metersClimbed": null,
+        "title": "Pelíkovice"
+      }
+    },
+    {
+      "id": "4WjJCaxdF88NEWGnXtJv",
+      "docData": {
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "journeyDate": "2022-04-15T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2022-04-15-slom",
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "title": "Solvayův lom",
+        "status": "todo",
+        "year": 2022,
+        "routeLength": null,
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "4pLjLsOUDbDlqHdNk7xf",
+      "docData": {
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "title": "Trosky",
+        "journeyDate": "2020-02-02T00:00:00.000Z",
+        "metersClimbed": null,
+        "journeyId": "2020-02-02-trosky",
+        "photoGalleryItems": [],
+        "journeyRouteUrl": "",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "photoGalleryThumbnailUrl": "",
+        "year": 2020,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "5Rtg5gAMERhVnd7ceXNw",
+      "docData": {
+        "journeyId": "2023-12-10",
+        "journeyDate": "2023-12-10T00:00:00.000Z",
+        "routeLength": null,
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "status": "todo",
+        "year": 2023,
+        "title": "Jablonec n. N.",
+        "photoGalleryItems": [],
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "5jFBSoE42PIJ5jxZDoJz",
+      "docData": {
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMPBcfbK7n1NeQGCDcO6yZtg849ubQUJyDUb8dJOm-ic2saOdt9hYMxYshgoGKngyVmO0dVxgqNNo_iU5c1Y_i01VtMdBQDd2-A-CBlB451EDG7y8k=w300",
+        "altitudeHighest": 783,
+        "status": "inprogress",
+        "journeyId": "2024-12-28-berany",
+        "year": 2024,
+        "altitudeLowest": 433,
+        "title": "penzion Berany",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczPxWIeT0VoP7jMhIHVcmpBj3wX-7Hhi9Ks8rduN4Cb_VfTWSWPznbTcYlFj2jYUp3xYib9EvxhiEA4TA50TiCTQIDPtgS3jocH59YrFHoC3hSyYsmJi=w300",
+        "journeyRouteUrl": "https://mapy.cz/s/motohedevo",
+        "routeLength": 24,
+        "metersClimbed": 522,
+        "journeyDate": "2024-12-28T00:00:00.000Z",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMbBGNX_6uu-fQdrx10GHLsrkC5Qrf6rmwB9tdP_v3zkK0OtXepzIXKMBaqQFZJ42rjfZC940o2lvkrHaiQHYRJxzHXIjj5gpsIRJIBTq8I_Z5bXhh_=w2400",
+            "description": "Černá Studnice, v pozadí Krkonoše"
+          },
+          {
+            "description": "Mordýřská studánka",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOkbDIWDHGHFggtlEVrGNelzgEH0JYaB_UOpRYjisbPyRPuvuczZbnY2joU3e25Go7OV9KuhIRmURR-CsFR2NN2WG4ALBnwZMFDGPGm0cDVysGcwYWl=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPnvmFXk3wWia0Bcf63ePXTg4OyF0YbRvWILSJQHoq-NDKM41w5_oUpL88LQ2oBQc4bPpg8fj4Y-XbimYHTlsG0z5OmYHwMYcHZD1YW4XR_dlmGYbrr=w2400",
+            "description": "Stará sklárna"
+          },
+          {
+            "description": "v zimě je to na sněhu vždycky veselejší",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPr5z9pFCEZDw4PNIP7UsToRWd712F4QRZPJUIXvPF8B61vBIsxhxpzCq52Yw-ogAfR7fQiCsmYmwyXdwHQYtRULVtjVJHk1L1C47i_EHuf-_8hDuhT=w2400"
+          },
+          {
+            "description": "penzion Berany",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN8yZh2dcsXzPJbxI1VR3pqj4DzeIwZFZC512JTTrLIhBl50JMqhBdAmN30xhpWlUB_-27jPDhdSFrT9wx770jRXwGVdmY8OKH1XTSkF9vrx3o58sHk=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPzuv-oOfqyWnOxxpauQDCO1kkiaXrOeuNhuO4F-sumZWm-b15bccEGTmVOCKmnQUQhl00yfdVhaETvaksnbXRj5wX8Dx8Suk61bZjVk78wE_uUM1YG=w2400",
+            "description": "pohled od penzionu Berany - kraj se topí v mlze"
+          },
+          {
+            "description": "krásný pohled do údolí",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNMeiDh64spSkM4cfWd9SsyQ7efV4dnvrgOj7IWDNRAp0ETBLkxELndGL3pBN3hi2FI90b3hHkyDmaxpZN2EL7klWQPqMQ_fhvFjmtuFU3KVXp3GHMO=w2400"
+          },
+          {
+            "description": "plastový sněhulák, to už je snad moc  :-)",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO7-q0shAgiu0ub5rSUE-RDM_fkRO-4VAgdqSASqokQCELqBXpBccSt-JuZWInVV-mIBtYKBpBqYMMmFdLQJx7ooTrI4Sq14VFBcrwWGDDS4CJvx0hg=w2400"
+          }
+        ]
+      }
+    },
+    {
+      "id": "80yr476l1JNcRHkT11Av",
+      "docData": {
+        "title": "Milíře",
+        "status": "todo",
+        "journeyDate": "2024-07-11T00:00:00.000Z",
+        "routeLength": 7,
+        "altitudeLowest": 400,
+        "journeyId": "2024-07-11-milire",
+        "altitudeHighest": 637,
+        "metersClimbed": 294,
+        "year": 2024
+      }
+    },
+    {
+      "id": "8BHL0aXEoGiFZoVuluoj",
+      "docData": {
+        "journeyDate": "2024-02-27T00:00:00.000Z",
+        "year": 2024,
+        "altitudeHighest": 400,
+        "metersClimbed": 177,
+        "altitudeLowest": 316,
+        "journeyId": "2024-02-27-bor",
+        "title": "Nový Bor",
+        "status": "todo",
+        "routeLength": 8
+      }
+    },
+    {
+      "id": "9Hia1rGMaXiS04teoY9s",
+      "docData": {
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "journeyDate": "2021-06-26T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "status": "todo",
+        "altitudeLowest": null,
+        "title": "Nový Bor",
+        "journeyId": "2021-06-26-nbor",
+        "year": 2021,
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "9QtgEqV419u7VbwF2Hw3",
+      "docData": {
+        "year": 2025,
+        "status": "todo",
+        "journeyDate": "2025-03-15T00:00:00.000Z",
+        "title": "Branžež",
+        "altitudeLowest": 250,
+        "metersClimbed": 48,
+        "routePoints": [
+          "Pomníky",
+          "Glamping Slunečno",
+          "Farářský rybník",
+          "Bývalý Žlunský rybník",
+          "Nová Ves",
+          "Hospůdka Na Křižovatce (Branžež)"
+        ],
+        "routeLength": 7,
+        "journeyRouteUrl": "https://mapy.cz/s/lapumojaho",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN7V9nqIy9HCk4vDc_iVTbpAB9tsgnzBOD1Nh3VIzi0sCtmipta8t8jeYgb5LKDl6T9ErkjK5_yDdDRajfn-H9dpCTB7uDLBb6PaiPHks82ucZXKShY=w2400",
+            "description": "bytelná lávka přes Kněžmostku"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMnSSh0CTbEs48YigkXNJhaCFnC1MNiip69_u-vQXuAP8OkwWdh0uXDZ6rV2V9JeFAng8do8zp9xNjcK_PeKIa6iLIJ7AcIKXU--FQGoZnsWOxrfsir=w2400",
+            "description": "Skalní okno"
+          },
+          {
+            "description": "nestandardní pivo občas potěší",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOApDpMpiJYAdof-nSWuvGZYFaa8vd49XFUHPKtvhQHKTW1z9MZrlAiDA1rb8i9u5yuMf5YlARsQuJ3Y55X4KyMsy4aGI_XU_SQVEmvcIqYAwLEh7ms=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPQFuVQV5XwGbe047Ej5mpn3gbRoraQ6cJaP5lC6HdLiJJjz5ZTc8DQ2lcFmhXwW10_GyVVRkNsAhfkt0hTBirMmJ17_sg013CntyKOOdMNCB-CGpb5=w2400",
+            "description": "velmi příznivé ceny, dokonce nealko levnější než pivo"
+          }
+        ],
+        "journeyId": "2025-03-15-branzez",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczPJHLIFdGu7EYKbTNTPU9YN5F8a3b601sZg7nLYpHtd4wvf5ahT-LiXk7fOkG7sAs4ZYmPDl2LQaWOmDbszt4h7V0vmx21iAyPkuko0SHaDfqF9AyvG=w300",
+        "altitudeHighest": 341,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczN7V9nqIy9HCk4vDc_iVTbpAB9tsgnzBOD1Nh3VIzi0sCtmipta8t8jeYgb5LKDl6T9ErkjK5_yDdDRajfn-H9dpCTB7uDLBb6PaiPHks82ucZXKShY=w300"
+      }
+    },
+    {
+      "id": "9yplFZeYoNErHC06lT25",
+      "docData": {
+        "journeyDate": "2024-04-28T00:00:00.000Z",
+        "altitudeLowest": 321,
+        "status": "todo",
+        "metersClimbed": 313,
+        "journeyId": "2024-04-28-kumburk",
+        "title": "Kumburk",
+        "year": 2024,
+        "routeLength": 12,
+        "altitudeHighest": 627
+      }
+    },
+    {
+      "id": "Ahh9qxmT5MeHnbY6QLOE",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "year": 2021,
+        "routeLength": null,
+        "altitudeLowest": null,
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "title": "Branžež",
+        "journeyRouteUrl": "",
+        "journeyDate": "2021-09-25T00:00:00.000Z",
+        "journeyId": "2021-09-25-branzez"
+      }
+    },
+    {
+      "id": "B94y1yIoIAIuwyqzSvo8",
+      "docData": {
+        "journeyRouteUrl": "",
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "title": "Rádlo",
+        "photoGalleryThumbnailUrl": "",
+        "status": "todo",
+        "altitudeHighest": null,
+        "journeyId": "2021-01-06-radlo",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "journeyDate": "2021-01-06T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "",
+        "year": 2021
+      }
+    },
+    {
+      "id": "BK09c2Jt0IJq7Rvchox2",
+      "docData": {
+        "altitudeLowest": 234,
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOFm-nUrSlkG5-8yIAlQgnItHNij6Jo_VmBblBJDnB3KP4jEvsa4_GXVArEJ8tftKPlVxJeHR4FvtnIqFOv3tVQsEmJAY-ohSH1Wti2OUvkmOrEJBg=w300",
+        "year": 2025,
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMGid8Ej-EzlmxEurodnyiyTI_1-Luhl94lw4jjcY9F22ToCkrb8eTVi3Z40J-UxtS25O2tha1GS_ma818sfka-X3YThG4su6eevy18Xobsnyhu_Xk=w2400",
+            "description": "svačina u hradu Valdštejn"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOxnGyA_oIbcjwVq_Ap916pREf6fh3l7L_vXjPqobVGLGqX4OPvCE08-QcuivfGRGpQLYZhWJnTHaDfs9MiHWWPkP7ySjiSv4hEZuxoG8_Hmufz1ws=w2400",
+            "description": "rozhledna Hlavatice"
+          },
+          {
+            "description": "zbytky domu v lese u Kacanov",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPIyuvdcyrZJnQAHI-sJV7MBkdgbXBWP9a1igRrS-fGIdN160a8xvVOGMuivmcFC2hD2rTMdnfYcYf_1gZmdUPEYnq146cYuKIc-AMsAGx7jJqLLKE=w2400"
+          },
+          {
+            "description": "zřícenina hradu Chlum-Kozlov",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPOXQ_2rlyAPq7Zf64c6sJg2F13Xgv4cBcxQCFTLiAxMVzFLyhGHlHngjk2vG42o3brdAnscjKc53cC3xUbFZDXrzF5rSywB7jasqfD-kG7MeQfF_0=w2400"
+          },
+          {
+            "description": "zřícenina hradu Chlum-Kozlov",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNKC_GWhXaDgkeIVILChQ7AGEWkQ3C4xbOlN4uekxcRJ2Gyyt73RtkAi86XYou205IgsPva9I2OdTvvGWnRV9o7m1bxp_Qj_wh4qVsoy8kGbxHFM6Y=w2400"
+          },
+          {
+            "description": "zřícenina hradu Chlum-Kozlov",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOpfOL1Hdv8lpxKPqYT2I9n_QsLUb1KaJ1y94ivFZ5Pn4PTYPT8nX7vn13DaKcJm4foDe5DdzOzneGS-d3rLgd_qu4H_MTbUNCA31nthDrvv-z20kA=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO3f9fZcUtl4sr_l9-3taFF4qURD6EJRYTzNwFFDA9_ogziWofcnF7xPdOLtgTWW5CErUdl1tlu6B2DCUokYj_Cr3FKBmH0u4KnMBUVyapGicfIg0Q=w2400",
+            "description": "zřícenina hradu Chlum-Kozlov"
+          },
+          {
+            "description": "zřícenina hradu Chlum-Kozlov",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO0NCeKHBGU6g6adU9QGw3GsdeyKpsPc8VfPrXed8KcYr8l7VGnaBVYFS5XGzKEbwNIglW_BinIQCnTUhnZ9ik0V9gL90ciRip1WbNZkLk8K6fu6CA=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNnTx8Dm_PTMmZTRxdCZ6RVnGJ7FIkcy7f_3GTRVyRjLIR_inrQb1DdxX8Wg8sxuksWtPoQC9m7geoKq0zPGL0nivei41YRd8uJa7mfUFHtcYq4nyQ=w2400",
+            "description": "zřícenina hradu Chlum-Kozlov"
+          },
+          {
+            "description": "copak to asi v zemi uvízlo?",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM4-Jl0h3GBhOto0SbHBvCMU4JzUzYUSdw7CH-qoGIArtnU4G9mr5Ecp3FRuWDjzH2uxxZGF1Vw3eFEFQpY7zDWrIR1gd8Zjporsn3hFyLyXXmXgZg=w2400"
+          },
+          {
+            "description": "tyhle kořeny moc hluboké nebyly",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNF8U7O6NaZIwGXc-y4I89U7kaZA52L214hEchz4OMwM4N1N3eGvOpbhUmyM5XF_4C8tLN3RVqSn8BxnK4aoGRL_oKjAD40HZmp61yXd7aZFy0HCy0=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMjbeRK1-aUC43SMzSLVKa8OoOi33KJTkF-9YnbNwxpaAdJaG165uQA8FOsKRn1BIUziy6gIMvxrwJ3UL9lYbKfpMZpa2oRrL1i-1VYq0716ixCz8k=w2400",
+            "description": "Všeň - kostel sv. Filipa a Jakuba"
+          },
+          {
+            "description": "Všeň - kostel sv. Filipa a Jakuba",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNTIeQcFagFAjtSNTtJpOqGKn5h0NC8IUDsRx9tCeyj4oR-GfbNFmcufqAlQyKOsH6Fb7wuQcm45EFGQHqP2QEpj3M1OUMwCPOUCNjzbIhOkibFPoE=w2400"
+          }
+        ],
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMGid8Ej-EzlmxEurodnyiyTI_1-Luhl94lw4jjcY9F22ToCkrb8eTVi3Z40J-UxtS25O2tha1GS_ma818sfka-X3YThG4su6eevy18Xobsnyhu_Xk=w300",
+        "status": "finished",
+        "title": "Valdštejn",
+        "journeyId": "2025-01-25-valdstejn",
+        "routeLength": 18,
+        "altitudeHighest": 411,
+        "metersClimbed": 448,
+        "journeyRouteUrl": "https://mapy.cz/s/bazuvuheku",
+        "journeyDate": "2025-01-25T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "BQrsuinESUAAaJ0uoBxV",
+      "docData": {
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "year": 2023,
+        "routeLength": null,
+        "journeyDate": "2023-02-19T00:00:00.000Z",
+        "metersClimbed": null,
+        "photoGalleryItems": [],
+        "title": "Krásná",
+        "journeyId": "2023-02-19-krasna",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "BagiUPhytBamz24ltWgk",
+      "docData": {
+        "status": "todo",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "title": "Javorník",
+        "photoGalleryThumbnailUrl": "",
+        "year": 2022,
+        "journeyId": "2022-03-23",
+        "journeyDate": "2022-03-23T00:00:00.000Z",
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "routeLength": null
+      }
+    },
+    {
+      "id": "BkdxxIKXdDEBPTDeBNqt",
+      "docData": {
+        "altitudeHighest": 609,
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczPaMNJxvRV1zkj1DTJUbgE2w3d7U7J6UJVv-NDhuN1qjIS0kVs5iH3Ufuu0PqPedRVOMz2HoveEBgToemF9SRiaz4pfcFOtHVwapJZXRWbn2AeCILg=w300",
+        "title": "Hamštejn",
+        "journeyDate": "2025-01-19T00:00:00.000Z",
+        "metersClimbed": 472,
+        "journeyId": "2025-01-19-hamstejn",
+        "photoGalleryItems": [
+          {
+            "description": "sněhové květy",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMV6Yj956r1sNY7-HMeKllimdI_JXWROtlaFFW88Ow0weiJKltQjjAoworpqrm5LHy50VXFlEmIoOH5uNeDluhRfSCFyGWkOVqMEFu2uTLmhrIDbIw=w2400"
+          },
+          {
+            "description": "nekonečné bílé pláně před Michovkou",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPABFoLMPdgP_pNa7sPGGe-twWFnwlj4UTs3UJyX51gIOv1F3HBRz8URnlsVRriLbg0v-ERQ42Scj1Cg95PB9VcQN3UGry3vkCIvb_8PwRCMIzzoS4=w2400"
+          },
+          {
+            "description": "Trosky se mlhou prokousaly",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN6ubzl7Pg6RMsbLdPbA2g8nbgyUB_tDbQH1f7jFg1xGuuqhZqiwl_o1f0IDZzctiEuJ0ATPi-euPexwZUypMMm5EcSmnHop5QGJn_3SpG9qdToJ9w=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP046M-TpjGUqI6U9dgLuFb_HDywKINRt2c6P5NA0A2_3-UF29BA8JTXv9fekUuGyBsNwzKDkcVTMdZzy6hagkIKsuxOCxUZdP5rlg-UhIjn4T8Pg8=w2400",
+            "description": "rozhledna Hamštejn"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNja1mBZV6xhgFyVwFjddUFnTF8pUY-vnFf9T14PABpjrWVN60doCnlPO9NrlWWUKmMneeGmtxSUus8lzQsruG671chQGsKpQXiPtDiFWEPdpmakQk=w2400",
+            "description": "rozhledna Hamštejn"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPJ3YATyQmrI4jGzmQJfYiH1DiU7nOGEZm3rBywPNFpO2FLnKM5BcJEfGXbTNZzRTnG16zmtpSgsFaHUBEsq0fdDgPQcSoYpvZt3_zV-pgmw71vmNY=w2400",
+            "description": "rozhledna Hamštejn"
+          },
+          {
+            "description": "Hamštejnský vrch - 610 m n.m.",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNl1ceaGhMHiv8a2-c6EWtTeqNtkDXzJ3Fqh2ioO88dN8dN56rL5r_M6Vmo9sIbTynsKkwgNHOLau57JetvXWFOewZlGmnKguUPMT5c3assIIe_eN8=w2400"
+          },
+          {
+            "description": "pavouk označující místo dřívější sjezdovky/vleku",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN-plA2Su_EipfuZ6mCVVVBYm0Vs2KPHeC5M10BkvEqAZQvJCmR1QcquNOj2E0eiCbUGYT8jpQN47g-OK1cYL-C4jIS0uAKP5tn2xpYVShD17EoI2I=w2400"
+          }
+        ],
+        "journeyRouteUrl": "https://mapy.cz/s/nakukusago",
+        "routeLength": 18,
+        "altitudeLowest": 247,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczP046M-TpjGUqI6U9dgLuFb_HDywKINRt2c6P5NA0A2_3-UF29BA8JTXv9fekUuGyBsNwzKDkcVTMdZzy6hagkIKsuxOCxUZdP5rlg-UhIjn4T8Pg8=w300",
+        "year": 2025,
+        "status": "inprogress"
+      }
+    },
+    {
+      "id": "Bqd1aKy84VlGt4zojyz8",
+      "docData": {
+        "photoGalleryItems": [],
+        "title": "Česká Lípa",
+        "metersClimbed": null,
+        "status": "todo",
+        "routeLength": null,
+        "journeyId": "2023-02-23-clipa",
+        "year": 2023,
+        "altitudeLowest": null,
+        "altitudeHighest": null,
+        "journeyDate": "2023-02-23T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "CYJtnCZCVvm9NtJ338Gk",
+      "docData": {
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2021-09-26-kost",
+        "title": "Kost",
+        "journeyDate": "2021-09-26T00:00:00.000Z",
+        "metersClimbed": null,
+        "year": 2021,
+        "routeLength": null,
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "status": "todo",
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "CZBQuORIjHXPGv466cyo",
+      "docData": {
+        "journeyDate": "2020-10-24T00:00:00.000Z",
+        "journeyId": "2020-10-24-radlo",
+        "photoGalleryThumbnailUrl": "",
+        "title": "Rádlo",
+        "altitudeLowest": null,
+        "journeyRouteThumbnailUrl": "",
+        "year": 2020,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "metersClimbed": null,
+        "journeyRouteUrl": "",
+        "routeLength": null,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "DRZlAZiZQ3iHiS6CO1yk",
+      "docData": {
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "photoGalleryItems": [],
+        "year": 2023,
+        "journeyDate": "2023-06-30T00:00:00.000Z",
+        "status": "todo",
+        "journeyId": "2023-06-30-lbelohrad",
+        "routeLength": null,
+        "title": "Lázně Bělohrad"
+      }
+    },
+    {
+      "id": "DRt47jgfyzs6u9MDhLju",
+      "docData": {
+        "metersClimbed": 770,
+        "year": 2024,
+        "journeyId": "2024-03-23-oldrichov",
+        "journeyDate": "2024-03-23T00:00:00.000Z",
+        "routeLength": 20,
+        "title": "Nový Oldřichov",
+        "altitudeHighest": 503,
+        "status": "todo",
+        "altitudeLowest": 190
+      }
+    },
+    {
+      "id": "Di8oQbQ1ml7E6nObb8Yt",
+      "docData": {
+        "photoGalleryItems": [],
+        "journeyDate": "2023-01-01T00:00:00.000Z",
+        "title": "Kozákov",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "year": 2023,
+        "altitudeHighest": null,
+        "journeyId": "2023-01-01-kozakov",
+        "metersClimbed": null,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "DkUQXY8xHWz8523B2vOD",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "metersClimbed": null,
+        "year": 2021,
+        "status": "todo",
+        "journeyRouteUrl": "",
+        "title": "Pěnčín",
+        "journeyDate": "2021-05-08T00:00:00.000Z",
+        "journeyId": "2021-05-08-pencin",
+        "routeLength": null,
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "Du73nfHVYbh0QEBeDu5X",
+      "docData": {
+        "title": "Z kina domů",
+        "year": 2024,
+        "metersClimbed": 341,
+        "routeLength": 16,
+        "status": "todo",
+        "journeyId": "2024-10-05-zkina",
+        "altitudeLowest": 353,
+        "journeyDate": "2024-10-05T00:00:00.000Z",
+        "altitudeHighest": 576
+      }
+    },
+    {
+      "id": "E42dQxfQiyKC2E49tW8f",
+      "docData": {
+        "metersClimbed": null,
+        "status": "todo",
+        "year": 2023,
+        "altitudeHighest": null,
+        "journeyDate": "2023-02-22T00:00:00.000Z",
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "title": "Zahrádky",
+        "journeyId": "2023-02-22-zahradky"
+      }
+    },
+    {
+      "id": "EjbGCDBTijHhzht6c7oP",
+      "docData": {
+        "routeLength": null,
+        "title": "Vrchovina",
+        "journeyId": "2020-12-30-vrchovina",
+        "journeyRouteUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "altitudeHighest": null,
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": "",
+        "year": 2020,
+        "journeyDate": "2020-12-30T00:00:00.000Z",
+        "metersClimbed": null,
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "Ep6NMmiRQfQwiCztGKi7",
+      "docData": {
+        "title": "Rádlo",
+        "journeyDate": "2020-10-18T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "year": 2020,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "journeyId": "2020-10-18-radlo",
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "FQAhzgbK519bQVdMAvkV",
+      "docData": {
+        "altitudeLowest": null,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "title": "Javorník",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "routeLength": null,
+        "year": 2023,
+        "journeyId": "2023-09-23-javornik",
+        "journeyDate": "2023-09-23T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "FgFFuUH54Ljmezdt6ctr",
+      "docData": {
+        "journeyDate": "2021-10-24T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "",
+        "routeLength": null,
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "altitudeLowest": null,
+        "status": "todo",
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "journeyId": "2021-10-24-oldrichov",
+        "year": 2021,
+        "photoGalleryItems": [],
+        "title": "Nový Oldřichov"
+      }
+    },
+    {
+      "id": "FkJM6y0ScXYzAAo6jqq9",
+      "docData": {
+        "metersClimbed": null,
+        "status": "todo",
+        "journeyRouteUrl": "",
+        "journeyDate": "2022-10-23T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "",
+        "title": "Jablonec n. N.",
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "journeyId": "2022-10-23-jablonec",
+        "year": 2022,
+        "altitudeLowest": null,
+        "routeLength": null
+      }
+    },
+    {
+      "id": "Fmi2kym7l495P0DrjOvF",
+      "docData": {
+        "journeyId": "2024-06-28-varnsdorf",
+        "altitudeLowest": 318,
+        "altitudeHighest": 447,
+        "status": "todo",
+        "routeLength": 26,
+        "title": "Varnsdorf",
+        "year": 2024,
+        "metersClimbed": 229,
+        "journeyDate": "2024-06-28T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "GLR4bGbLapQLjCMGKGqz",
+      "docData": {
+        "altitudeHighest": null,
+        "journeyDate": "2022-01-23T00:00:00.000Z",
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "journeyId": "2022-01-23-jablonne",
+        "altitudeLowest": null,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "year": 2022,
+        "photoGalleryThumbnailUrl": "",
+        "title": "Jablonné v Podještědí"
+      }
+    },
+    {
+      "id": "GSf960EZhNETm6ucAqO2",
+      "docData": {
+        "metersClimbed": null,
+        "status": "todo",
+        "year": 2023,
+        "journeyId": "2023-11-17-noldrichov",
+        "routeLength": null,
+        "title": "Nový Oldřichov",
+        "journeyDate": "2023-11-17T00:00:00.000Z",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "GVMXybQppk7lZ1CJhMMy",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "year": 2022,
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "routeLength": null,
+        "journeyId": "2022-03-27-klic",
+        "journeyDate": "2022-03-27T00:00:00.000Z",
+        "title": "Klíč",
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "GXdR0kzc7io0NE7AhzHn",
+      "docData": {
+        "journeyRouteUrl": "",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "journeyDate": "2021-09-27T00:00:00.000Z",
+        "altitudeHighest": null,
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2021-09-27-hradiste",
+        "year": 2021,
+        "status": "todo",
+        "title": "Mnichovo Hradiště",
+        "metersClimbed": null,
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "GenD7CqDgXoDa1RidHDM",
+      "docData": {
+        "title": "Jablonec n. N.",
+        "status": "todo",
+        "journeyDate": "2023-01-15T00:00:00.000Z",
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "journeyId": "2023-01-15-jablonec",
+        "altitudeHighest": null,
+        "metersClimbed": null,
+        "year": 2023
+      }
+    },
+    {
+      "id": "GlhzS5g6VDHoZ7tovi7b",
+      "docData": {
+        "title": "Kopanina",
+        "year": 2023,
+        "journeyId": "2023-12-17-kopanina",
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "journeyDate": "2023-12-17T00:00:00.000Z",
+        "altitudeHighest": null,
+        "status": "todo",
+        "routeLength": null
+      }
+    },
+    {
+      "id": "HL6NjgMBcMGZNKG4eew1",
+      "docData": {
+        "year": 2021,
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "title": "Jablonec n. N.",
+        "journeyRouteThumbnailUrl": "",
+        "routeLength": null,
+        "altitudeHighest": null,
+        "journeyDate": "2021-09-04T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "altitudeLowest": null,
+        "journeyId": "2021-09-04-jablonec",
+        "status": "todo",
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "HedTTbBzFuctHzZrzVMC",
+      "docData": {
+        "title": "Nový Bor",
+        "journeyDate": "2020-07-27T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "year": 2020,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "journeyId": "2020-07-27-nbor",
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "I0741cH1AXmwCbKdlGra",
+      "docData": {
+        "status": "todo",
+        "routeLength": 20,
+        "title": "Jablonec n. J.",
+        "metersClimbed": 516,
+        "year": 2024,
+        "altitudeHighest": 958,
+        "altitudeLowest": 446,
+        "journeyId": "2024-08-29-jablonecnj",
+        "journeyDate": "2024-08-29T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "I7j47DcDluYYKu6b1gGh",
+      "docData": {
+        "routeLength": null,
+        "altitudeLowest": null,
+        "journeyDate": "2021-11-06T00:00:00.000Z",
+        "journeyId": "2021-11-06-lomnice",
+        "title": "Lomnice nad Popelkou",
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "status": "todo",
+        "journeyRouteThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "photoGalleryItems": [],
+        "year": 2021,
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "IeuhsGirNjhAkQQ1HZma",
+      "docData": {
+        "journeyDate": "2021-10-23T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "",
+        "routeLength": null,
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "altitudeLowest": null,
+        "status": "todo",
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "year": 2021,
+        "journeyId": "2021-10-23-smrk",
+        "photoGalleryItems": [],
+        "title": "Smrk"
+      }
+    },
+    {
+      "id": "J5bnXf1A4ozQZaCIGVy8",
+      "docData": {
+        "altitudeLowest": 315,
+        "journeyId": "2024-08-30-Semily",
+        "title": "Semily",
+        "routeLength": 21,
+        "altitudeHighest": 700,
+        "journeyDate": "2024-08-30T00:00:00.000Z",
+        "status": "todo",
+        "year": 2024,
+        "metersClimbed": 572
+      }
+    },
+    {
+      "id": "JDS7CQwpk6N9Mbs7ipnz",
+      "docData": {
+        "journeyDate": "2024-07-06T00:00:00.000Z",
+        "altitudeHighest": 611,
+        "routeLength": 16,
+        "altitudeLowest": 325,
+        "status": "todo",
+        "metersClimbed": 367,
+        "title": "Nový Oldřichov",
+        "journeyId": "2024-07-06-noldrichov",
+        "year": 2024
+      }
+    },
+    {
+      "id": "JkEgfSYjSQ70ZVi9sm2x",
+      "docData": {
+        "status": "todo",
+        "year": 2020,
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "journeyRouteUrl": "",
+        "title": "Bramberk",
+        "photoGalleryThumbnailUrl": "",
+        "altitudeHighest": null,
+        "journeyDate": "2020-02-22T00:00:00.000Z",
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2020-02-22-bramberk",
+        "routeLength": null
+      }
+    },
+    {
+      "id": "KRzZkXINyS58zvhlnKAs",
+      "docData": {
+        "journeyDate": "2022-03-19T00:00:00.000Z",
+        "title": "Ještěd",
+        "journeyRouteThumbnailUrl": "",
+        "altitudeHighest": null,
+        "year": 2022,
+        "altitudeLowest": null,
+        "journeyId": "2022-03-19-jested",
+        "journeyRouteUrl": "",
+        "metersClimbed": null,
+        "routeLength": null,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "KUeMIeGZ4KZcrx9rgfuz",
+      "docData": {
+        "routeLength": 9,
+        "title": "Rynoltice",
+        "altitudeHighest": 380,
+        "status": "todo",
+        "journeyId": "2024-07-28-rynoltice",
+        "journeyDate": "2024-07-28T00:00:00.000Z",
+        "altitudeLowest": 306,
+        "year": 2024,
+        "metersClimbed": 116
+      }
+    },
+    {
+      "id": "KY59boVwvsADNYQP3wOu",
+      "docData": {
+        "altitudeLowest": null,
+        "altitudeHighest": null,
+        "year": 2023,
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "journeyId": "2023-03-19-semily",
+        "journeyDate": "2023-03-19T00:00:00.000Z",
+        "title": "Semily",
+        "status": "todo",
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "L9kUJnaDysQKKSsGvF05",
+      "docData": {
+        "status": "todo",
+        "title": "Ještěd",
+        "metersClimbed": 635,
+        "altitudeLowest": 432,
+        "journeyId": "2024-01-20-jested",
+        "routeLength": 11,
+        "journeyDate": "2024-01-20T00:00:00.000Z",
+        "year": 2024,
+        "altitudeHighest": 1010
+      }
+    },
+    {
+      "id": "MBwnFsBPmfCuPYAsYFZO",
+      "docData": {
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2022-03-12-vitkov",
+        "status": "todo",
+        "altitudeHighest": null,
+        "journeyDate": "2022-03-12T00:00:00.000Z",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "metersClimbed": null,
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "year": 2022,
+        "title": "Horní Vítkov"
+      }
+    },
+    {
+      "id": "MJZ9OVpaWRDT5rTbTz4L",
+      "docData": {
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "year": 2022,
+        "status": "todo",
+        "journeyRouteThumbnailUrl": "",
+        "journeyDate": "2022-08-12T00:00:00.000Z",
+        "journeyId": "2022-08-12-noldrichov",
+        "routeLength": null,
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "title": "Nový Oldřichov",
+        "altitudeLowest": null,
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "MfdJQfXTtLD76ETX9cgN",
+      "docData": {
+        "year": 2022,
+        "status": "todo",
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2022-08-13-kravare",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "title": "Kravaře",
+        "photoGalleryThumbnailUrl": "",
+        "routeLength": null,
+        "journeyDate": "2022-08-13T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "NQ1LPVsA4wOtLeKgXJ2m",
+      "docData": {
+        "altitudeLowest": null,
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "routeLength": null,
+        "journeyDate": "2021-02-28T00:00:00.000Z",
+        "altitudeHighest": null,
+        "year": 2021,
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2021-02-28-javornik",
+        "photoGalleryItems": [],
+        "title": "Javorník",
+        "status": "todo",
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "Nj3MuWR5r0pUMaOugX2g",
+      "docData": {
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2020-08-15-klipa",
+        "journeyRouteThumbnailUrl": "",
+        "journeyDate": "2020-08-15T00:00:00.000Z",
+        "title": "Krásná Lípa",
+        "routeLength": null,
+        "year": 2020,
+        "journeyRouteUrl": "",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "ODkWNdA5DRNnKCNIr8sE",
+      "docData": {
+        "journeyId": "2024-07-27-malevil",
+        "title": "Malevil",
+        "status": "todo",
+        "altitudeHighest": 405,
+        "journeyDate": "2024-07-27T00:00:00.000Z",
+        "altitudeLowest": 312,
+        "routeLength": 14,
+        "year": 2024,
+        "metersClimbed": 170
+      }
+    },
+    {
+      "id": "OGSRmicFIB58E67jzo2k",
+      "docData": {
+        "altitudeLowest": 234,
+        "status": "todo",
+        "journeyDate": "2024-03-16T00:00:00.000Z",
+        "routeLength": 11,
+        "year": 2024,
+        "altitudeHighest": 275,
+        "title": "Turnov",
+        "metersClimbed": 62,
+        "journeyId": "2024-03-16-turnov"
+      }
+    },
+    {
+      "id": "OypySgpl2qbFas6IB4Fg",
+      "docData": {
+        "journeyDate": "2024-06-25T00:00:00.000Z",
+        "altitudeHighest": 433,
+        "routeLength": 28,
+        "title": "Srbská Kamenice",
+        "metersClimbed": 534,
+        "year": 2024,
+        "status": "todo",
+        "altitudeLowest": 120,
+        "journeyId": "2024-06-25-skamenice"
+      }
+    },
+    {
+      "id": "P7SNrpODqX9lfE2iFrrb",
+      "docData": {
+        "title": "Chrastavská šlápota",
+        "altitudeLowest": 275,
+        "routeLength": 19,
+        "journeyDate": "2024-01-06T00:00:00.000Z",
+        "metersClimbed": 406,
+        "journeyId": "2024-01-06-chrastava",
+        "altitudeHighest": 583,
+        "status": "todo",
+        "year": 2024
+      }
+    },
+    {
+      "id": "PAIGRpLC3UMXSVL9AxX8",
+      "docData": {
+        "journeyDate": "2022-01-16T00:00:00.000Z",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "title": "Sychrov",
+        "metersClimbed": null,
+        "journeyId": "2022-01-16-sychrov",
+        "journeyRouteUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "year": 2022,
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": "",
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "PYXtE9ZOvy2Qq58Jdrwo",
+      "docData": {
+        "altitudeHighest": 559,
+        "journeyDate": "2024-03-09T00:00:00.000Z",
+        "status": "todo",
+        "journeyId": "2024-03-09-zizkac",
+        "year": 2024,
+        "routeLength": 7,
+        "metersClimbed": 237,
+        "altitudeLowest": 432,
+        "title": "Žižkův Vrch"
+      }
+    },
+    {
+      "id": "Q3vFEPuPPeUOYB0FYKfX",
+      "docData": {
+        "title": "Tábor",
+        "year": 2025,
+        "journeyId": "2025-03-07-tabor",
+        "routePoints": [
+          "Semily (vlakové nádraží)",
+          "Semily - u zahr. kolonií",
+          "Bořkov - Na Poříčí",
+          "Slaná - Nedvězí, bus",
+          "Pohoří",
+          "Stružinecký rybník",
+          "Stružinec - Na Cikánce",
+          "Lípa v Nových Dvorech",
+          "Kaple Bolestné Panny Marie",
+          "Lomnice nad Popelkou - náměstí",
+          "Lomnice nad Popelkou - u obory",
+          "Lípa pod Táborem",
+          "Křížová cesta na Tábor",
+          "Tábor - Tichánkova rozhledna",
+          "Kyje u Jičína - žst.",
+          "Kyje",
+          "Ranč na Kamenci",
+          "Bradlecká Lhota - bus",
+          "Zřícenina hradu Bradlec",
+          "Restaurace Na Klepandě",
+          "Zřícenina hradu Kumburk",
+          "Skalka pod Kumburkem",
+          "Stará Paka - vlakové nádraží"
+        ],
+        "metersClimbed": 936,
+        "journeyDate": "2025-03-07T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczM1mDQvnw1DCxW_g8EJosBnOGZONCi9JB31-EuiKjWMeGWYjPGHh4vz964hkL055bhbyHc0vqTHUt4E18ckAIe_SabKRBBepIKXIv4_dQit2-pLQyM=w300",
+        "altitudeHighest": 681,
+        "status": "todo",
+        "journeyRouteUrl": "https://mapy.cz/s/ketorejaza",
+        "altitudeLowest": 315,
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOTjH-vvwB9XC7Hf9mTuWPiajBIbTtCY79tMLIrYTGGNTCCbKbW9zkAX0tRN78CVY7KFufheEj8iqnc4j46ruuIdMBpWb8JiDwEzhSILL4gskTDxic=w2400",
+            "description": "na vrcholcích Krkonoš je sníh, ale tady taky troška zbyla"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPE-DqbSh5RwVerRvexyPy_r0tmQ0LATc4yplbHsUFqCTGOta6w_9Um50UVfplkjAleg3WtZLwuWEkZjV6t4wghdm1IpW1ykTcoMXCQmzzaphn0gys=w2400",
+            "description": "na vrcholcích Krkonoš je ještě sníh"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO-dfRdPM7KkpijcXcqSlD5lUd3G9fx7SRAkwWG_SrVZZa_Wle5zxV7eFsFaNkeCgIcUbO0SAiK2hNn2FxSGB2cREXULuRF4Drlrnuo_Hed-pERMhU=w2400",
+            "description": "Stružinecký rybník"
+          },
+          {
+            "description": "jaro už je blízko, jehňátka rostou",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNSaxROAEEAlcCk0Hg7RnIPAJJW2CNa69g8ymxYR9vOLyfWMgHvVYxWfoA_M67Khg4sA17eDvZGVHWHIVzM1uJkrAFZ8OprW-LpfuTsGLtpGTqqwR0=w2400"
+          },
+          {
+            "description": "zastavení křížové cesty na Tábor",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO582QLbT6p4o1UFrp1gDpi_QLWvR__7xDdOIdFSOUfMv1dMSXj9Y_MQenUAkOXU-7BPJc4HYT-JGt-IKD8iF6o_vl5Y-Vxa6PGB5SgQBpoZEb4cAk=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNBNbNbEz16YZz8eMHL2-AEFt9nmxsX4iRn11aqkLbiNQaRYfH7hDvNwv2at8W1HLaeDD60GCU3XsG-R-_dyStNDFPFedhOVxA8Y7fsFY86d10G-LU=w2400",
+            "description": "Tábor - Tichánkova rozhledna"
+          },
+          {
+            "description": "Tábor - Tichánkova rozhledna",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPqRH2RNHdu1QxeofWMAmUN7N8CEJNqGMrgvVHxkL1nfTh55tRjit2qFJCrG4pt7KdWiP06u0FZwzS2KOdkyDjYYLAGmorQs3ULRGN9MCWtDuBvYBU=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM7inhQOHYH4vHLFY-u_m_CMjxnw-GMSXxLofHemeES_u7uiohMbCNfjGLxb1uT_FEO-KSrDn9YG-R05LzcuY83vNdXgOtLlH6scmA6IROIgGRD5EM=w2400",
+            "description": "originální zvonička ..."
+          },
+          {
+            "description": "... a originální zastávka (Kyje)",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN5zYUXvxxGMn9O1teuzQZbNYGPCNZgdkfF6e5--a_DuNOPpCZ0ES9BJaO0goqePKd6A8y3DORwWWYOy69xPY1oFMncWOwTTi01VJwcXF_4Za6xeV8=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMY0yWCVFBI-Ozn7IGb0W6NMAwHjW7Tis6n7jnKnul2p2hQSdGFAmeoQPkpgvtzjJwuGfmRQk8Zht0vaqX6m-9S-Lae7dHuBhrGagGw8AGPYu9IfpI=w2400",
+            "description": "zřícenina hradu Bradlec"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPzLVlvdEnFR6bgPsL9OHIBcp8EpEAtb0K-WC5fDt71m_J3WWil5vGkJis1klKTaDVltqhsBehV_xrLB6cWZb1G17k-Gd5bQDqCckwC4uFdQpDPIv8=w2400",
+            "description": "zřícenina hradu Bradlec"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPvGecnhWt7POy9a2f6KgLjnQvuncjE_Nlsg-cumt6snQonU9tkrVkvmZ2gISAGEUBn7Ith7xq9kcz5VkPUmwkNT-RhGzJcenLpYGsKiGswEhlhA0M=w2400",
+            "description": "zřícenina hradu Kumburk"
+          },
+          {
+            "description": "zřícenina hradu Kumburk",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN97jreiUoOQuRjQ25EkvJq92ysAp_gN67DCyhftiTxKNyIb5_6vNnByI_i4naILfV8J-zwSjQjeX7bF4elfWXKXZpbqZLxqOWAKHNm8-KGVQTLySc=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM_Iwy_qrov4B3vGUw5Rzxsb3QWhmw305a7TaEBWJ_EAVnbMwAvY8EGfD6GwxglmGxmSIXCB0fd-thcconP_2Gdegb9xaFZyAHjA5afeKBsVfX-rlg=w2400",
+            "description": "zřícenina hradu Kumburk"
+          }
+        ],
+        "routeLength": 32,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczPqRH2RNHdu1QxeofWMAmUN7N8CEJNqGMrgvVHxkL1nfTh55tRjit2qFJCrG4pt7KdWiP06u0FZwzS2KOdkyDjYYLAGmorQs3ULRGN9MCWtDuBvYBU=w300"
+      }
+    },
+    {
+      "id": "QTKcuiAZ59F6h9S7Parf",
+      "docData": {
+        "routeLength": null,
+        "title": "Ještěd",
+        "journeyRouteThumbnailUrl": "",
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "journeyId": "2021-10-17-jested",
+        "photoGalleryItems": [],
+        "metersClimbed": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "year": 2021,
+        "journeyDate": "2021-10-17T00:00:00.000Z",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "QdGFNTE6LpF0zu6uBlQd",
+      "docData": {
+        "journeyDate": "2023-11-04T00:00:00.000Z",
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "title": "Smrk",
+        "status": "todo",
+        "year": 2023,
+        "journeyId": "2023-11-04-smrk",
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "QyZi1Y090kwD7M8B9Ou5",
+      "docData": {
+        "metersClimbed": 309,
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMwKrtrDWrG0QqBVjRZVjm72XHsGEIwNhcMHX8DMED5oX7QslaPwBXC2uPdZlweY8PT4uGEk5xxfKkmUq_JntA_AreyssawixaY6846OJs6uy7Dtf8=w300",
+        "status": "inprogress",
+        "title": "Hrádek n. N.",
+        "altitudeHighest": 491,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOB1PG2rHu7sadpb0ibPklWUusRTDfY0jA1Y8KsCKDYG3MSqG2PGuN_WS3NV-A9xJB2XlGXH62xtLvcyUIN9aernLNlzMyL533SAp76IDODhHSVTGU=w300",
+        "year": 2025,
+        "journeyId": "2025-02-01-hradek",
+        "routeLength": 19,
+        "journeyRouteUrl": "https://mapy.cz/s/hafulapume",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOB1PG2rHu7sadpb0ibPklWUusRTDfY0jA1Y8KsCKDYG3MSqG2PGuN_WS3NV-A9xJB2XlGXH62xtLvcyUIN9aernLNlzMyL533SAp76IDODhHSVTGU=w2400",
+            "description": "česko-německá hranice"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOJS5MT4KKRU1oew8wPw2G8hmx5Pokp33ON0_GCA1vq68WPlavPh6mamzwohoHv2tlJ-LaWk-fhfAoyHyXb8gOVv2k7X0324pS36_HvEEC3fYXI0Io=w2400",
+            "description": "divné místo na spaní"
+          },
+          {
+            "description": "zámek Lemberk",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM-UBxXtcKDYJ_Wb7pTQqQ0yhP39sepixZvBkJAY9htxFzBpghWz1J56jQRU3CVNMleGiLr1bUYv3050BLQNqRcvNjmVT1ukDG44Fit-3HXqtOIg3w=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNPlOb014P7vgeVybb8ZFhRaC6qRPq2Y9zkVlel-D3V7MLoYuSY5QY-mE0rHKapQV_n-rWFKlpKLM55nMLBOHuhQClprrkNgP0GpLigcRkP_AQCbSY=w2400",
+            "description": "cesta po česko-německé hranici"
+          },
+          {
+            "description": "kámen z půlky český a z půlky německý",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNxEn0edd0CXGeZ5SfuNzWvnyGk6X58BGJxFAHzbvgfXKN7o5wCnQp3H29nsUGa_yzyCl5aUZ_caWdmz81xVqXES9fea2mce5dkiBOHWiDDlrAH8As=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNJv7GbPiePHCxohODS-gH_49wtqn6SGw3tuZeeYKVEt4y6NulOD4bhnJtaq5rCD5dOMDfBF0tgF4rgp_MqVrYeTSsYYtmubc1kBH9h1QXaLzGiNWs=w2400",
+            "description": "cesta po česko-německé hranici"
+          }
+        ],
+        "altitudeLowest": 240,
+        "journeyDate": "2025-02-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "RCmQIO7KuDj1NYrU9nCS",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "year": 2022,
+        "journeyRouteUrl": "",
+        "title": "Kozákov",
+        "altitudeLowest": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2022-01-01-kozakov",
+        "altitudeHighest": null,
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "status": "todo",
+        "metersClimbed": null,
+        "journeyDate": "2022-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "RyVII4le6HmBUUFHZZMc",
+      "docData": {
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "status": "todo",
+        "journeyDate": "2023-06-10T00:00:00.000Z",
+        "year": 2023,
+        "title": "z plavání domů",
+        "journeyId": "2023-06-10-zplavani",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "routeLength": null
+      }
+    },
+    {
+      "id": "S1KpDmwYKw1V13cs7v23",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "routeLength": null,
+        "title": "Javorník",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "status": "todo",
+        "altitudeLowest": null,
+        "journeyDate": "2020-04-10T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "year": 2020,
+        "photoGalleryItems": [],
+        "journeyId": "2020-04-10-javornik",
+        "journeyRouteThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "SceIJ4moA26tjSgdDuhO",
+      "docData": {
+        "altitudeHighest": 721,
+        "status": "todo",
+        "altitudeLowest": 287,
+        "routeLength": 15,
+        "photoGalleryItems": [
+          {
+            "description": "vrchol Oldřichovského Špičáku",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMYv7mp78g-hXIdJ8M7rnuGtTolsQ4lSSE9JjRVB6i8x-yPjowrGGX7mm70TER4PlhPwu2hnpHSwjPYQIaJRtYlNYMjV15A3aPBG794-EoD_b5f6CU=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMlaGzgBoGTXaMOobgHzJY1ax9kfiUapOJ5iLzHMDXfnXzecoqj9LK7j3bCeJ2IYAA-OdC2MIANue9z3_ZSEejSQmpqBLrgGaZb8SJclw07yj5XURvZ=w2400",
+            "description": "Frýdlant - poesiomat, dali jsme si Hrnečku, vař!"
+          },
+          {
+            "description": "hrad a zámek Frýdlant",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP8SbR-QF9SBDzcgGAwyiDQ9KkT9Hqo5sHLlKrNHzzRKNmeQLFiItgC56W4nr6-9HVFcU3KCHAzaE99kK9IOiQTre_f8GV_JMyctkL8EFwFaB_8Z3aN=w2400"
+          },
+          {
+            "description": "hrad a zámek Frýdlant",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMN9_LHK7wSDyfSx9bRJemyAxGAe6jF3EFOFGzpUY7sqn8mWW4THEb-BQc7ZBZ9re5wLY2y4kOnXjcZhmpBE7CZ-SBKae_LA7nmZfKViB-BQIX3kwXa=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP1MU4dY1yXvA1V5iF4fX15Hl9DfJ9tXIjtnA81hLlty_oFrRkQ2-vwr9mUBh7cWHn7siUcwcWmnMMPS6N3zkOCHA7MwEvVuN-zjabACRf4bEQXT4Ow=w2400",
+            "description": "hrad a zámek Frýdlant"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNOmETAcldPN3Uu5x2QlLAngwrxal-GX7XSISyn-7-S_QVg3MtEiqa_qayREnF7ImVkNX8FTD2_kdCUfIpDw_pJcSCn4htUEofbxi4e--OzZOvwDfYm=w2400",
+            "description": "Jizerské hory"
+          },
+          {
+            "description": "Špičák - skalní útvar Hřib",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOcQ8OD0mjrxWtw9Q9JADLf4E2srJPtbhCG8IhcqRpN_sFnXJpkh_yXVKCRkiPM8lCq_IXhi0dpnvu47IVD4RQQku0DDwLSccyOBrwbChG9yTFc1UK6=w2400"
+          },
+          {
+            "description": "už poslední schody dolů - byla to dřina",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMMQ_UJwD4y5kMaqSaKigyOU7NEJMEz5mT-Do4IFRJdMdKhJ670Rn98gIgVcla1kLm6Ir7F9qXdCsqaQjbx6oMgyMhah1dLRnC6-4s5YDNqCqJena8_=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM0zot1lEmjzXt1cUoPcR1UAnC1-skCqu1wBK8acDki_eJ8x0CpljAQLGixiO-t6FtATnjhapXXFd0NlurnobsdaKCsF9pM8EvyznUzIZtDKIVoGTEL=w2400",
+            "description": "balvany cestou na Špičák"
+          },
+          {
+            "description": "schody na Špičák, už to začíná",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO0OkVUDw1pDusEPaPK05Iq11LEGRNtGo3sP1qttggiZEubntl3gv-1zkhl4-MDglLopTtC96L44wov08P0lSFyJMVZRYHJ3lOhjvYAmhVEBMKEfj9I=w2400"
+          }
+        ],
+        "routePoints": [
+          "Mníšek u Liberce (vlak)",
+          "Pod Oldřichov. Špičákem",
+          "Špičák",
+          "Skalní útvar Hřib",
+          "Kříž na Scheibe",
+          "Hřebenový buk",
+          "Geologická stezka",
+          "Větrov-Zátiší",
+          "Frýdlant - u jezu",
+          "Hrad a zámek Frýdlant",
+          "Restaurace Bílý Kůň",
+          "Bludiště",
+          "Frýdlant - nám. TGM",
+          "Frýdlant v Čechách (vlak)"
+        ],
+        "journeyDate": "2025-03-01T00:00:00.000Z",
+        "journeyId": "2025-03-01-spicak",
+        "year": 2025,
+        "metersClimbed": 400,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMYv7mp78g-hXIdJ8M7rnuGtTolsQ4lSSE9JjRVB6i8x-yPjowrGGX7mm70TER4PlhPwu2hnpHSwjPYQIaJRtYlNYMjV15A3aPBG794-EoD_b5f6CU=w300",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOla5lMnlF1gxrot11iOJmic8Iek3YhCZS2AychF1CbH5y1iHKaxgTaYB7hjiI6ebekZNNAItS1rMrddxzaIZw5-2gETxJRuXGEat_sLjssepPWTFk=w300",
+        "journeyRouteUrl": "https://mapy.cz/s/jenohufuze",
+        "title": "Frýdlant"
+      }
+    },
+    {
+      "id": "Sg0OYJr9WRvJV2U9OISp",
+      "docData": {
+        "year": 2025,
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPsUe_6iOlgiJyr-HKoBMuXpRvFemh3i0AnuFolbkP9NqgIta4WSuKYKTMiW3zax8jU1v3v_7Z-960qkRAGyNNT9EXNthFdgtwFsIpk_ILYUjYTNRg=w2400",
+            "description": "převis u Obětního kamene"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN9vb39Oiol8FzDd1XuS6k7D812XAfVeH8d6pYAEP35f17EDbZ_K1qpabI5B2ugmMJHWKtjQer3kTUqEaHfTLLAJ3Bk-joJs6_7EkGMLCNIY0hlsAM=w2400",
+            "description": "Obětní kámen"
+          },
+          {
+            "description": "zřejmě dobrý oddíl",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNsKWB5l5sA9A86V81k0ALpR72GwX-SsdPZcg47dKWsp4wPzk1xfaJrpGygyfIK5vuRSeFpC9nqcJjk2lUDiMbhwaQqHwOjTfb3n7dYFB3TfqBWrK0=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMz7em9Mxa0CVVG8J213QVnhXRKNq5KMsGSeek2zWaDeyeHsR8DD8u5QYRmbfQeSvB5LCIilF8xXb_tYMX7ZGYoJ8u5_fn59smjUH90SaaSoZU9Duw=w2400",
+            "description": "tak tohle se povedlo"
+          },
+          {
+            "description": "Vyskěř na dohled, ale ještě před obědem",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO5dqxfFUqzr7tmznKLBMR4_uFM8WkvsLzPcuDct8bpaqCHUvQJqdYY-oH_VMZG_vYdceTm3LYoTwcElvdaaYsnm5A8Jr_drMfzbz7s4ooV8iWK_4g=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM_Jpno0rZ-LhTYG6sctVwTYOiIBB3kEeYpQRhloT1K-wFQLTO2OmNmt-ifT8aWEeiHJHD5Pewer7nBU7gwdnnVgrcdRCqDxZ08jiExK81NmfYt-Cg=w2400",
+            "description": "Vyskeř - kostel Nanebevzetí Panny Marie a dřevěná zvonice"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOYeqpFHDSK5qnHRL1pjqNcwdYfgfsv37GP4Yz09_EskCDcvXbWdcWNSis1fC5bhu9onriOoTYGGmxLRKhcQ6v6vpAijOIEqxoGnT-YYz_jd0xr51g=w2400",
+            "description": "jedno ze zastavení pěkné křížové cesty na Vyskeř"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN7vYaLhVnqGhK1EBw9hp3U77YKOJnK8xCjoI8Y84YYONbg4v-TM4-NoSCoIKF3Ivt9fFcHa5RXT6sLatidHPCBB4pVT0NiaTyu1_P4MK3KLNe3fMk=w2400",
+            "description": "Vyskeř - kaple na dosah"
+          },
+          {
+            "description": "Vyskeř - krásný kruhový výhled",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPmuBYc6RBsK7ZAFpWQCRFCC8fn5_gbrdiiPiOMEhWlEURMKzScx2Fcl6Fa1Ouk04ESiJt-TwhN6t-xfxOKnAhZOe_Ec7FY5o1eZ1GDbcBxM7NIn54=w2400"
+          },
+          {
+            "description": "Vyskeř - kaple sv. Anny",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN-S0hIBc_mXnaj00PNiwYxuMMTC8ntslAtWOjZGo7TZ7rb0_hKiqSFsT_PIkspAwBOG7Ad6-pS6cdNa2T7LzzdgB4yO-Aa_OFNXWhSVEKe2hXun-4=w2400"
+          },
+          {
+            "description": "Vyskeř - odcházíme po opačném svahu kopce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNubDjzf_pc2K4Y8TSP73btyKCRPqHdgWcHpc1-77wH5JoBr2ws_lCY_0_WAxABojZv0XjtF9eM4ldrJRxfA2lmY2dXS_LXRN5z3WC1Z5trsqqfAKo=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPjzGlcP1uT67r5FR48v37bDiSnQ1ZtsSAhPVBNbKKIOkg5e2c0HGsh9R02ZDNjoNvJOIPFh_TbAIUJOBZLIn7qmsglSyRXVAMHe47dWd5LdjOzU8E=w2400",
+            "description": "Vyskeř při zapadajícím slunci"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPwsOPgl9Yhs33Xt8V0XKu7DZjyNpMgJPtd5pOzBX1DWHdOBMJIAvvazyjLgHDLDaYijtphtcXchldIbshdJlY1awpu6Y3HbComuYT99E8q0eHT1pw=w2400",
+            "description": "na Valdštejně už je trochu tma ..."
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMOfb28XLEGLMHXp9iEzPAKR_VD-dvHTk6GwWXiSLipuHaOODklDXdZQv8ytu2aqlCKOy4GIegkyg-QdAJBCXm7iPtB01LatxnMHPglBx4taxLMKbk=w2400",
+            "description": "... ale hospoda nasvícená je"
+          },
+          {
+            "description": "rozhledna Hlavatice - tma jako v ranci",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOyu0IdfzPQ0lnuKYe91uJWcOVVxeT5yQAZmujqML-TqwxtrKoPs3VGzbU4fMR7K4GD7G43dMeMDhe5JeHBhddr0scA3ojFldhLMz70fds2xjzddZw=w2400"
+          }
+        ],
+        "altitudeHighest": 467,
+        "journeyId": "2025-02-08-vysker",
+        "title": "Vyskeř",
+        "altitudeLowest": 232,
+        "metersClimbed": 753,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczPmuBYc6RBsK7ZAFpWQCRFCC8fn5_gbrdiiPiOMEhWlEURMKzScx2Fcl6Fa1Ouk04ESiJt-TwhN6t-xfxOKnAhZOe_Ec7FY5o1eZ1GDbcBxM7NIn54=w300",
+        "status": "finished",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMcPEQ0DSIAtzegcsHCoNFD9po6EMrHEs30LYbpNyQvgAfrotYgqWT3l7JmBW_hNHAsGi07I5VFVUYG9lR9K1VmYKQn2QzKy48oCup8_mjSWVTR6ek=w300",
+        "journeyDate": "2025-02-08T00:00:00.000Z",
+        "routeLength": 30,
+        "journeyRouteUrl": "https://mapy.cz/s/rabajagegu"
+      }
+    },
+    {
+      "id": "SjWIBtMOl6s86xVEdNEk",
+      "docData": {
+        "altitudeHighest": null,
+        "routeLength": null,
+        "metersClimbed": null,
+        "status": "todo",
+        "altitudeLowest": null,
+        "year": 2023,
+        "title": "Černá Studnice",
+        "photoGalleryItems": [],
+        "journeyId": "2023-09-30-cstudnice",
+        "journeyDate": "2023-09-30T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "StTC9lVrfAIhjsxgMURu",
+      "docData": {
+        "altitudeLowest": null,
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "status": "todo",
+        "journeyRouteUrl": "",
+        "metersClimbed": null,
+        "journeyDate": "2022-02-19T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2022-02-19-prosec",
+        "year": 2022,
+        "title": "Proseč",
+        "routeLength": null
+      }
+    },
+    {
+      "id": "T5bDc1tlt4OD8jEXfmdH",
+      "docData": {
+        "journeyDate": "2022-05-12T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2022-05-12-jablonec",
+        "year": 2022,
+        "journeyRouteUrl": "",
+        "title": "Jablonec n. N.",
+        "status": "todo",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "routeLength": null
+      }
+    },
+    {
+      "id": "TfAToclKjexN96KeNaIB",
+      "docData": {
+        "routeLength": null,
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "year": 2022,
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2022-08-06-klipa",
+        "journeyDate": "2022-08-06T00:00:00.000Z",
+        "status": "todo",
+        "title": "Krásná Lípa",
+        "metersClimbed": null,
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "journeyRouteThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "ULCtENicxhKi8bV7NLBx",
+      "docData": {
+        "title": "Maliník",
+        "altitudeHighest": 774,
+        "status": "todo",
+        "journeyDate": "2024-02-24T00:00:00.000Z",
+        "altitudeLowest": 351,
+        "metersClimbed": 780,
+        "routeLength": 28,
+        "journeyId": "2024-02-24-malinik",
+        "year": 2024
+      }
+    },
+    {
+      "id": "V3TVykEuFUzsMOB44SWY",
+      "docData": {
+        "altitudeHighest": null,
+        "journeyDate": "2023-08-23T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "altitudeLowest": null,
+        "year": 2023,
+        "journeyId": "2023-08-23-kokorin",
+        "status": "todo",
+        "title": "Kokořín",
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "VdhmdgIrnGJdVU8udCXx",
+      "docData": {
+        "journeyDate": "2023-12-27T00:00:00.000Z",
+        "routeLength": null,
+        "status": "todo",
+        "year": 2023,
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "journeyId": "2023-12-27-radimovice",
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "title": "ze Sychrova"
+      }
+    },
+    {
+      "id": "W72Np5dQOAiU9uhV1gCg",
+      "docData": {
+        "routeLength": null,
+        "journeyDate": "2023-03-04T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "journeyId": "2023-03-04-svijany",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "status": "todo",
+        "title": "Svijany",
+        "year": 2023
+      }
+    },
+    {
+      "id": "X2KpBVgk5iwjzSpuKGC3",
+      "docData": {
+        "title": "Nedamov",
+        "metersClimbed": null,
+        "photoGalleryItems": [],
+        "status": "todo",
+        "journeyDate": "2023-08-24T00:00:00.000Z",
+        "altitudeHighest": null,
+        "year": 2023,
+        "journeyId": "2023-08-24-nedamov",
+        "routeLength": null,
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "X49nYbSdhcMMGrJqwtCG",
+      "docData": {
+        "year": 2023,
+        "altitudeHighest": null,
+        "journeyId": "2023-07-23-javornik",
+        "journeyDate": "2023-07-23T00:00:00.000Z",
+        "metersClimbed": null,
+        "status": "todo",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "title": "Javorník",
+        "routeLength": null
+      }
+    },
+    {
+      "id": "XCTX7Oe7DrRz32BuvCEl",
+      "docData": {
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP1q6WrXl6z3c-osAtPlzsxUvyyXr_5CcXJaJY2P7O1BTWLpIkXBbvkxxonQV8hkREbj47eQ0cX_hV6HeAwH3E0j1efEJEpIQ430sh_60z4kpHs5Zvg=w2400",
+            "description": "tuhle kontrolu nám tam omylech nechali organizátoři jiné akce místo té naší"
+          },
+          {
+            "description": "zasloužená odměna pro tátu v cíli - Sokolovna Kokonín",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMMVucUJegC6B8p5ASWgvKs4LK7ubgmTfPTkWkDVSDOYDADpijuPZBbZPP46Ss9GfdD_n3Nc-oU8x753vX6l_KSQuf6aLq_Fb8Ph0vXvFXUOSYucNyV=w2400"
+          }
+        ],
+        "journeyDate": "2024-11-16T00:00:00.000Z",
+        "status": "inprogress",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMqOmVWcGULq96NvyBkK5D6wbbUwqqnNtkhOQPicXFzlYKN0CdeIBKl5UK0bCkuqR89khpHGGuVIJy3RqQlvA8pbQjQnaVyoetpCZS3ZBCTlMk4qX1w=w300",
+        "altitudeLowest": 532,
+        "routePoints": [
+          "Smržovka - Lyžařský vlek Filip",
+          "Jelení Kout",
+          "Scholzeho kříž",
+          "Berany",
+          "Jezdecká cesta",
+          "Dolní Černá Studnice",
+          "Kokonín"
+        ],
+        "routeLength": 16,
+        "title": "Orienťácké derby",
+        "journeyRouteUrl": "https://mapy.cz/s/fubezufova",
+        "journeyId": "2024-11-16-derby",
+        "year": 2024,
+        "altitudeHighest": 850,
+        "metersClimbed": 542,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczP1q6WrXl6z3c-osAtPlzsxUvyyXr_5CcXJaJY2P7O1BTWLpIkXBbvkxxonQV8hkREbj47eQ0cX_hV6HeAwH3E0j1efEJEpIQ430sh_60z4kpHs5Zvg=w300"
+      }
+    },
+    {
+      "id": "XMNsM1RHenmXjlupafFH",
+      "docData": {
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczNObbh9BE7dfc5sfLE-dP9etSz6SXu3DYO1oC_23IL01SVoRtsJn3RJ83iFDkNd-2qrxw6Mj5Ea8rgPn9teaWjRrHnA5Yo0IrfX-2bd60Ay_w1n2nM=w300",
+        "routeLength": 12,
+        "year": 2025,
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNZ1GfN2uRxUtkLsUpytx2ceLdI1vkSMu-qfqWdvzBVnYVt6vRAduuYR_yQGtfAi8oN6KvLLvQnKuIU62pgP0i6ptmaRhQNMqI6hcgy4h_xpAVOS2g=w2400",
+            "description": "Javorník - restaurace Obří sud"
+          }
+        ],
+        "altitudeLowest": 357,
+        "status": "inprogress",
+        "altitudeHighest": 681,
+        "journeyRouteUrl": "https://mapy.cz/s/nahonomufa",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczNZ1GfN2uRxUtkLsUpytx2ceLdI1vkSMu-qfqWdvzBVnYVt6vRAduuYR_yQGtfAi8oN6KvLLvQnKuIU62pgP0i6ptmaRhQNMqI6hcgy4h_xpAVOS2g=w300",
+        "journeyId": "2025-01-05-javornik",
+        "metersClimbed": 476,
+        "title": "Javorník",
+        "journeyDate": "2025-01-05T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "XUZoWTYxvacFC4QJZoFp",
+      "docData": {
+        "title": "Javorník",
+        "year": 2021,
+        "altitudeHighest": null,
+        "routeLength": null,
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "journeyDate": "2021-12-18T00:00:00.000Z",
+        "altitudeLowest": null,
+        "journeyRouteUrl": "",
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "journeyId": "2021-12-18-javornik"
+      }
+    },
+    {
+      "id": "XkBTKxctR0beDhdliVPp",
+      "docData": {
+        "altitudeLowest": 204,
+        "altitudeHighest": 260,
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOKfqZjIYgauZc9VqsyNdhyZl-nqzi6hkfC8IBgTyaWx6f0Q1gqpuoZecPvk35c7R5zbShEgt5DM5NDiuzeVbxgT0lAmIee-fK7ttiuKLOMnFVk8b8=w300",
+        "metersClimbed": 101,
+        "title": "Mladá Boleslav",
+        "status": "todo",
+        "year": 2025,
+        "journeyRouteUrl": "https://mapy.cz/s/gurafezage",
+        "photoGalleryItems": [
+          {
+            "description": "zřícenina hradu Michalovice",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN6LcHQPsKuUWBAzAyGa8-udO6u4nO4s0yaAWREeW5ljAWOzI7jP4nMl45HZKO2hDUvMWdT7NKnVQKBPSANcP6Hs8PpKFV8ouI5GyypvGPgipjaVVg=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNaCBmNjm6KP4W6HcbX7QGTEnTZnp2j8zdXXfQo3FPbFeUZ6Jjdzli-QUbrul2kS0ESqkEwmkkHYrkCFyN3wriPd1n5wt6YVGKOxswZhXHAI-MvnNI=w2400",
+            "description": "letní scéna Michalovická Putna"
+          }
+        ],
+        "routeLength": 11,
+        "routePoints": [
+          "Mladá Boleslav-Debř - vlakové nádraží",
+          "Zřícenina hradu Michalovice",
+          "Podlázky",
+          "Komenského náměstí (Ml. Boleslav)",
+          "Park Výstaviště (Ml. Boleslav)",
+          "Škoda Auto Muzeum",
+          "Městský bazén na Štěpánce",
+          "Restaurace Rozvoj",
+          "Mladá Boleslav město (vlak)"
+        ],
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczN6LcHQPsKuUWBAzAyGa8-udO6u4nO4s0yaAWREeW5ljAWOzI7jP4nMl45HZKO2hDUvMWdT7NKnVQKBPSANcP6Hs8PpKFV8ouI5GyypvGPgipjaVVg=w300",
+        "journeyDate": "2025-03-04T00:00:00.000Z",
+        "journeyId": "2025-03-04-boleslav"
+      }
+    },
+    {
+      "id": "YQ5BYTg7F4LYClfWjBmB",
+      "docData": {
+        "metersClimbed": null,
+        "journeyDate": "2020-11-17T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "title": "Protržená přehrada",
+        "photoGalleryThumbnailUrl": "",
+        "altitudeLowest": null,
+        "journeyId": "2020-11-17-prehrada",
+        "journeyRouteUrl": "",
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "routeLength": null,
+        "status": "todo",
+        "year": 2020
+      }
+    },
+    {
+      "id": "Z1cO8dCgApFe4ceVwee4",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "year": 2022,
+        "altitudeHighest": null,
+        "journeyDate": "2022-09-07T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "journeyId": "2022-09-07-kopanina",
+        "journeyRouteUrl": "",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "title": "Kopanina"
+      }
+    },
+    {
+      "id": "Z5yfMpNF5sNaHF659eCQ",
+      "docData": {
+        "year": 2024,
+        "metersClimbed": 614,
+        "journeyDate": "2024-08-11T00:00:00.000Z",
+        "title": "Ještěd",
+        "altitudeLowest": 367,
+        "journeyId": "2024-08-11-jested",
+        "status": "todo",
+        "altitudeHighest": 1010,
+        "routeLength": 16
+      }
+    },
+    {
+      "id": "ZQzcwWc6dK9amEJHFlSh",
+      "docData": {
+        "altitudeHighest": 742,
+        "status": "todo",
+        "altitudeLowest": 432,
+        "journeyId": "2024-11-09-javornik",
+        "routeLength": 12,
+        "metersClimbed": 405,
+        "title": "Javorník",
+        "journeyDate": "2024-11-09T00:00:00.000Z",
+        "year": 2024
+      }
+    },
+    {
+      "id": "ZWfVqGDY14wKFsI3gkk2",
+      "docData": {
+        "journeyId": "2021-09-11-klipa",
+        "year": 2021,
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "photoGalleryThumbnailUrl": "",
+        "title": "Krásná Lípa",
+        "journeyRouteThumbnailUrl": "",
+        "journeyDate": "2021-09-11T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "status": "todo",
+        "routeLength": null,
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "ZjJRrdsYguzgk3D9gHwW",
+      "docData": {
+        "photoGalleryItems": [],
+        "status": "todo",
+        "journeyDate": "2023-08-20T00:00:00.000Z",
+        "title": "Krásná Lípa",
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "routeLength": null,
+        "journeyId": "2023-08-20-klipa",
+        "year": 2023
+      }
+    },
+    {
+      "id": "a3nOK0CAoBAa9KMGS0GR",
+      "docData": {
+        "title": "Jablonné v P.",
+        "routeLength": 4,
+        "journeyDate": "2024-07-26T00:00:00.000Z",
+        "altitudeLowest": 306,
+        "status": "todo",
+        "altitudeHighest": 365,
+        "metersClimbed": 60,
+        "year": 2024,
+        "journeyId": "2024-07-26-jablonne"
+      }
+    },
+    {
+      "id": "aCgcx9tpAuQQ9ETQHgxd",
+      "docData": {
+        "altitudeLowest": null,
+        "title": "Rádlo",
+        "journeyDate": "2021-02-04T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "",
+        "year": 2021,
+        "photoGalleryItems": [],
+        "journeyRouteUrl": "",
+        "journeyId": "2021-02-04-radlo",
+        "metersClimbed": null,
+        "photoGalleryThumbnailUrl": "",
+        "status": "todo",
+        "altitudeHighest": null,
+        "routeLength": null
+      }
+    },
+    {
+      "id": "bIsfkcOrpx3z6tPocWJj",
+      "docData": {
+        "altitudeHighest": 760,
+        "altitudeLowest": 355,
+        "routeLength": 9,
+        "metersClimbed": 337,
+        "status": "todo",
+        "year": 2024,
+        "journeyId": "2024-03-17-klic",
+        "journeyDate": "2024-03-17T00:00:00.000Z",
+        "title": "Klíč"
+      }
+    },
+    {
+      "id": "bNaYtBE6brlsFP4hDtEq",
+      "docData": {
+        "altitudeHighest": 629,
+        "altitudeLowest": 433,
+        "title": "Žižkův Vrch",
+        "journeyId": "2024-07-21-jablonec",
+        "metersClimbed": 281,
+        "year": 2024,
+        "status": "todo",
+        "journeyDate": "2024-07-21T00:00:00.000Z",
+        "routeLength": 12
+      }
+    },
+    {
+      "id": "bQQILYORbbMjUNTB13O0",
+      "docData": {
+        "year": 2024,
+        "routeLength": 24,
+        "metersClimbed": 820,
+        "journeyId": "2024-08-28-spicak",
+        "altitudeHighest": 1026,
+        "title": "kemp Špičák",
+        "journeyDate": "2024-08-28T00:00:00.000Z",
+        "status": "todo",
+        "altitudeLowest": 374
+      }
+    },
+    {
+      "id": "bw7suo7Iwq7aBHBTnrfe",
+      "docData": {
+        "journeyDate": "2024-02-17T00:00:00.000Z",
+        "status": "todo",
+        "year": 2024,
+        "altitudeLowest": 306,
+        "altitudeHighest": 771,
+        "title": "Jablonné v Podještědí",
+        "journeyId": "2024-02-17-jablonne",
+        "routeLength": 29,
+        "metersClimbed": 684
+      }
+    },
+    {
+      "id": "cNQNd19FgahVQFcGn01w",
+      "docData": {
+        "status": "todo",
+        "photoGalleryItems": [],
+        "journeyDate": "2023-09-16T00:00:00.000Z",
+        "altitudeHighest": null,
+        "title": "Sychrov",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "routeLength": null,
+        "journeyId": "2023-09-16-sychrov",
+        "year": 2023
+      }
+    },
+    {
+      "id": "cNeL0FU4q7p14nLwheR5",
+      "docData": {
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOQ_kfVnZXeSlIGj5PgoIRwIuz9mfHEwVo4jNKEMhximaIcKBl3yn9rzFVICAvc5BcI6b8upDomDXcSV6IVneH2ckbfv9iU_07jgOF5iSqc31myNxyh=w300",
+        "year": 2025,
+        "journeyDate": "2025-04-05T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczO81wKVss_uoBLKSpTPCQERhckuYnn4uO2yX0Xm8VTLOooP54Ojn8OjPG8tPqa3Ano4oS-wfiPNIxhewgW3m440dgRz9R0h-lNBr2j73E0x_6LvU8hL=w2400",
+        "photoGalleryItems": [
+          {
+            "description": "Sokolík - místo k odpočinku s prima vyhlídkou",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN44Vt6AvH6-ugAS6Lf5u0MhiMiirLYRjZ2k2WLECBOuO4ALwKpan5NHicx5ltiXEpHKD32wDagsI88Umkc88S3k7rtARyA4-2LJU1zdyOV2_QZ8xmQ=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOATrZsbVgarKKW6wVz9xqbMD_eC9N8DQ1c3sp_kM0XUJJslNtD2pWmu4n3FrRr9NKtCbD83EXiienY3jqTN26epVAhLDRz2xMpptLCde1SgJiEaFKA=w2400",
+            "description": "támhle za chvilku budem"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMdCwFiZ1sE9Au2BXsBL3B3VTMFbBbxSvSynrlXLL4yfu_UXhWP2TJ_7fVFEhf0MjuDByvMoEPVxEfMX_Xe3473OH2PcuQvEScza6-ucnsrlt7RaXTP=w2400",
+            "description": "Kyčelnice devítilistá"
+          },
+          {
+            "description": "kamenné moře",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMzK2J-G3gybBBGwFHRolTKpw_YYWYmEJb0nBGQKNcd-bxtNZCTvT_qAVBTevVrAADCs7mIy1zjvUL32g1aw97ShJlCrjkHC5wlQ8IUpa4kV_H0EWqO=w2400"
+          },
+          {
+            "description": "a průchod skrz kamenné moře",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN2tnYKwgiZ7S7YKW6jb5rQj_xhbbcksCfEplIS81O4QPToYoMIWxEWzmheYJ7n5dcj_j9cLRp7YeB6mVAKHn-GSsj8TFyeBOpdVEbJxE1_P0jbVJKW=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNQ8SudbkHTycPlv5uC8rYMwgVsiEkLXItbNoDyovpSrsIw0xuxqJtY-KA1ezud3IbzDlLoryq9isGgkiLD9puxqTpMMuSkNwqnK7Fl8lRUQiIsiKyH=w2400",
+            "description": "pohled na okolní kopce je trošku smutný"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNBe7HOGqImv0bBElphHaJPJAjEsUF5gbIJmAyBkBLZr-gB3ZPar4ldwWPm8hX5dA3XDmJJmLXAAZvI8daAz7A-yQ0ufxOPeVM6ThTUMCrPIu00D1R8=w2400",
+            "description": "teď už je teda vrchol opravdu na dosah"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPEXUr7wU_6W__v7ys0xpp01nJ3xGbe-CD8ZAB3jcTt9xr3DdVYNTfM2MgxWjKH7cQhoVnccKuh0uZ1oWC_CjRR6We9kjhlLDD_8XgSgQuRvXNJ8zeT=w2400",
+            "description": "panoramatická - výled kolem dokola"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOQ_kfVnZXeSlIGj5PgoIRwIuz9mfHEwVo4jNKEMhximaIcKBl3yn9rzFVICAvc5BcI6b8upDomDXcSV6IVneH2ckbfv9iU_07jgOF5iSqc31myNxyh=w2400",
+            "description": "vrchóóól"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN1vs-5AkaFXvIkj1YAwPXDv65NjJ8b6AWOEyvEAd_SZuSeM6VnsyWc5eBBAsIQO9Pisjg25Dj7JJQZLFEn7yJO_bBeCSuMLB3SgpVs3UtwcQw4aNYo=w2400",
+            "description": "Kamzičí studánka s obřími lavičkami, na které se nesmí"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMFWUUxD71wrGvgOOv1mnXlm57A8RrVsNEm474W1FgukpVmafz4a165IPnBDkfX-XJsaZ_XmgttgtnhXUc7mmWzglzLWRYIUTzN3WFoa2HIQ5YXiR4m=w2400",
+            "description": "Františkův pramen - kousek pod Kamzičí studánkou"
+          },
+          {
+            "description": "další studánka - čím níž, tím méně opečovávaná",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPahk0-WbjeObpuyN625tmI9xUHZxtr9JtGfo99U8rwrJxLbqK5zMvlsGTZa8vd5I8oeyfhwcd0T1FJ4Da6974g4AjO0wubrmgpy5Fi6dB-1JONQPZX=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNxOitRZQTwIqHukXMIPzxrWnXzDYbBp-B40bLaoLOHmzu24V9I_Fuq9zJQyp0ggs7j8me8SDIclUOee1exaeDLxHyflF79xh5rPhCKPcyN_bZWHGkU=w2400",
+            "description": "lávka přes novoborský obchvat"
+          },
+          {
+            "description": "Kostel sv. Ducha",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNPcq9A2YNUU0KRi01DMiRp1rUbY6ks7jb0EAmeFa6saX_ePeO3mVZX-w5BPHdJmHNAwMxle3SIyiZYL9DKX_0sdmOPVPHw7duqVniLXDivIK-E3eNe=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMZmfMWv4QKxQ_30BiTmdPZlmvYHuDmlv1Lolj7Jxz5It-jC9BDTqGCMqUq-RbodAySifbvk-lVZnecfFGtNKFmhyDeYp5UgKtPwfzlNUuS6ZUyo67n=w2400",
+            "description": "hrob prababičky a pradědy"
+          }
+        ],
+        "altitudeHighest": 760,
+        "storyHtml": "<p>Dneska jsme jeli autem do N. Boru na oslavu babiččiných narozenin. A protože bylo poměrně hezky, rozhodli jsme se cestu malinko zpestřit výstupem na Klíč. Na jiný výlet by totiž už o víkendu nebyl čas, protože zítra jedeme na orieťácké závody do Doks. A Eda ještě na Klíči nebyl.</p><p>Máma nás vysadila ve Svoru u kulturáku a vyrazili jsme naší oblíbenou trasou. Po žluté značce pod železniční viadukt a nahoru na kopec Sokolčík. Touhle cestou se rychle dostaneme z asfaltu a pak už si můžeme užívat cestu po loukách a lesích. Vyhlídkové místo kousek za vrcholem nabízí malou ochutnávku a Klíč jako na dlani.</p><p>Vyrážíme přímo dolů po louce, abychom se na kraji lesa připojili na červenou značku, která nás už dovede až na vrchol. Les je to tedy trochu smutný, nedávno přišel o většinu svých stromů a ještě neměl čas se vzpamatovat. S přibývající výškou se to ale začíná zlepšovat, což bude zřejmě i tím, že se dostáváme z lesa původně převážně smrkového do oblasti buků. Typická, hojně kvetoucí rostlina, která nás tady zaujala, byla <i>Kyčelnice devítilistá</i>.</p><p>Cesta k vrcholu Klíče má svou atmosféru danou průchody přes kamenná moře a po celou dobu výhledy do údolí a na ostatní kopce. I na těch je vidět smutný konec smrkových porostů. Cestou jsme potkali docela hodně běžců, zřejmě kopec slouží k pravidelným tréninkům místních drsňáků. Člověk se ani nestihne nějak nudit a už je nahoře. Tentokrát jsme měli vrchol sami pro sebe, ale moc jsme si ho neužili, protože foukal silný ledový vítr a viditelnost nic moc díky velkému oparu. Ale úkol splněn, vrchol dobyt, konečně si ho můžeme odškrnout všichni. Vyrážíme dolů.</p><p>Cesta dolů směrem na Nový Bor utíká ještě rychleji, zpestřená je v podstatě jen několika studánkami. U největší a nejvíc opečovávané <i>Kamzičí studánky</i> leželo několik kmenů obřích pokácených smrků zbavených kůry jako připomínka místní \"kůrovcové kalamity\". A asi právě proto, že tak krásné dřevo přímo vybízí k všelijakému blbnutí, je na ně vstup zakázán. Klasika. Ale kdo by to dodržoval :-).</p><p>Pod kopcem překonáme místní silniční obchvat pomocí pěkné lávky a v Arnultovicích zamíříme na místní hřbitov. Přišli jsme sem zapálit svíčky pro tátovu babičku a dědu, cestu z Klíče k tomu využíváme pravidelně, když už cesta vede v podstatě kolem. Dole ve městě už je krásně teploučko, sluníčko hřeje a vichr z Klíče sem nedosáhne, na chvilku jsme si tedy sedli na náměstí, dali malou svačinku, a čekali, až budeme moct jít do hospody. Šli jsme asi moc rychle. Odpočatí a vyhřátí jsme pokračovali do cíle, restaurace Boráček, kde se konala rodinná oslava babiččiných 70. narozenin.</p>",
+        "altitudeLowest": 362,
+        "journeyRouteUrl": "https://mapy.cz/s/lebupemake",
+        "status": "finished",
+        "journeyId": "2025-04-05-klic",
+        "restaurantsHtml": "<p>Restaurace <b>Boráček</b> - byl to cíl trasy, ale už vlastně do ní nepatřila. Obsluha milá, prostředí celkem útulné, pití OK, jídlo stravitelné. Ale nejhorší věc - záchody na klíč na baru, grrrr. Protože jsme ale měli uzavřenou společnost, bylo už pro nás po 14. hodině otevřeno pořád.</p>",
+        "title": "Klíč",
+        "routeLength": 9,
+        "metersClimbed": 349,
+        "routePoints": [
+          "Svor - bus",
+          "Svor - kaple",
+          "Svor - železniční most",
+          "Sokolčík",
+          "Klíč - odb. k vrcholu",
+          "Klíč",
+          "Sedlo pod Klíčem",
+          "Kamzičí studánka",
+          "Františkův pramen",
+          "Lávka přes obchvat N. Boru",
+          "Nový Bor - Arnultovice",
+          "Hřbitov Arnultovice",
+          "Nový Bor - nám.",
+          "Restaurace Boráček"
+        ]
+      }
+    },
+    {
+      "id": "chPVUJhvdfxQj21foyy1",
+      "docData": {
+        "year": 2024,
+        "metersClimbed": 882,
+        "status": "todo",
+        "routeLength": 27,
+        "altitudeLowest": 202,
+        "altitudeHighest": 486,
+        "journeyId": "2024-06-26-klipa",
+        "journeyDate": "2024-06-26T00:00:00.000Z",
+        "title": "Krásná Lípa"
+      }
+    },
+    {
+      "id": "dI6IDhDnjuVaOcZcLM4g",
+      "docData": {
+        "journeyRouteUrl": "https://mapy.cz/s/revevadavu",
+        "photoGalleryItems": [
+          {
+            "description": "no, trochu jsem se bál ...",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNoPH4Z0s_RB1cPrfkjZ8HWLJ4CxU9ERHR1CeJFzC-GV863tBnHoPItdXTZcsGX4Hgvb4jf3iduGnX37oxVVxtFLpNngKXy4Ev0DyHDTLtE2yYD8xyc=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNYMIK3iSAR9VF0Ht4m02bvMvSbb5KUnv3kiWciuucQ6yXmzp5FhI5ygSsb957hOzSNZu4gtDlBuzb0L8cALrLKTuckDykx2_pNpQOyFsC8L9aoJgtt=w2400",
+            "description": "... ale další možnost byla ještě horší"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPF1iKzdEWg5woJ1VbzzwbLk0BqJTQkDuQiNjqEJOHaK-J2yLAvoIXnL7r1Dd9v91TMQUh7WGVyJHthU7BMiB4I2TB9vdFC9TWH0bJXVf8G-Y6_W3Cr=w2400",
+            "description": "v okolí Záskalí je takových křížů několik"
+          },
+          {
+            "description": "Obří sud",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOuvUNt8mkfmA8PJvUQsAuMIMZk8tfK_pXKBgUBriz5nbkKN0Lqfw1-tXa12WXMrhxklp3DtA2ctWrem6DtkGLH1SidzJZXk0U4LGHdX6PhSVe4xo2M=w2400"
+          }
+        ],
+        "metersClimbed": 489,
+        "journeyDate": "2025-03-29T00:00:00.000Z",
+        "altitudeLowest": 379,
+        "journeyId": "2025-03-29-javornik",
+        "altitudeHighest": 684,
+        "title": "Javorník",
+        "year": 2025,
+        "status": "todo",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOT4iqFJU5Dx3xF22Gr3P_ZxqItKd-p6E6kJKE_NPqRq2E6YzqKRehv3LY8BpxwgLu0JWT7NVqIN5jd6TW-eT3LImUwdJGFj4XDL0Fj9Og7dgCYCkbF=w300",
+        "routePoints": [
+          "domov",
+          "Liščí Jáma",
+          "Svatý kříž",
+          "Kříž (Záskalí)",
+          "Záskalí - bus",
+          "Obří sud (Javorník)",
+          "Jeřmanice"
+        ],
+        "routeLength": 13,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOuvUNt8mkfmA8PJvUQsAuMIMZk8tfK_pXKBgUBriz5nbkKN0Lqfw1-tXa12WXMrhxklp3DtA2ctWrem6DtkGLH1SidzJZXk0U4LGHdX6PhSVe4xo2M=w300"
+      }
+    },
+    {
+      "id": "deHCoJSPXciqbpyo2rhg",
+      "docData": {
+        "altitudeLowest": 247,
+        "title": "Turnov",
+        "routeLength": 20,
+        "journeyDate": "2024-01-14T00:00:00.000Z",
+        "status": "todo",
+        "altitudeHighest": 657,
+        "year": 2024,
+        "journeyId": "2024-01-14-turnov",
+        "metersClimbed": 406
+      }
+    },
+    {
+      "id": "dlAB0AZTowrv2I493eb9",
+      "docData": {
+        "altitudeLowest": 247,
+        "routeLength": 19,
+        "year": 2024,
+        "altitudeHighest": 744,
+        "status": "todo",
+        "journeyDate": "2024-01-01T00:00:00.000Z",
+        "metersClimbed": 555,
+        "journeyId": "2024-01-01-kozakov",
+        "title": "Kozákov"
+      }
+    },
+    {
+      "id": "dy4aiRzPHInmbUZbSVKa",
+      "docData": {
+        "photoGalleryItems": [],
+        "journeyDate": "2021-10-03T00:00:00.000Z",
+        "status": "todo",
+        "journeyRouteThumbnailUrl": "",
+        "altitudeLowest": null,
+        "routeLength": null,
+        "journeyRouteUrl": "",
+        "title": "Javorník",
+        "journeyId": "2021-10-03-javornik",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "year": 2021,
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "f6ZlNK5R57th8MudDyZL",
+      "docData": {
+        "journeyDate": "2025-02-22T00:00:00.000Z",
+        "status": "inprogress",
+        "metersClimbed": 232,
+        "altitudeLowest": 235,
+        "journeyRouteUrl": "https://mapy.cz/s/nabuhugolu",
+        "routeLength": 20,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczN6K4xQztqOzokytw4bHuXbZI0DprpXLicX6_Vkaav_4nwr-jwJET-Cizxm4JSiZyZULB4M3UcElEOQzbbvIwULtVcq_O308IJMM9JG4I4Vljl4vk0=w300",
+        "altitudeHighest": 349,
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczP9jTxNv1V7-K42wQKYsJVQO0evH1NqgdW38MlmFrJIJFG_dGpQLpgCbzaOxPYNv78Yeb7BbHp-Rnlkzn5JhIZI0VQy4P3rDs_lD1315yCtnUX9KLs=w300",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP3b2Einh7pdQKWpdPP6iC3LAgIDcQEyx_OahfCGezL54VfBORxaQCQzS4IXt_2bkAzh5iLa9SDw9yjBUKHrxX1XPa2dRkWzZxLH_8Tw-cne_NoFcg=w2400",
+            "description": "Chrastava - hřiště u cyklostezky u Nisy"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNrcup8loL8hm00oQqINLqpsU0tqcLOY5ifq3Ry4AXXr1k6oOlpoX7r-izYjDTZMyWH7tLzxMT_9DnMmpIi9WOXssjg6ixUw1-V2E3OB6cfIiVtfYw=w2400",
+            "description": "uvidíme, jestli se po ní někdy svezeme"
+          },
+          {
+            "description": "cyklostezka sv. Zdislavy",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNgfkmFTSGIo4aXfRPiNeEhV3eMbtPhU5Ffk7fX9hx4JC-eJ-u-FyVfIdZnw1QW1nd4K5tWohV-rPQqT7RxVcWOmNSCNkPaZZV9Eyizh6Shas8lmw0=w2400"
+          },
+          {
+            "description": "cyklostezka sv. Zdislavy - QR kód",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNjgUwo_VGnBvaX2QHB2uI6rUDGqIyBUqtKmrbG5djPj6jRSijEDtQRdAJHNRo1vxF5Y52IgqGoJWi74xc92z1scyQqzZOmjKR_x2kdup_Y0Y2dZeg=w2400"
+          },
+          {
+            "description": "hrad Grabštejn",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMnJ8V801lzdHKQPfdvvuE74C8lFp0QHt-B-_Fd2gHSvDaWJgdzl63fzRL2V9iP9P-5GM639ObDg8KrzPCF1Gsmuj2mtbljwnYkpi5AYBx-9oQ7eXc=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN_MjSXpk_IPENWdO3O_hxu97KDihWGagb6UeV_23n2zth6Z0__wAj0iW-Bg8ASJkvDmHn7ej1k87Pmz4KouimPc6vpdHelE5gjHh2uODcvKb_cWX4=w2400",
+            "description": "hrad Grabštejn"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOJ_GK3zE9ODK8PfznPRndH1miiZiNGADorSOLxjb1FF9Qpmg6H0jlRq9mpmUgUtLD5tuidA0jUNZn5nzem-qT-kDv5ZUp--eu22VoGxauf-LfQKsE=w2400",
+            "description": "zastavení křížové cesty na Grabštejn"
+          },
+          {
+            "description": "svačinka v altánku na Grabštejně - tam nefouká",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPxbLMS4Q5WM9j8Lb9rw1JzYL8JzPpdOaDfxfz4dtAofWbuQWrwWaXlpu9hsPhTuF4CrUixW0lpuWF9KIbfyvpyZY6r1jA57se2RBSONo2YnUkgI-M=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOUkYk5lApL1o1t83ofArc3a1tGTfq3PNoR_-sn5dvI2UgWP6TEKom8RmHTKEY51Z15am72Ig7BOgvcEdpvXmDk-oJhNbKHs_mVlubcOynhr0FJ6Qk=w2400",
+            "description": "hrad Grabštejn"
+          },
+          {
+            "description": "hrad Grabštejn",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP8AM9n9Z27ZhF4fWA1Te71McKJMjwfeBY5FXQcVie04_iPO9yZSEOZPxS13mqCRuMciga0BRv64X4ZqMdiv6w88Fc5SkGOqk5TjqroflqGgJvRVYs=w2400"
+          },
+          {
+            "description": "Trojmezí - hraniční kámen s Polskem",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPA2mUs1VE9-6fc7qYbEElsd86tLSI1Ue8lVEoUN0rW2vOz6_Rwc7fN1z5j4CwjvcC-nP3FoAjw67_eifD1t2PAhmzkdtMhLDTzDozF3aMuhCTisC8=w2400"
+          },
+          {
+            "description": "Trojmezí",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN6K4xQztqOzokytw4bHuXbZI0DprpXLicX6_Vkaav_4nwr-jwJET-Cizxm4JSiZyZULB4M3UcElEOQzbbvIwULtVcq_O308IJMM9JG4I4Vljl4vk0=w2400"
+          },
+          {
+            "description": "Plzeň v restauraci Nostalgie",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO9aWZKNbBYutXhutNiqE7MW0gM4rD5UMB4n_O7QfecDiRkje6xdMyyDzPSayg3DIxrQ-55-n9BAP27i0LejJMeVqldMdUsThnK_GhtR_mWHqndoYo=w2400"
+          }
+        ],
+        "year": 2025,
+        "title": "Grabštejn",
+        "journeyId": "2025-02-22-grabstejn"
+      }
+    },
+    {
+      "id": "gO0itWuTZpGTFIZAYgWp",
+      "docData": {
+        "journeyId": "2024-11-02-lomnice",
+        "routeLength": 18,
+        "year": 2024,
+        "metersClimbed": 471,
+        "altitudeHighest": 623,
+        "status": "todo",
+        "title": "Lomnice n. P.",
+        "journeyDate": "2024-11-02T00:00:00.000Z",
+        "altitudeLowest": 276
+      }
+    },
+    {
+      "id": "gSBbQguHZgOEb9iRQzia",
+      "docData": {
+        "year": 2023,
+        "routeLength": null,
+        "status": "todo",
+        "title": "Javorník",
+        "altitudeLowest": null,
+        "journeyId": "2023-01-22-javornik",
+        "journeyDate": "2023-01-22T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "gt7hknybIdtkrcu85mMP",
+      "docData": {
+        "journeyDate": "2022-10-08T00:00:00.000Z",
+        "metersClimbed": null,
+        "title": "Malá Skála",
+        "journeyRouteUrl": "",
+        "journeyId": "2022-10-08-mskala",
+        "year": 2022,
+        "status": "todo",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyRouteThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "gwkTEvyESIE40PWyaARh",
+      "docData": {
+        "journeyDate": "2023-08-25T00:00:00.000Z",
+        "altitudeHighest": null,
+        "journeyId": "2023-08-25-splavy",
+        "metersClimbed": null,
+        "year": 2023,
+        "status": "todo",
+        "photoGalleryItems": [],
+        "title": "Staré Splavy",
+        "altitudeLowest": null,
+        "routeLength": null
+      }
+    },
+    {
+      "id": "h6ZLcxr7kWzwp4MEPW0S",
+      "docData": {
+        "journeyRouteUrl": "",
+        "year": 2022,
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": "",
+        "journeyDate": "2022-03-05T00:00:00.000Z",
+        "journeyId": "2022-03-05-hodkovice",
+        "status": "todo",
+        "altitudeLowest": null,
+        "title": "Hodkovice n. M.",
+        "altitudeHighest": null,
+        "routeLength": null,
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "hZZB1sB8zwKftrIsarAI",
+      "docData": {
+        "title": "Bramberk",
+        "journeyId": "2024-02-18-bramberk",
+        "status": "todo",
+        "routeLength": 13,
+        "year": 2024,
+        "metersClimbed": 315,
+        "journeyDate": "2024-02-18T00:00:00.000Z",
+        "altitudeHighest": 788,
+        "altitudeLowest": 491
+      }
+    },
+    {
+      "id": "hq2eKP0WZjSy6717uU9L",
+      "docData": {
+        "status": "todo",
+        "journeyDate": "2022-01-29T00:00:00.000Z",
+        "routeLength": null,
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "year": 2022,
+        "journeyId": "2022-01-29-jablonec",
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "title": "Jablonec n. N."
+      }
+    },
+    {
+      "id": "iSOLc4adLl6VsoZYHQvj",
+      "docData": {
+        "altitudeHighest": 744,
+        "journeyRouteUrl": "https://mapy.cz/s/gahuheruje",
+        "journeyDate": "2025-01-01T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczNrGUEGZrnFZhEbmbShRacW_aFfI8z_FoMI-md-D7iys0pN-jlieBD9Eij6TRJsn1_1RcKIpTvejUdzJ13pG0i23vwrUQf8cng7vI3bKXqs9Ldu83Q=w300",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNrGUEGZrnFZhEbmbShRacW_aFfI8z_FoMI-md-D7iys0pN-jlieBD9Eij6TRJsn1_1RcKIpTvejUdzJ13pG0i23vwrUQf8cng7vI3bKXqs9Ldu83Q=w2400",
+            "description": "Kozákov - rozhledna a Riegerova chata"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOQWex00UbW9FqGCi2G4oPCVDvVoLQ4guYgcXrxWS826_csqXyDmwvPiW1G5bXFhBDHWtBNZO1ipoHzsPir1fJIGw5-810og1kQQyRAefBtomldNmk=w2400",
+            "description": "Kozákov - pohled od Loktuše"
+          },
+          {
+            "description": "zřícenina skalního hradu Rotštejn",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNvN6Tw7uwxLhOIz1XW4a36mHRPJBh_v2CAsjQI70lAF0Tun6uCMawawWLy9dVmPJa3Hs4nqPf6WqXgHaR61zo1Dt46RLlGj7oc5090Dw__J4nYhTg=w2400"
+          },
+          {
+            "description": "Rohozec v restauraci Loktuše",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOWfK0cLMR7UgwQgYAlqr1o0SeBDKu_IRSLY_odzrOhCQl6Wdb0W56mblRM63jW1h3HKDAo_2PDzuNq0W45RORVW9arjUEPHJ0Bl15_w_8S8JWTwL0=w2400"
+          }
+        ],
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMesnpqiSaVbv3WRfbrwlgG7HfB3IVwV2HrNUpOYvbqX0ZA3iN-E4mB21DRmcJZqQtqMasRybe5-oYisFE3n3Q6WTICaQwm-hwEtl1X3U4uJNWM8Gs=w300",
+        "altitudeLowest": 247,
+        "journeyId": "2025-01-01-kozakov",
+        "title": "Kozákov",
+        "routeLength": 19,
+        "year": 2025,
+        "metersClimbed": 587,
+        "status": "finished"
+      }
+    },
+    {
+      "id": "ibdrA9nZJyzqHR39oy4t",
+      "docData": {
+        "journeyDate": "2021-10-09T00:00:00.000Z",
+        "year": 2021,
+        "title": "Milíře",
+        "status": "todo",
+        "altitudeLowest": null,
+        "journeyId": "2021-10-09-milire",
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "journeyRouteUrl": "",
+        "photoGalleryItems": [],
+        "routeLength": null
+      }
+    },
+    {
+      "id": "ifaAIq0WRXwab2BtyxnR",
+      "docData": {
+        "altitudeHighest": 346,
+        "journeyId": "2024-03-10-svijany",
+        "metersClimbed": 322,
+        "title": "Svijany",
+        "journeyDate": "2024-03-10T00:00:00.000Z",
+        "altitudeLowest": 223,
+        "status": "todo",
+        "routeLength": 26,
+        "year": 2024
+      }
+    },
+    {
+      "id": "jPHsn0IxcSjYIktkbkCl",
+      "docData": {
+        "altitudeLowest": null,
+        "year": 2023,
+        "journeyDate": "2023-06-29T00:00:00.000Z",
+        "status": "todo",
+        "photoGalleryItems": [],
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "routeLength": null,
+        "title": "Miletín",
+        "journeyId": "2023-06-29-miletin"
+      }
+    },
+    {
+      "id": "jdE4QeEsigFtLN5vnuy9",
+      "docData": {
+        "year": 2020,
+        "status": "todo",
+        "title": "Hrubá Skála",
+        "journeyDate": "2020-02-08T00:00:00.000Z",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "routeLength": null,
+        "journeyRouteUrl": "",
+        "photoGalleryItems": [],
+        "journeyId": "2020-02-08-hskala",
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "juMvU351b3VT7IAjnqfd",
+      "docData": {
+        "status": "todo",
+        "altitudeLowest": 373,
+        "year": 2024,
+        "routeLength": 17,
+        "journeyDate": "2024-02-03T00:00:00.000Z",
+        "journeyId": "2024-02-03-liberec",
+        "metersClimbed": 255,
+        "title": "Liberec",
+        "altitudeHighest": 574
+      }
+    },
+    {
+      "id": "kDM9dxPWYJT1EVVOtCNI",
+      "docData": {
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "journeyId": "2022-12-26-mhradiste",
+        "journeyDate": "2022-12-26T00:00:00.000Z",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "status": "todo",
+        "title": "Mnichovo Hradiště",
+        "year": 2022
+      }
+    },
+    {
+      "id": "kLW5Sreze7AaOGOJggSs",
+      "docData": {
+        "year": 2022,
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": "",
+        "altitudeHighest": null,
+        "status": "todo",
+        "metersClimbed": null,
+        "routeLength": null,
+        "journeyRouteUrl": "",
+        "altitudeLowest": null,
+        "title": "Císařský kámen",
+        "journeyDate": "2022-04-10T00:00:00.000Z",
+        "journeyId": "2022-04-10-ckamen",
+        "journeyRouteThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "kNKCB08QTzOeIX9BTKhJ",
+      "docData": {
+        "routeLength": null,
+        "altitudeHighest": null,
+        "metersClimbed": null,
+        "journeyRouteUrl": "",
+        "journeyDate": "2022-06-26T00:00:00.000Z",
+        "journeyRouteThumbnailUrl": "",
+        "altitudeLowest": null,
+        "year": 2022,
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": "",
+        "title": "Bramberk",
+        "status": "todo",
+        "journeyId": "2022-06-26-bramberk"
+      }
+    },
+    {
+      "id": "kU9YvTHEKBkdZj9YwfVF",
+      "docData": {
+        "title": "Úštěk",
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2022-08-14-ustek",
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyDate": "2022-08-14T00:00:00.000Z",
+        "status": "todo",
+        "year": 2022,
+        "journeyRouteUrl": "",
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "lc9AMYm248G9y7zVMF2i",
+      "docData": {
+        "routePoints": [
+          "Pilínkov (vlak)",
+          "U lomu - H. Hanychov",
+          "Nad lomem",
+          "Pod Pláněmi",
+          "Pláně pod Ještědem",
+          "Frantina",
+          "Ještědka",
+          "Ještěd - odb.",
+          "Ještěd - vrchol",
+          "Nad Výpřeží",
+          "U Vířivých kamenů",
+          "Dvořákův kříž",
+          "Průchod 15. poledníku",
+          "Sáňkařská ul.",
+          "Strakonická ul.",
+          "Husitská ul",
+          "Liberec (vlak)"
+        ],
+        "year": 2025,
+        "altitudeHighest": 1010,
+        "journeyDate": "2025-03-30T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczP1R05zDpUCi705KsVKQSJZ93TLcH1J8pZgG7aA8lUEv8XQ7tdZbElZOyKGaj97fklKC2wgd7ZOMLl6sroSUOryqEF2jIvsmm3kC4dFuhGMAXViOPaY=w300",
+        "status": "inprogress",
+        "journeyId": "2025-03-30-jested",
+        "journeyRouteUrl": "https://mapy.cz/s/lobarajotu",
+        "altitudeLowest": 364,
+        "metersClimbed": 593,
+        "title": "Ještěd",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOwxGPZdjMjDssS6UxR9HjADHeZCPXCzir7gSemL-SyfuD7BW1AMvg9wlQ6qzyNip2-e_JX7rRov2OZoX5z3z1ARwmF5YNunQV69hFvU1j1Xt5tX7oh=w300",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPxP7YljbJVBODjFrscV9eRAkUIyKGK2ZauWhMeIuIYX3zA67dmBxKI-Uy3eN_Rge4ExWSLxlxr4gFzQvugdVtzSMJSl4KPsrrn0raBO9QwFvz-TC2a=w2400",
+            "description": "dřevěné sochy u lomu"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMCzfTCQXro1hGRiXI8wgSIndW8k9vxt0imsvrYI8sHqTCHq-HbSkaZFt5kxbo2B3WrRUcsoaZ1tKYEyfu916CqSwF4Y57gw9Gju7cHGtvgvkMRpZQJ=w2400",
+            "description": "dřevěné sochy u lomu"
+          },
+          {
+            "description": "Devětsil bílý - ten byl teda úplně všude",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMMmzCN12EAN9QeK8T06Sl4YDhjr2BexB3akAnRcIuvGqW071ukMU8AHPDOjzlhyW7YlhHAa5LXEAN5T0lEhNytsROA2fncrsNBH4NAJVjELPq3HbPu=w2400"
+          },
+          {
+            "description": "už je to jen kousek ...",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPRjNifqHHLMeNz6Ru_HJNQ7BX5PT7LwyTYbQnrPL5Q8WRwjq9eshaMeWGG2P0v_W-8woAG-oWrzzksb4i3qd0IyM4g49Mguro2gaPEOGYozDLR0Jpm=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP1R05zDpUCi705KsVKQSJZ93TLcH1J8pZgG7aA8lUEv8XQ7tdZbElZOyKGaj97fklKC2wgd7ZOMLl6sroSUOryqEF2jIvsmm3kC4dFuhGMAXViOPaY=w2400",
+            "description": "... a jsme tam, ale trochu tady fouká"
+          }
+        ],
+        "routeLength": 13
+      }
+    },
+    {
+      "id": "lfr20xg5QJqbIrwOqUgk",
+      "docData": {
+        "journeyDate": "2024-04-06T00:00:00.000Z",
+        "status": "todo",
+        "title": "Rovensko p. Tr.",
+        "metersClimbed": 310,
+        "altitudeHighest": 465,
+        "routeLength": 11,
+        "journeyId": "2024-04-06-rovensko",
+        "year": 2024,
+        "altitudeLowest": 264
+      }
+    },
+    {
+      "id": "m4Eyh6UlbzHdDMnEl2QD",
+      "docData": {
+        "journeyDate": "2022-07-04T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "journeyRouteUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "year": 2022,
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "",
+        "status": "todo",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "journeyId": "2022-07-04-zakupy",
+        "title": "Zákupy"
+      }
+    },
+    {
+      "id": "mLBFvW1T0vlzR4d51xzo",
+      "docData": {
+        "metersClimbed": 297,
+        "journeyDate": "2024-04-13T00:00:00.000Z",
+        "altitudeLowest": 402,
+        "title": "Milíře",
+        "routeLength": 7,
+        "status": "todo",
+        "journeyId": "2024-04-13-milire",
+        "year": 2024,
+        "altitudeHighest": 597
+      }
+    },
+    {
+      "id": "mn9KytcTwAj9lr1HWQ9i",
+      "docData": {
+        "year": 2021,
+        "metersClimbed": null,
+        "title": "Rádlo",
+        "status": "todo",
+        "altitudeHighest": null,
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2021-02-25-radlo",
+        "journeyRouteUrl": "",
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyDate": "2021-02-25T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "mrSZKGWCvRyypmQEqjkD",
+      "docData": {
+        "journeyRouteUrl": "",
+        "journeyId": "2022-09-10-klipa",
+        "title": "Krásná Lípa",
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "altitudeLowest": null,
+        "photoGalleryThumbnailUrl": "",
+        "year": 2022,
+        "metersClimbed": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "journeyDate": "2022-09-10T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "nP7wGjmPIrYG0ggMkIMv",
+      "docData": {
+        "title": "Kryštofovo údolí",
+        "journeyId": "2023-02-12-kudoli",
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "routeLength": null,
+        "journeyDate": "2023-02-12T00:00:00.000Z",
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "year": 2023,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "o08sSHLDpnbuzoPGialf",
+      "docData": {
+        "altitudeLowest": null,
+        "altitudeHighest": null,
+        "year": 2023,
+        "metersClimbed": null,
+        "journeyId": "2023-08-26-clipa",
+        "status": "todo",
+        "title": "Česká Lípa",
+        "journeyDate": "2023-08-26T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "routeLength": null
+      }
+    },
+    {
+      "id": "o4PckMLJ2wI7TNbqYQ1H",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "title": "Rádlo",
+        "journeyDate": "2021-01-27T00:00:00.000Z",
+        "metersClimbed": null,
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "year": 2021,
+        "altitudeLowest": null,
+        "journeyId": "2021-01-27-radlo",
+        "altitudeHighest": null,
+        "status": "todo",
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "oSn115ujYzOVOciTZF7W",
+      "docData": {
+        "routeLength": null,
+        "journeyDate": "2022-01-15T00:00:00.000Z",
+        "year": 2022,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "journeyId": "2022-01-15-sloup",
+        "title": "Sloup v Čechách"
+      }
+    },
+    {
+      "id": "odFeoVTOz1s4DW68TQ41",
+      "docData": {
+        "journeyId": "2022-01-08-jablonec",
+        "title": "Jablonec n. N.",
+        "altitudeHighest": null,
+        "year": 2022,
+        "photoGalleryItems": [],
+        "metersClimbed": null,
+        "altitudeLowest": null,
+        "journeyRouteThumbnailUrl": "",
+        "routeLength": null,
+        "status": "todo",
+        "journeyDate": "2022-01-08T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "",
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "olTOpS3myZBJ03CLupWL",
+      "docData": {
+        "altitudeLowest": null,
+        "journeyId": "2022-04-23-hvozd",
+        "year": 2022,
+        "journeyRouteThumbnailUrl": "",
+        "journeyDate": "2022-04-23T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "title": "Hvozd",
+        "altitudeHighest": null,
+        "status": "todo",
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "osuxKlj2Ra1LJtrgRWeI",
+      "docData": {
+        "altitudeLowest": null,
+        "year": 2020,
+        "journeyId": "2020-12-29-rychnov",
+        "journeyRouteThumbnailUrl": "",
+        "journeyDate": "2020-12-29T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "",
+        "metersClimbed": null,
+        "title": "po Rychnově",
+        "altitudeHighest": null,
+        "status": "todo",
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "ovSD2xiObi8fYWopSRE2",
+      "docData": {
+        "year": 2024,
+        "metersClimbed": 712,
+        "altitudeHighest": 870,
+        "title": "Hejnice",
+        "status": "todo",
+        "journeyId": "2024-08-27-hejnice",
+        "journeyDate": "2024-08-27T00:00:00.000Z",
+        "altitudeLowest": 350,
+        "routeLength": 27
+      }
+    },
+    {
+      "id": "ph6V8Hzqg3LhVsBXgw8E",
+      "docData": {
+        "journeyDate": "2020-06-06T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "altitudeLowest": null,
+        "journeyId": "2020-06-06-kozakov",
+        "journeyRouteThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "photoGalleryThumbnailUrl": "",
+        "year": 2020,
+        "status": "todo",
+        "title": "Kozákov",
+        "routeLength": null,
+        "metersClimbed": null,
+        "altitudeHighest": null
+      }
+    },
+    {
+      "id": "ph8SkLjti1ZuzN2Oq0yx",
+      "docData": {
+        "title": "Kopanina",
+        "journeyDate": "2020-03-28T00:00:00.000Z",
+        "photoGalleryItems": [],
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "status": "todo",
+        "altitudeHighest": null,
+        "year": 2020,
+        "photoGalleryThumbnailUrl": "",
+        "journeyId": "2020-03-28-kopanina",
+        "journeyRouteUrl": "",
+        "altitudeLowest": null,
+        "routeLength": null
+      }
+    },
+    {
+      "id": "pqWrQ8ymjcSkrgi2luRF",
+      "docData": {
+        "year": 2022,
+        "journeyDate": "2022-02-12T00:00:00.000Z",
+        "journeyRouteUrl": "",
+        "status": "todo",
+        "altitudeLowest": null,
+        "photoGalleryItems": [],
+        "routeLength": null,
+        "photoGalleryThumbnailUrl": "",
+        "title": "Hrádek n. N.",
+        "altitudeHighest": null,
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null,
+        "journeyId": "2022-02-12-hradek"
+      }
+    },
+    {
+      "id": "r65r0Y1LOv42tSfUYqCM",
+      "docData": {
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "year": 2020,
+        "photoGalleryItems": [],
+        "status": "todo",
+        "journeyDate": "2020-11-29T00:00:00.000Z",
+        "routeLength": null,
+        "title": "Frýdštejn",
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2020-11-29-frydstejn",
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "rOUG3dRFMPNBm7pUdN1u",
+      "docData": {
+        "year": 2025,
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczNVZv8pq2DLRr39iJoH1zhKQST1P5WV_bB7Qj05Ly-vzGe4cKlNZg1dQvrLZE2PgaREiTl1MKrqg1H_DSwzsSE9HXR_BcLoUy89m35svjcv_zUMnEs=w300",
+        "title": "Bramberk",
+        "status": "inprogress",
+        "metersClimbed": 440,
+        "journeyDate": "2025-01-11T00:00:00.000Z",
+        "routeLength": 15,
+        "altitudeLowest": 490,
+        "journeyId": "2025-01-11-nisanka",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMuZ7Qi0DlwJ8L1DsyudyLLIf5G8MvQd7sI1nN72Lmr8iMYGjGJ09hT1Ksf1U06ErVuTGFBuuiulSWLk6seoqJTSxnKVYoNJKnPyclybzvpgl99pds=w300",
+        "journeyRouteUrl": "https://mapy.cz/s/fahevedaca",
+        "photoGalleryItems": [
+          {
+            "description": "rozhledna Nisanka",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMuZ7Qi0DlwJ8L1DsyudyLLIf5G8MvQd7sI1nN72Lmr8iMYGjGJ09hT1Ksf1U06ErVuTGFBuuiulSWLk6seoqJTSxnKVYoNJKnPyclybzvpgl99pds=w2400"
+          }
+        ],
+        "altitudeHighest": 785
+      }
+    },
+    {
+      "id": "rwVPpsOleixpUXlyKK5H",
+      "docData": {
+        "photoGalleryThumbnailUrl": "",
+        "journeyDate": "2022-06-18T00:00:00.000Z",
+        "year": 2022,
+        "journeyId": "2022-06-18-jested",
+        "altitudeLowest": null,
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "status": "todo",
+        "journeyRouteUrl": "",
+        "title": "Ještěd",
+        "journeyRouteThumbnailUrl": "",
+        "routeLength": null,
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "s4qBYo9aQX5HqXKRQKzA",
+      "docData": {
+        "year": 2025,
+        "altitudeHighest": 629,
+        "journeyDate": "2025-02-16T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczOjbW1PA974baQRQUfTQTLMbGmpUzdPn-168-vuwI7Lo0Le-6VzvRQjIqVK52FZk-9nphAC-IEhbXouvoz8epxBg3vQVBEeqrxG3yZ7UxpwrTVXbUo=w300",
+        "status": "inprogress",
+        "journeyId": "2025-02-16-prosec",
+        "altitudeLowest": 349,
+        "journeyRouteUrl": "https://mapy.cz/s/dodejesuva",
+        "metersClimbed": 383,
+        "title": "Proseč",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczP0vsFW_OeikAC43Mk2oQQB_ltR2105KR_CVtw1nd2RT_2O5cLMb9VIeH9fXpj0PB9bA7K9jBUuSVpdeD8T8irZ5yOLj1_H5hz1XfmY0ryKR0fT63I=w300",
+        "photoGalleryItems": [
+          {
+            "description": "restaurace Žižkův vrch změnila provozovatele",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNlv4uPzSWYQtfk5ZwS6rU49cmzSLV_ilK6N08aKbRhcPyAUsqPWOCYNeR2f9iqb0WpGQBKBkWqUaXf4As8BijWCBNZjsBLxXVJrMOrE7v03D1gRgg=w2400"
+          },
+          {
+            "description": "rozhledna Nad Prosečí",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOjbW1PA974baQRQUfTQTLMbGmpUzdPn-168-vuwI7Lo0Le-6VzvRQjIqVK52FZk-9nphAC-IEhbXouvoz8epxBg3vQVBEeqrxG3yZ7UxpwrTVXbUo=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPHqMyM12ClQzQTmZyRMb8rlmGdcg_-Ia3sHt2kjTq-pVjToGPanJz2alhXbQIJkDb-X2BbTx-AHnANpeS4tUTMlfa6NRoHOMUKNvsWy6zq_Bt025J0=w2400",
+            "description": "oběd v restauraci Chata Proseč"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOCuzwl7lMgsFUtv9DyVxWfdTAgR-rkBZcJ7S6gexLgM5_lIDo618sqexvhDMMyxTLkuBZXddZGvLoxbFvOWtBQ_Q0Dv4L5VX1AZDWhM84T4bNxu7_6=w2400",
+            "description": "pohled na protejší hřeben s Císařským kamenem"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOw4OJlaf2KfvVcKZ5bDipjCMXgpityTmeER4i7vWuvLfCQrxWTGfzIS-xTPcTz8BFeIc8rdSTB3bS7u72XH3pEh1sZe3lxnPh1KV0tuYnFIQy6Q4xM=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOjNHYbM5nNca1xvA6xC_ICBO6HrYIKX1DOspQrioYqfMjj9NB0RO-nSmGpT2bSpf5sEWuWwqjEjLmryZNKXr1QCJDnRWLARmr7ouY9C54yyW2FBcAO=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNRbx9DZ3c7zEzASVR8rPzs8YfICypt2d9eiJ5qz_ReyKPLNvkS03uc5rrExdLpMcarbRnQT8zABoS7sRUOQJ3wlJnM-TkKEX3j-rk5P2KO3AGgsVzn=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPIHnQKeqeqsWSgxbSnXPMdQuw8hUWW6PGbI9MykWS8l1C_5pxFzgcsp7pZM4zG-KJLTEN3YGe_LxatiRo0H1DPnALeAXoODZH6SL4jooxdCEWqIRye=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOkq_aNDYxIMIYvcFPtTrEjVm5qgbDkVODLI1rqTzdTIW5KAc4SSvxKdyaPPg6ikpxlr9ClFhgY_hgNMgDO9oMcQRLlXkKhNSfR3cM-DulaFG1P2qn_=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOgVYBqIVvUdYCrg5Tq8AqPoaiV7BTtkikk5axomnZXGA5t4YxNh3OKLAYTvQn9vl_m3gRp61YQlNi3Wg87ep0AXkelNXyQpz9hzxHmK18aOWidwKjw=w2400"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOFNDFo7MeqapHiC_NnLtjegMWP3TUAMJPSyltJX3rykVfSOt_A8QYGgYT1j9fxbB7XQwtfBUIEXVPDvcEk0f6uS1lFFIEHvbPfJjxXYdN3JgG0R9KJ=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN1PC4K41x73YWTTSTyUEP3EGL_ku2z6elmxdJArdKRlGEnxPwn6eq-MGOuvrijWDS0J3Nx1WRkzbpfEfkBs-1HI-WS0Aed72Wr0Vqr_-xxVGKM_d66=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPFWPFUX7huPv-HwB41Kol6_VxaKObGPFwI5ANg_3TooaEsLMF0Jnu2zizWPjXdK_hzxtDZ1LoftkNoEM2gQ6Y0mhUQnCcZJKGj1MDg6nosDcdbvSXM=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOsqLtuaDACCtg8GDPe7sjF6-z1Icbe5zYuSh_uaBGAuc7ObcZsGhd3SsgMKj5vNYeqWGpct3s1A7PmtHX3294qGtgdVS6VBmX4PqFrlUms_EA5CRM-=w2400"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPQ9XIa21NkJHpJaxt3b4OiFWK7psiSLBapVUJo7fMBrz6wpHGikYPCv88dQ-2RqCgFkc4mwwosQ4Z17GOZ1wINCtgTaNpgk1vttazRfVL4vJ79pLB6=w2400"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOPTWZnQhy_rhHeWf0zNvMconQ5QcCeS67wwH3Ab2RMavUqAejSJcv7CeIYseKWTth18igB1fy3s4pdynoPttkrHKzZo-7T5ARXdmlCZWPys31YGrQz=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP1ORIysVC5KyzSFBsS1p4PApI9zCuqsmjS9jMeu2vSFXj3tby-GBd6eQJlwtChwAuU0h6bApU4S3lOKwYywSJMFLyRe-nIs4Y_v25XKWKQCep_91Jk=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMBjEg1dWyJdd8DqQAVPaQHynI5ODE9AqOkE2LXnMw_bMX9anGZMtloy5H-ShzqY3JTDsI6Zith_mDr5q-Gh9Qihbx6SuHfU4qixUVB_aEzkUix0vaE=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNnkaNnggdsbs-g0kxIbsOu8JuEq9teMsyTFpTlflKAb0J6qi1tr7unbZozQ53zAtn225oWt5zUe5wF2jXsIxfdcLl5doI9tq-A_j90ZqCDeghyCHCI=w2400"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO13yzAPgzRzDd9E9dtnT4jNy6lVDmabeTnZ1NeiplNj63qp2gn0LOp-e6Cr2cbl2__Y_EUPTBKqH6T1hcr03ZjbZHCZYi0N23iCfba1WHQ7UZ6ShqN=w2400"
+          },
+          {
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPNIbsmrXFWC7QlUJPcAVItftN1vaM8CjjUQrvNlb0fbJXmoXqXeWowVocYMcAQ-dWvlVYUjgMKr98xA4n_rkJ7T2Olmfm6Zwi8uHCA4PpI_Uiaflt3=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNhNEX_aRhbFRf6PVm4zDQ29ESxOyIHt3bruQUqqSc1lrWjVw86ovf643HviyMgJA-DbJR-772Sj3HgW58fotb8Dwq1djqzungN_Q9aywXRvaIv8bom=w2400",
+            "description": "tajemné bytosti v lese cestou z Proseče do Liberce"
+          }
+        ],
+        "routeLength": 19
+      }
+    },
+    {
+      "id": "s8cRqRytPtZ11HAynMPl",
+      "docData": {
+        "journeyId": "2023-01-07-hamrstejn",
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "altitudeHighest": null,
+        "status": "todo",
+        "year": 2023,
+        "routeLength": null,
+        "title": "Hamrštejn",
+        "journeyDate": "2023-01-07T00:00:00.000Z",
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "sA1q6MwBxpq2tER4FqVB",
+      "docData": {
+        "photoGalleryItems": [],
+        "altitudeLowest": null,
+        "journeyDate": "2023-06-17T00:00:00.000Z",
+        "altitudeHighest": null,
+        "routeLength": null,
+        "year": 2023,
+        "status": "todo",
+        "metersClimbed": null,
+        "title": "Smržovka",
+        "journeyId": "2023-06-17-smrzovka"
+      }
+    },
+    {
+      "id": "sBAsHmHqzoNrBWan1hgH",
+      "docData": {
+        "title": "Hamr na jezeře",
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "journeyDate": "2022-07-03T00:00:00.000Z",
+        "journeyId": "2022-07-03-hamr",
+        "status": "todo",
+        "metersClimbed": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "photoGalleryItems": [],
+        "year": 2022,
+        "photoGalleryThumbnailUrl": "",
+        "routeLength": null
+      }
+    },
+    {
+      "id": "sCIEDswuoAZIdP0BtoqA",
+      "docData": {
+        "journeyId": "2025-03-09-rohozec",
+        "routeLength": 18,
+        "altitudeLowest": 262,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczO0dVNuqqYTXKRGnN9a4H1OjpcO5xQ94yT3uAf58OvkelXUWjR878ftc_AB89w_WGnqJsfqspr6kt9a5HxM584z7VRtx6JU_XYHSXxI0jBN-FX4bP0=w300",
+        "photoGalleryItems": [
+          {
+            "description": "Frýdštejn - krásně rekonstruovaný objekt",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNjGa7POde5WjV9Iu1cspKnYMjfGDzEELhDYG7VqaPiPkNHbPKpUEivzz9LtXB8CX55CoyfkqfKcGn8zdScE9MvOSrvs-EDG9VL9nCWVN-B7P_3aJo=w2400"
+          },
+          {
+            "description": "Frýdštejn, zřícenina už na dohled",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM9sp09FbuVkeESKdpUTAWbDZpYyybq_ltZtsEeObZTRpEBbXUozW1iKyuFljG_ud1WsKEZbXfnHg0XKnh7L4zPCuKkPvtmB-y1H7uusSzP31tt5Dk=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNxapgQx7dyToUDXQafe7BNyvsb5Yla-nZWV0_WvYNUsY-rGME4pqkNcfz6lfy4fbcHQVtw5ha-VvoalzpoiilLBcQhJkX8RA7CfXEbSs4IUbAsXPs=w2400",
+            "description": "Bartošova pec"
+          },
+          {
+            "description": "Bartošova pec",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP2UwRAd9184hIBntWTR5zZuERRB0kSYFBSPP1JJf28IFgLqEPe4lv-f_3zCQcLoi_OKg-_WIovwDiHZu73uGFeC59n78T9vZjW1qYPEv3nE8NIixw=w2400"
+          },
+          {
+            "description": "pivovar Rohozec - restaurace",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczO0dVNuqqYTXKRGnN9a4H1OjpcO5xQ94yT3uAf58OvkelXUWjR878ftc_AB89w_WGnqJsfqspr6kt9a5HxM584z7VRtx6JU_XYHSXxI0jBN-FX4bP0=w2400"
+          }
+        ],
+        "journeyDate": "2025-03-09T00:00:00.000Z",
+        "journeyRouteUrl": "https://mapy.cz/s/lukededomu",
+        "altitudeHighest": 594,
+        "status": "todo",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczNnGEVoZGuVce3b-ksC5B7bsqoPPKGF89W_UC1kBUrZNmghS0eRBW1FABnfiWVQG33UHeHDWDani2ouDiUmdJW_kVVQODKwEg9kgdO8NkOdHI6tkHI=w300",
+        "routePoints": [
+          "domov",
+          "Liščí Jáma",
+          "Svatý kříž",
+          "Pelíkovice",
+          "Pamětní kámen manželů Scheybalových",
+          "Frýdštejn",
+          "Mužákův statek",
+          "Voděrady",
+          "Horky",
+          "Ondříkovice",
+          "Bartošova pec",
+          "Rohozecká Restaurace",
+          "Zvířecí hřbitov",
+          "Park T. G. Masaryka",
+          "Turnov (vlakové nádraží)"
+        ],
+        "title": "Malý Rohozec",
+        "metersClimbed": 265,
+        "year": 2025
+      }
+    },
+    {
+      "id": "sJygzGMCXk2xToaiGOfT",
+      "docData": {
+        "routePoints": [
+          "Jablonec n. N. - autobusové nádraží",
+          "Vodní nádrž Mšeno",
+          "Mšeno - Sádky",
+          "Jindřichov - sedlo",
+          "Skalní hřib",
+          "RC letiště Bohumíra Hořeního",
+          "Historické překladiště bývalé tramvajové vozovny Janov nad Nisou",
+          "Janov n. N. - Za Prahou",
+          "Janov n. N. - most",
+          "Trniště",
+          "Hašlerova chata (rozc.)",
+          "Křížová cesta Janov nad Nisou",
+          "Studánka Trniště",
+          "Hašlerova chata - stud.",
+          "Nad Harcovským potokem",
+          "Andělské kameny",
+          "Harcov - kostel",
+          "Husova ulice",
+          "Šaldovo náměstí",
+          "Restaurace Radniční sklípek",
+          "Pražská ulice",
+          "Liberec (vlak)"
+        ],
+        "year": 2025,
+        "altitudeHighest": 728,
+        "journeyDate": "2025-04-12T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczNnmWkyl2SdEktN0yYxU_5nhDLPG1GWO52w5-6Rcm6OV678_dcQxVqGVRkXkMbKDVJbo49wkaeiz0YHzEnQcW51DrIO9Up7iJcVD6vYnkLQWW_s15sN=w300",
+        "restaurantsHtml": "<p><b>Radniční sklípek</b> - měli jsme málo času, tak jsme šli tentokrát na jistotu. Párkrát do roka sem zajdeme a vždycky je to v pohodě. Krásný velký prostor, pozorný a milý personál, něco k jídlu vždycky najdeme. Tentokrát jsme se spokojili s palačinkami a smažákem, pospíchali jsme na vlak a tak jsme nechtěli nic moc vymýšlet. Všechno šlo hladce, nadlábli jsme se a včas vyrazili. A záchody také bez problému. Standardní spokojenost.</p>",
+        "status": "finished",
+        "journeyId": "2025-04-12-liberec",
+        "altitudeLowest": 349,
+        "journeyRouteUrl": "https://mapy.cz/s/kekekufahu",
+        "metersClimbed": 463,
+        "title": "Jablonec - Liberec",
+        "journeyRouteThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMS1e2EoBj5uiHpRHz9FRbKhEsaEUVMMRAxMyxDQViLchtgdx3WQZVHItcxppPISjkiFmof02vsCXoCR6SLO0c2cni1wMVwiGCMMbdXk-Wl427EKjgE=w300",
+        "photoGalleryItems": [
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMgkGXh7sf2tP220Lpu4UHCLRnQgeyL673ZKkz49QS44GJm5j21WL1arfcdvx8I79YMC97DlRnMvbfAfprjmpmuqxmYEdCB84zIVLKcYhk_b4gfffew=w2400",
+            "description": "Skalní hřib"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOzq90hVWdRhnvl954BGdKPU2yt3bmbQIALaRQlt6UdRQHdnsTQAjGZd6ONdM9oUK38ZyxvZKPzbGojNtIOxiJfwzFd-q1a59BCWw5Z4gbm59VLrjcF=w2400",
+            "description": "RC letiště Bohumíra Hořeního"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMwNo6CW4QyX-_rcdZVedfEPBoSyHXjsJn4DcVsDZH2jEMn8n6C6F4Rm9ZePutGymn05LrVpXbuQLPM98O3kc5RWJPEZocg7iIsi9cUgEV0V0f8qyig=w2400",
+            "description": "Janov nad Nisou - v pozadí bobová dráha"
+          },
+          {
+            "description": "Historické překladiště - roztomilý vagónek",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNXdwt4ThttaI68Am5kNRCpKRD5FEMBkfxUfGhSHnYMXRyq9Na49XJghQuD53vRsDbUVCCT4lWIkc_aweo3LwdTX0cv8avdkaOM4Oq4TSJGUbCQLDUL=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN6BXXEjz0upDi6j0IUjIusCHox5wRc4rH55A43rQC8onUmpUkd-cctXONkv-1uG5Iy49S-yjVdaO6JuDfhAuvw2Fy0XcLCfYD9usuCI3gF5z3U0E56=w2400",
+            "description": "Tramvajová doprava na Jablonecku"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMWpf-zgTLDfQNP5P9iaaYxSf3CVV3c0_Pcp_qSMteON6VXEfi6AsweyD_e_hz78Afic1EQSs7hPoAEdn8CNt_hNjeYRoboaIPuXIB5StqI1MVuVVhN=w2400",
+            "description": "Tramvajová doprava na Jablonecku"
+          },
+          {
+            "description": "Tramvajová doprava na Jablonecku",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMXSfUOtgSehgpEzNUm4ZGtbHTLiqrfd0XyCXE0FxdlzzT682aS_sANFZTPoplRBNok2-w7p81eCAnL5CgMGubZ4bUPdhcL_UyCGJWjD9-0mba86WaJ=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN526LfJBZX2NazLzyZtacg__hWiDvqgrchD6XmpsVcJ9KLwQhg830YvpXzk5yUoMCRxwEVSWz29p9dugAvm4QNFIgzzfaRyAT--FRJ3Uo7Em-hhPXI=w2400",
+            "description": "Vozovna Janov"
+          },
+          {
+            "description": "Historické překladiště bývalé tramvajové vozovny Janov nad Nisou",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPCNrQ0ddqn7wY7z4uusBBZGtIkcgVHmnwkIkd-YEAm6OS8j6ubjZ8bG9O6dUR_Gx6n6PxqbJ817asd7gEK6lvJQtWcHHswENg52SJEX2E4G4r9-FOi=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOemosGy-Yc4Kpx7K9GfgiVnIX6b3lLWlptXyBRs3_GVwHk4dKZ1cSMnfckObWdNDyFBVv5uAEH1ZYOCEExHZconnK0Xrxm6-ySE1tBFyzfgzjYRSU6=w2400",
+            "description": "Janov n. Nisou - solidní lávka"
+          },
+          {
+            "description": "Janov nad Nisou - opravdu krásné místo",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM1g-hhxca_vhwE2Kl3ECmtFNYS3ShKTiGLql4fJmT1Ni3tKaAy7t2O-tbGwACE7vkqqk2S2wt5Jp_TjmwMg4WNmTYeRKHOq6sdSDWoouaQ_iy57VGF=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNkvZ8S5RwLMka-BRFt9ZPbQNhKZLEvep6mBI2HZAD3FoxbJ-A2SI6Y85txNvADdr-1Za3U5egV-hQyeLXkCLiQpszLP0h5tCLdcGjc08IMHItxv97U=w2400",
+            "description": "Sasanka hajní"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPe1r5wugMjNT7pA_kvANQuTP-a4TDf35wgnHAqaOH2iHZdR50Ivi8SMIHDoX9QcBfpPqS1csFid2WZHQsyU8gTC6U9BkMX8Jr5VCmvEK2qEqwQTexL=w2400",
+            "description": "Violka vonná (fialka)"
+          },
+          {
+            "description": "tihle fešáci určitě pamatují císaře pána",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMLgkyZ2sAifuCRahn9oPQ_AZI3MIxMygxJVw5jaCqw232oiEbwDqvlK79xJHmE3hy9R8Swc2fcQzIvp7muJD05Tn6223o2bXRovYbzWO1qpFhD4jkC=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOpTpO04vVDfAJDkN4BLzpquR6X8vUt6rgtnrY0st-fe8AaA_ZYh1nKqcYigmaBm5GI59eAmg6EaU7kZp9_lwFjyfIw_iXuwI30OahVOwcqmzkZMO5C=w2400",
+            "description": "Trniště - příběh"
+          },
+          {
+            "description": "Trniště - vyhlídka",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOLsucuxAZdbbcH__DdgkxmWOGU8S5VxMqk15GfMcFXet2IG1NyviDJSmZ9o4iO9K3EMY0bzBOV4qABhxbYZEtw4FOaqzdKRYU2Wp6ovcVJQheQG8ic=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNPUf-Oofq8L_SvZkcdC9q67lvmVUB1_zCDlzV5LIFMX9SqweJ9r5bvJeTX1yktc_NuAvGv9J5OJC8kzqpQDxKHoIhs6C360g1bd5_kiaLmugqk8P1h=w2400",
+            "description": "co to asi může být?"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOXdBpRhz4dJ1o9mTENxyEg4BVaT_ZmhuVmoRlM9bvLRBJIb0Qah4VpqKNo0gtap8ljA28mJk5oHPA72rlw3kKtqpK11q314Kf13MzlSXqiE581HWTs=w2400",
+            "description": "ukázka zastavení Křížové cesty"
+          },
+          {
+            "description": "popis Křížové cesty",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNSGkF4GxF7lrdcW2KuF3X5ipUFT4FFMYna8LRvb1jIO-FhvBgeg-7r0Y6QXDzkT_wJ5eXUofIPG8hqiAL8KGVesuCtaEHslWH7wYoFhSyyiyOWJhPn=w2400"
+          },
+          {
+            "description": "kaplička na konci Křížové cesty",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPBFSueNhKgIH0bIvuT5Wa7ANVogOIOkzmO3XI9DQdtzwS7s9OIXRRWr3bvQ7CqH_pJC2rkdW397gXgTxKv65WHX2Oco7HE6OpcfNL5WU-RiwtuLMVI=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM2a1HHTVxx9RHc3hBI9RHm3ruzMTm5B6TvxNLjw7tEHLOOO3M0-WThtmUEaxo7Jzy-ZbDKzY_nHJTujrd4cSrYTq-orF2dQIck_iA6nj8ngwkyUc80=w2400",
+            "description": "křížová cesta pro lenochy - krátká a na rovině"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOlrnL0yDkMWF7J_2xL5LQQWTu1Pxdu83v8kPC-eR9b9m0-hUzbwjU4kfI0V-Kfvi0Z8V0fDaLxzb_i9QWzmk2PV4pmjL4H22Fyt98TdgtZqTRttNPl=w2400",
+            "description": "osvěžení vodou ze studánky přišlo vhod"
+          },
+          {
+            "description": "v dálce Liberecká Výšina",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMbWdwmY9Nq516K6eL6HGflgOUDHAJgUIfMbotLH_PA_0H52lhywT9HKX_oZ9Mx7U2UhDyhUaYXqyeu0pH0oUan7V5MQf-1tRPHkrH-fkhKMKuGSLJg=w2400"
+          }
+        ],
+        "storyHtml": "Tentokrát jsme se nevydali rovnou z domova, ale posunuli se autobusem do Jablonce n. N. na autobusák. Odsud jsme došli k hlavní hrázi jablonecké přehrady Mšeno a po cyklostezce na západním břehu jsme dokráčeli mezi nádrže Mšeno II a Mšeno III. Přešli jsme krátkou hráz a kolem rybích sádek zamířili konečně do lesa.<div>Po modré značce jsme dorazili k restauraci Chata Jindřichovka. Na oběd bylo ještě brzy, pokračovali jsme tedy dál a kosek za hospodou odbočili zpět do lesa. Těšili jsme se na Skalní hřib. Když jsme ho ale našli, Eda byl zklamaný, že to není žádný hřib, ale spíš nějaká činka nebo co. Na konci lesa jsme narazili na zajímavý objekt - letiště pro RC modely. Odsud jsme se z docela prudkého kopce dostali do Janova nad Nisou, v podstatě jedinou obcí na trase mezi startem a cílem.</div><div>Hned první kontakt s Janovem z výšky nám nabídnul výhled v pozadí s bobovou dráhou. Prošli jsme obcí, kolem krásné lávky na vysokých kamenných sloupech a zahnuli jsme do kopce směrem na Trniště. Kopec to byl teda přísný, ale nakonec jsme pěknou skalní vyhlídku našli a těšili se, že teď si snad trochu odpočineme a půjdeme nějakou dobu po rovině.</div><div>Kolem bývalé Hašlerovy chaty jsme odbočili k místní malé, ale pěkné, křížové cestě. Na jejím konci je studánka s pitnou (snad) vodou, díky opravdu teplému dni nám přišlo občerstvení velice vhod.&nbsp;</div><div>Následoval poměrně dlouhý úsek krásným vlkhým lesem protkaným potůčky, asi nejpříjemnějčí část trasy. Jak už k výletům do lesa patří, nechyběl ani pes, který na nás s hlasitým štějáním začal skákat. A nechyběli ani klasické rady \"nebojte se, on je hodnej\". No, tentokrát naštěstí opravdu byl. A měl na sobě i vestu se záchranářským křížem, tak třeba si jen myslel, že už jsme tak vyřízení, že potřebujeme pomoc.</div><div>Jakmile jsme opustili les, už jsme se v podstatě jen tešili do hospody. Na jídlo, pití, chládek a odpočinek. Protrpěli jsme si cestu Harcovem a protože kolem přehrady se pořád nesmí chodit, vzali to po Husovce do centra. Bylo už docela dost hodin, nebyl tedy čas na experimenty a zamířili jsme na jistotu do Radničního sklípku. Tam nám podle očekávání poskytli vše k plné spokojenosti, na vlak jsme tak nemuseli ani moc běžet.</div>",
+        "routeLength": 20,
+        "journeyMembers": [
+          "Eda",
+          "táta"
+        ]
+      }
+    },
+    {
+      "id": "soqiuVFLDRax4yt6ONo3",
+      "docData": {
+        "routeLength": null,
+        "title": "Bramberk",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "status": "todo",
+        "journeyId": "2023-02-05-bramberk",
+        "journeyDate": "2023-02-05T00:00:00.000Z",
+        "year": 2023,
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "spOAwuYC0ZA1xBmHYaPn",
+      "docData": {
+        "status": "todo",
+        "altitudeLowest": null,
+        "routeLength": null,
+        "photoGalleryItems": [],
+        "altitudeHighest": null,
+        "journeyRouteUrl": "",
+        "journeyId": "2021-05-15-ckamen",
+        "journeyRouteThumbnailUrl": "",
+        "year": 2021,
+        "title": "Císařský kámen",
+        "metersClimbed": null,
+        "journeyDate": "2021-05-15T00:00:00.000Z",
+        "photoGalleryThumbnailUrl": ""
+      }
+    },
+    {
+      "id": "t7YGGk4E70rpzzW3BneG",
+      "docData": {
+        "metersClimbed": 610,
+        "routeLength": 30,
+        "title": "Lomnice",
+        "altitudeHighest": 544,
+        "journeyId": "2024-03-02-lomnice",
+        "year": 2024,
+        "altitudeLowest": 275,
+        "journeyDate": "2024-03-02T00:00:00.000Z",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "tJ27SMP3zs7plCcF7IVe",
+      "docData": {
+        "routeLength": 24,
+        "year": 2024,
+        "journeyDate": "2024-02-10T00:00:00.000Z",
+        "journeyId": "2024-02-10-sychrov",
+        "altitudeHighest": 540,
+        "status": "todo",
+        "title": "Sychrov",
+        "altitudeLowest": 248,
+        "metersClimbed": 273
+      }
+    },
+    {
+      "id": "tl1fEGtmuUAcYadeWN8s",
+      "docData": {
+        "status": "todo",
+        "metersClimbed": null,
+        "year": 2023,
+        "altitudeHighest": null,
+        "title": "Návarov",
+        "altitudeLowest": null,
+        "journeyId": "2023-11-12-navarov",
+        "routeLength": null,
+        "journeyDate": "2023-11-12T00:00:00.000Z",
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "u58F4PZsxZFxJW502IHB",
+      "docData": {
+        "year": 2023,
+        "journeyId": "2023-07-01-ostromer",
+        "altitudeHighest": null,
+        "routeLength": null,
+        "metersClimbed": null,
+        "title": "Ostroměř",
+        "photoGalleryItems": [],
+        "journeyDate": "2023-07-01T00:00:00.000Z",
+        "altitudeLowest": null,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "udZntq6P2tSTcodRhSIq",
+      "docData": {
+        "altitudeHighest": null,
+        "metersClimbed": null,
+        "journeyDate": "2020-05-03T00:00:00.000Z",
+        "status": "todo",
+        "title": "Sychrov",
+        "journeyId": "2020-05-03-sychrov",
+        "altitudeLowest": null,
+        "year": 2020,
+        "routeLength": null,
+        "journeyRouteThumbnailUrl": "",
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": []
+      }
+    },
+    {
+      "id": "vHY4WfgNwU0ltQOGO1o6",
+      "docData": {
+        "photoGalleryItems": [],
+        "journeyId": "2021-03-17-radlo",
+        "journeyRouteThumbnailUrl": "",
+        "altitudeHighest": null,
+        "metersClimbed": null,
+        "status": "todo",
+        "year": 2021,
+        "altitudeLowest": null,
+        "journeyDate": "2021-03-17T00:00:00.000Z",
+        "routeLength": null,
+        "journeyRouteUrl": "",
+        "photoGalleryThumbnailUrl": "",
+        "title": "Rádlo"
+      }
+    },
+    {
+      "id": "wDSzahrhI6jb0Npn3qlO",
+      "docData": {
+        "altitudeHighest": 684,
+        "altitudeLowest": 367,
+        "journeyDate": "2024-10-12T00:00:00.000Z",
+        "year": 2024,
+        "metersClimbed": 633,
+        "routeLength": 14,
+        "title": "Javorník",
+        "journeyId": "2024-10-12-javornik",
+        "status": "todo"
+      }
+    },
+    {
+      "id": "wMaiENwteCr2rjYxwprj",
+      "docData": {
+        "journeyDate": "2024-07-13T00:00:00.000Z",
+        "metersClimbed": 478,
+        "year": 2024,
+        "title": "Javorník",
+        "journeyId": "2024-07-13-javornik",
+        "status": "todo",
+        "altitudeLowest": 353,
+        "altitudeHighest": 684,
+        "routeLength": 16
+      }
+    },
+    {
+      "id": "wvuGDlW48SmsBm1ZDkKT",
+      "docData": {
+        "year": 2024,
+        "routeLength": 10,
+        "journeyId": "2024-08-25-turnov",
+        "altitudeHighest": 268,
+        "metersClimbed": 38,
+        "title": "Turnov",
+        "journeyDate": "2024-08-25T00:00:00.000Z",
+        "altitudeLowest": 247,
+        "status": "todo"
+      }
+    },
+    {
+      "id": "x1T2hNsDSKG3CUGPepky",
+      "docData": {
+        "title": "J. Paseky - Rychnov 19.10.2024",
+        "status": "todo",
+        "routeLength": null,
+        "year": 2024,
+        "journeyId": "2024-10-19-zpasek",
+        "journeyDate": "2024-10-19T00:00:00.000Z",
+        "metersClimbed": null,
+        "altitudeHighest": null,
+        "altitudeLowest": null
+      }
+    },
+    {
+      "id": "x1TnO5l5gio06bZ62Dsr",
+      "docData": {
+        "journeyDate": "2022-07-05T00:00:00.000Z",
+        "routeLength": null,
+        "altitudeHighest": null,
+        "altitudeLowest": null,
+        "journeyRouteUrl": "",
+        "journeyId": "2022-07-05-nbor",
+        "photoGalleryThumbnailUrl": "",
+        "photoGalleryItems": [],
+        "status": "todo",
+        "year": 2022,
+        "title": "Nový Bor",
+        "journeyRouteThumbnailUrl": "",
+        "metersClimbed": null
+      }
+    },
+    {
+      "id": "xN78Y4pR4ZUraQCT9syq",
+      "docData": {
+        "altitudeHighest": null,
+        "year": 2021,
+        "journeyDate": "2021-12-30T00:00:00.000Z",
+        "metersClimbed": null,
+        "photoGalleryThumbnailUrl": "",
+        "altitudeLowest": null,
+        "journeyRouteThumbnailUrl": "",
+        "status": "todo",
+        "routeLength": null,
+        "journeyId": "2021-12-30-turnov",
+        "title": "Turnov",
+        "photoGalleryItems": [],
+        "journeyRouteUrl": ""
+      }
+    },
+    {
+      "id": "xRMtOvixxlxdmg8md9PD",
+      "docData": {
+        "metersClimbed": 410,
+        "journeyId": "2024-06-27-sluknov",
+        "status": "todo",
+        "altitudeLowest": 336,
+        "routeLength": 24,
+        "title": "Šluknov",
+        "altitudeHighest": 563,
+        "journeyDate": "2024-06-27T00:00:00.000Z",
+        "year": 2024
+      }
+    },
+    {
+      "id": "xTcRN3UqIM2iWlexeW6E",
+      "docData": {
+        "title": "Praha",
+        "altitudeHighest": null,
+        "photoGalleryThumbnailUrl": "https://lh3.googleusercontent.com/pw/AP1GczMyNSShGRPCqf_Bgq64Y0dDBCdvvgGdrXs8mf7VhXGrFUC3YzCuYLLFakfw49HZ9_cfmU2ZXJHF0WK0ZtKFJ4qxN2GnhBUDt0tYzVK_joHIHcYhWMQ=w300",
+        "photoGalleryItems": [
+          {
+            "description": "Obecní dům a Prašná brána",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPmcmm77zKRZDahHlVjurtM3CuFiOcuGwvCc3GA6_eQuKivUKK18ZfrPtq-W6_6WvTUczkgV7gMPO440_Oohj1rL0aH1AcvSJUOY8lBoS81DYVY048=w2400"
+          },
+          {
+            "description": "Obecní dům",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOl9_lrow5UOG6K_wgwKs6dvqQ2ZwAfdjJwClov9CA8XycPkdsTF-Hh8_uBmTxPKpA4wcCaZh20B5y5uArmFdhsJkIlLCj2o1qt_bIjatk62KlK4KU=w2400"
+          },
+          {
+            "description": "Staroměstské náměstí",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczNJSzD_Pyu5Izj13rPbxgHGS8C2IATdU7qND1i_Lg9-d5rhVEibjUHWnFWTy5YTEUcLgOo92tCplJd75T0_BG0m2n1P8qphLDNMT7JQNx9bijourt0=w2400"
+          },
+          {
+            "description": "Staroměstské náměstí",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczN1F3xLG0X_kyHWjAWj-2qHGlPxQCt71z9FkDMbhxprHyWhI2j5_1QK0DOmqamQIDmYVK6D2qL3CgFGYnRsQ9JiTq3fAD9noZ17BhGI9WKr99jgQMM=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMyNSShGRPCqf_Bgq64Y0dDBCdvvgGdrXs8mf7VhXGrFUC3YzCuYLLFakfw49HZ9_cfmU2ZXJHF0WK0ZtKFJ4qxN2GnhBUDt0tYzVK_joHIHcYhWMQ=w2400",
+            "description": "socha sv. Václava, v pozadí Národní muzeum"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczM12cW_Y1ds8uCNs2o5yEwpA6n4CDdgvKghyf3l0rHCfEUSNYWTIziBHQYDmP1vYm8xcYjHT2LYjLkskN4Fz0R_9weCvdI1-WIs-djUrNLdfxx-Mjc=w2400",
+            "description": "hřiště na střeše Medúzária"
+          },
+          {
+            "description": "Vyšehrad",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczPWuY7QYAHAB9el_dM8mU-dkp7Y7r89oPmthesWc7C5kGd1_iwGCb4likB5NWWPXi8tF6o_N-Odh9PVx3rNDdjqqo-_hWUqCzQPzEp7qegSBebil-M=w2400"
+          },
+          {
+            "description": "Vyšehrad - bazilika sv. Petra a Pavla",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczP3vf-1nlT5gF3iLJi7JpdPi0zfJDH-A2B8-JiF6kEA5a4xbbpw0UeLtRCbrYyvo04q_mJTdaUibO2zbJk3JaT6pzbtXYtP_oR0gCnDoJWlMq49-S0=w2400"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczOOufp0YYKyYpHuaSigih_tcKVo0Bd8EbleeGW5jFMrzPWNk0qZWLHuZRRvhSIgF6mfnRWYU4kptXjaOW91_qUzauSAmmleFikxQJmXy7unvRpupbY=w2400",
+            "description": "Vyšehrad"
+          },
+          {
+            "description": "Žižkovský vysílač",
+            "url": "https://lh3.googleusercontent.com/pw/AP1GczMMjBN_zcgtBv5KZb44enAx0_EGenuUYh3SUhtb5eMuHqqiwrGBWKojDTjogFe_19M2n8bWQmzfDoVLwAV1pDU96LyQocmbgmS67k6EPFPVzE3pz5g=w2400"
+          }
+        ],
+        "journeyDate": "2025-03-05T00:00:00.000Z",
+        "routeLength": null,
+        "altitudeLowest": null,
+        "year": 2025,
+        "journeyRouteThumbnailUrl": "",
+        "journeyId": "2025-03-05-praha",
+        "status": "todo",
+        "metersClimbed": null,
+        "journeyRouteUrl": ""
+      }
+    }
+  ]

@@ -216,13 +216,15 @@ fieldset#journey-form
     gap: 5rem;
 }
 
-.route-points-form-field
+.route-points-form-field, 
+.journey-members-form-field
 {
     display: flex; 
     flex-direction: row;
 }
 
-.route-points-form-field .form-field-label
+.route-points-form-field .form-field-label,
+.journey-members-form-field .form-field-label
 {
     width: 40%; 
     text-align: right; 

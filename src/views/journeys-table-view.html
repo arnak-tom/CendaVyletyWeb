@@ -112,6 +112,17 @@
                     <input type="text" id="journeyTitle" placeholder="např. Severní pól" style="width: 15rem;" required />
                 </div>
 
+                <div class="journey-members-form-field" >
+                    <div class="form-field-label" >
+                        <label for="journeyMember">Sestava</label>
+                    </div>
+                    <div class="whisperer">
+                        <input type="text" id="journeyMember" placeholder="Vyber nebo zadej člena sestavy" >
+                        <ul id="journeyMemberSuggestions" ></ul>
+                        <ul id="journeyMemberSelected" ></ul>
+                    </div>
+                </div>
+
                 <div class="form-field">
                     <label for="routeLength">Délka trasy v km</label>
                     <input type="number" min="1" max="100" step="1" id="routeLength" placeholder="např. 20" />
@@ -164,8 +175,14 @@
                     <button id="add-photo-gallery-item-button" type="button">Přidat položku</button>
                 </div>
 
-                <div class="form-restaurant">
+                <div class="form-restaurant" style="max-width: 60rem;">
+                    <div style="margin-bottom: 0.5rem;">Restaurace</div>
                     <div id="rich-text-editor-restaurant"></div>
+                </div>
+
+                <div class="form-story" style="max-width: 60rem;">
+                    <div style="margin-bottom: 0.5rem;">Příběh</div>
+                    <div id="rich-text-editor-story"></div>
                 </div>
 
                 <div>

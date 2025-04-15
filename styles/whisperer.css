@@ -20,36 +20,39 @@
     margin: 0;
   }
   
-  .whisperer #journeyRoutePointSuggestions 
+  .whisperer #journeyRoutePointSuggestions,
+  .whisperer #journeyMemberSuggestions
   {
     border: 1px solid #ccc;
     max-height: 20rem;
     overflow-y: auto;
     background: white;
     position: absolute;
-    /* width: calc(100% - 20px);
-    border-radius: 5px; */
   }
   
-  .whisperer #journeyRoutePointSuggestions li 
+  .whisperer #journeyRoutePointSuggestions li,
+  .whisperer #journeyMemberSuggestions li
   {
     padding: 8px;
     cursor: pointer;
   }
   
-  .whisperer #journeyRoutePointSuggestions li:hover 
+  .whisperer #journeyRoutePointSuggestions li:hover,
+  .whisperer #journeyMemberSuggestions li:hover
   {
     background-color: #f0f0f0;
   }
   
-  .whisperer #journeyRoutePointsSelected 
+  .whisperer #journeyRoutePointsSelected,
+  .whisperer #journeyMemberSelected  
   {
     margin-top: 10px;
   }
 
     
   
-  .whisperer #journeyRoutePointsSelected li 
+  .whisperer #journeyRoutePointsSelected li,
+  .whisperer #journeyMemberSelected li
   {
     display: flex;
     justify-content: space-between;

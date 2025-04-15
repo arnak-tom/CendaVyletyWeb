@@ -137,32 +137,14 @@ export class JourneyWeb
 
             if (journeyCard.dataset.isLoaded !== "1")
             {
-                // let dataFound = false;
+                // const innerHtml = await JourneyWeb.#fetchText(`/src/journey-card-content/${journeyCard.dataset.year}/${journeyCard.id}.html`);
 
-                // await JourneyWeb.#fetchText(`/src/journey-card-content/${journeyCard.dataset.year}/${journeyCard.id}.html`)
-                //     .then(data => 
-                //     {
-                //         if (data) 
-                //         {
-                //             dataFound = true;
-
-                //             journeyCard.querySelector(".journey-attributes").innerHTML = data;
-                //         } 
-                //     } );
-
-                // if (!dataFound)
+                // if (!innerHtml)
                 // {
                 //     return;
                 // }
 
-                const innerHtml = await JourneyWeb.#fetchText(`/src/journey-card-content/${journeyCard.dataset.year}/${journeyCard.id}.html`);
-
-                if (!innerHtml)
-                {
-                    return;
-                }
-
-                journeyCard.querySelector(".journey-attributes").innerHTML = innerHtml;
+                // journeyCard.querySelector(".journey-attributes").innerHTML = innerHtml;
 
                 const journeyThumbnail = journeyCard.querySelector('.journey-thumbnail');
 
@@ -175,6 +157,13 @@ export class JourneyWeb
 
                 if (journey)
                 {
+                    const journeyMembersElement = journeyCard.querySelector('.journey-attribute-members .value');
+
+                    if (journeyMembersElement && journey.journeyMembers && journey.journeyMembers.length > 0)
+                    {
+                        journeyMembersElement.textContent = journey.journeyMembers.join(", ");
+                    }
+
                     const routeLengthElement = journeyCard.querySelector('.journey-attribute-route-length .value');
 
                     if (journey.routeLength && routeLengthElement)
@@ -203,40 +192,9 @@ export class JourneyWeb
                         altitudeHighestElement.textContent = journey.altitudeHighest;
                     }
 
-                    const journeyThumbnailImgElement = journeyCard.querySelector('.journey-card-images img.journey-thumbnail');
+                    JourneyWeb.#setImagesGalleryItemsToCard(journeyCard, journey);
 
-                    if (journey.photoGalleryThumbnailUrl && journeyThumbnailImgElement)
-                    {
-                        journeyThumbnailImgElement.src = journey.photoGalleryThumbnailUrl;
-                        journeyThumbnailImgElement.alt = `${journey.title} ${journey.year}`;
-
-                        const imagesCountElement = journeyCard.querySelector(".journey-thumbnail-container .images-count");
-
-                        if (imagesCountElement && journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
-                        {
-                            imagesCountElement.textContent = journey.photoGalleryItems.length;
-                        }
-
-                        if (journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
-                        {
-                            journeyThumbnailImgElement.dataset.images = JSON.stringify(journey.photoGalleryItems);
-                        }
-                    }
-
-                    const journeyRouteLinkElement = journeyCard.querySelector('.journey-card-images a.journey-route-link');
-
-                    if (journeyRouteLinkElement && journey.journeyRouteUrl)
-                    {
-                        journeyRouteLinkElement.href = journey.journeyRouteUrl;
-                        journeyRouteLinkElement.classList.remove("hidden");
-
-                        const journeyRouteThumbnailElement = journeyCard.querySelector('.journey-card-images a.journey-route-link .journey-route-thumbnail');
-
-                        if (journeyRouteThumbnailElement && journey.journeyRouteThumbnailUrl)
-                        {
-                            journeyRouteThumbnailElement.src = journey.journeyRouteThumbnailUrl;
-                        }
-                    }
+                    JourneyWeb.#setRouteLinkToCard(journeyCard, journey);
 
                     const journeyRoutePointsElement = journeyCard.querySelector('.journey-attribute-route-points .value');
 
@@ -244,13 +202,24 @@ export class JourneyWeb
                     {
                         journeyRoutePointsElement.textContent = journey.routePoints.join(" > ");
                     }
+
+                    const restaurantsElement = journeyCard.querySelector('.journey-attribute-restaurants .value');
+
+                    if (journey.restaurantsHtml && restaurantsElement)
+                    {
+                        restaurantsElement.innerHTML = journey.restaurantsHtml;
+                    }
+
+                    const storyElement = journeyCard.querySelector('.journey-attribute-story .value');
+
+                    if (journey.storyHtml && storyElement)
+                    {
+                        storyElement.innerHTML = journey.storyHtml;
+                    }
                 }
 
                 journeyCard.dataset.isLoaded = "1";
             }
-
-
-
 
             const journeyCardContentCurrent = journeyCard.querySelector(".journey-card-content");
 
@@ -260,8 +229,6 @@ export class JourneyWeb
             const journeyCardContentActiveAll = document.querySelectorAll(".journey-card-content:not(.hidden)");
 
             journeyCardContentActiveAll.forEach(c => c.classList.add("hidden"));
-
-            // const journeyCardContentCurrent = journeyCard.querySelector(".journey-card-content");
 
             if (wasCurrentHidden)
             {
@@ -341,5 +308,47 @@ export class JourneyWeb
                 leftNavToggle.click();
             }
         }
+    }
+
+    static #setImagesGalleryItemsToCard(journeyCard, journey)
+    {
+        const journeyThumbnailImgElement = journeyCard.querySelector('.journey-card-images img.journey-thumbnail');
+
+        if (journey.photoGalleryThumbnailUrl && journeyThumbnailImgElement)
+        {
+            journeyThumbnailImgElement.src = journey.photoGalleryThumbnailUrl;
+            journeyThumbnailImgElement.alt = `${journey.title} ${journey.year}`;
+
+            const imagesCountElement = journeyCard.querySelector(".journey-thumbnail-container .images-count");
+
+            if (imagesCountElement && journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
+            {
+                imagesCountElement.textContent = journey.photoGalleryItems.length;
+            }
+
+            if (journey.photoGalleryItems && journey.photoGalleryItems.length > 0)
+            {
+                journeyThumbnailImgElement.dataset.images = JSON.stringify(journey.photoGalleryItems);
+            }
+        }
+    }
+
+    static #setRouteLinkToCard(journeyCard, journey)
+    {
+        const journeyRouteLinkElement = journeyCard.querySelector('.journey-card-images a.journey-route-link');
+
+        if (journeyRouteLinkElement && journey.journeyRouteUrl)
+        {
+            journeyRouteLinkElement.href = journey.journeyRouteUrl;
+            journeyRouteLinkElement.classList.remove("hidden");
+
+            const journeyRouteThumbnailElement = journeyCard.querySelector('.journey-card-images a.journey-route-link .journey-route-thumbnail');
+
+            if (journeyRouteThumbnailElement && journey.journeyRouteThumbnailUrl)
+            {
+                journeyRouteThumbnailElement.src = journey.journeyRouteThumbnailUrl;
+            }
+        }
+
     }
 }

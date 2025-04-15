@@ -17,13 +17,21 @@ export class Administration
             return Administration.#instance;
         }
 
+        this.journeyMemberWhisperer = new Whisperer("journey-members", "journeyMember", "journeyMemberSuggestions", "journeyMemberSelected");
+
+        this.journeyMemberWhisperer.loadData();
+
         this.routePointWhisperer = new Whisperer("route-points", "journeyRoutePoint", "journeyRoutePointSuggestions", "journeyRoutePointsSelected");
 
         this.routePointWhisperer.loadData();
 
         this.restaurantEditor = new RichTextEditor("rich-text-editor-restaurant");
 
-        this.restaurantEditor.setContent("<p>Toto je testovací text</p>");
+        this.restaurantEditor.setContent("<p>Kdepak jsme se občerstvili?</p>");
+
+        this.storyEditor = new RichTextEditor("rich-text-editor-story");
+
+        this.storyEditor.setContent("<p>Jak to šlo?</p>");
 
         Administration.#instance = this;
     }
@@ -190,6 +198,8 @@ export class Administration
         }
 
         const routePoints = Array.from(document.querySelectorAll("#journeyRoutePointsSelected li")).map(li => li.firstChild.textContent.trim());
+
+        const journeyMembers = Array.from(document.querySelectorAll("#journeyMemberSelected li")).map(li => li.firstChild.textContent.trim());
             
         const data = 
         {
@@ -197,6 +207,7 @@ export class Administration
             journeyDate: new Date(document.getElementById("journeyDate").value),
             year: new Date(document.getElementById("journeyDate").value).getFullYear(),
             title: document.getElementById("journeyTitle").value,
+            journeyMembers: journeyMembers,
             routeLength:     ConvertUtil.convertToNumberOrNull( document.getElementById("routeLength").value ),
             metersClimbed:   ConvertUtil.convertToNumberOrNull( document.getElementById("metersClimbed").value ),
             altitudeLowest:  ConvertUtil.convertToNumberOrNull( document.getElementById("altitudeLowest").value ),
@@ -206,6 +217,8 @@ export class Administration
             journeyRouteUrl: document.getElementById("journeyRouteUrl").value?.trim(),
             photoGalleryItems: photoData,
             routePoints : routePoints,
+            restaurantsHtml : this.restaurantEditor.getContent(),
+            storyHtml : this.storyEditor.getContent(),
             status: document.getElementById("status").value
         };
 
@@ -271,10 +284,16 @@ export class Administration
         document.getElementById("dataForm").reset();
         document.getElementById("docId").value = "";
         document.getElementById("photo-gallery-items").innerHTML = "";
+        document.getElementById("journeyMemberSuggestions").innerHTML = "";
+        document.getElementById("journeyMemberSelected").innerHTML = "";
         document.getElementById("journeyRoutePointSuggestions").innerHTML = "";
         document.getElementById("journeyRoutePointsSelected").innerHTML = "";
 
+        this.journeyMemberWhisperer.removeAllSelectedItems();
         this.routePointWhisperer.removeAllSelectedItems();
+
+        this.restaurantEditor.setContent("");
+        this.storyEditor.setContent("");
     }
 
     // Úprava záznamu
@@ -305,6 +324,18 @@ export class Administration
             });
         }
 
+        this.journeyMemberWhisperer.removeAllSelectedItems();
+
+        document.getElementById("journeyMemberSelected").innerHTML = "";
+
+        if (journey.journeyMembers)
+        {
+            journey.journeyMembers.forEach(rp => 
+            {
+                this.journeyMemberWhisperer.addSelectedItem(rp);
+            });
+        }
+
         this.routePointWhisperer.removeAllSelectedItems();
 
         document.getElementById("journeyRoutePointsSelected").innerHTML = "";
@@ -315,6 +346,16 @@ export class Administration
             {
                 this.routePointWhisperer.addSelectedItem(rp);
             });
+        }
+
+        if (journey.restaurantsHtml)
+        {
+            this.restaurantEditor.setContent(journey.restaurantsHtml);
+        }
+
+        if (journey.storyHtml)
+        {
+            this.storyEditor.setContent(journey.storyHtml);
         }
     }
     

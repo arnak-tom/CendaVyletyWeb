@@ -45,6 +45,11 @@
     min-width: 40rem;
 }
 
+.journey-attribute-story div.value
+{
+    text-indent: 3rem;
+}
+
 @media (max-width: 768px) 
 {
     .journey-card-content
