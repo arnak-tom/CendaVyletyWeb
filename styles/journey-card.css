@@ -45,9 +45,12 @@
     min-width: 40rem;
 }
 
-.journey-attribute-story div.value
+.journey-attribute-story div.value,
+.journey-attribute-story div.value div,
+.journey-attribute-story div.value p
 {
-    text-indent: 3rem;
+    text-indent: 0;
+    margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) 
